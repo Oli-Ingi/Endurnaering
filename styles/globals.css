@@ -1,0 +1,115 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@media (max-width: 730px) {
+  body { font-size: 0.9em; }
+}
+
+@media (max-width: 400px) {
+  body { font-size: 0.8em; }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.green {
+  fill: #77A03F;
+  background-color: #77A03F;
+}
+
+.white {
+  fill: white;
+  background-color: white;
+}
+
+
+.gray {
+  background-color: #E9E9DF;
+}
+
+.dark {
+  background-color: #001A00;
+}
+
+.blue {
+  background-color: #295F83;
+}
+
+@keyframes poly {
+  /* 0% { clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); } */
+  0% { 
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%); 
+    opacity: 0;
+  }
+  100% { 
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 85%);
+    opacity: 1;
+   }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-15vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3d {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotate3d(3, -3, 1, 45deg);
+    opacity: 1;
+  }
+}
+
+@keyframes logoSplash {
+  0% {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    left: 50%;
+    top: 50vh;
+  }
+  40% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50vh;
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50vh;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    left: 0;
+    top: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
