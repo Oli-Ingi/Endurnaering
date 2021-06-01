@@ -11,8 +11,8 @@ type Props = {
     alCenter?: boolean;
     alEnd?: boolean;
 
-    col?: boolean;
-    wrap?: boolean;
+    col?: boolean; // flex-direction: column
+    fWrap?: boolean; // flex-wrap
 
     marginTop?: string;
     marginBottom?: string;
@@ -22,7 +22,7 @@ type Props = {
 
 
     minHeight?: string;
-    flex?: number;
+    flex?: number; // flex: 1
     ofHidden?: boolean;
 }
 
@@ -41,10 +41,10 @@ const Wrapper = styled.div<Props>`
     ${p => p.marginTop && css`margin-top: ${p.marginTop};`}
     ${p => p.marginBottom && css`margin-bottom: ${p.marginBottom};`}
     ${p => p.flex && css`flex: 1;`}
-    ${p => p.wrap && css`flex-wrap: wrap;`}
+    ${p => p.fWrap && css`flex-wrap: wrap;`}
     ${p => p.col && css`flex-direction: column;`}
 
-    @media screen and (max-width: 750px){
+    @media screen and (max-width: 885px){
         ${p => p.noMdPad && css`padding: 0px;`}
 
         justify-content: center;

@@ -10,7 +10,8 @@ import Home from "../components/templates/Home";
 
 // TODO: import content here
 const article = {
-  title: 'Njóttu þess að borða!',
+  title: 'Upplifðu frelsi.',
+  subtitle: 'Njóttu þess að borða!',
   paragraphs: [
     'Löggiltur næringarfræðingur veitir næringarráðgjöf í fjarviðtali. Ráðgjöfin er sniðin að þínum persónulegu markmiðum þegar kemur að næringu og þú ræður ferðinni.'
   ]
@@ -23,41 +24,57 @@ const concepts = [
     src: '/Naering.png',
     header: 'Næring',
     content: [
-      'Þú sem einstaklingur þarft að borða, þú þarft að næra þig svo þú sért tilbúin í að takast á við verkefni dagsins. Þig langar samt ekkert endilega að borða eins og maki, vinur eða samstarfsfélagi og því þarftu að finna þig í þínu eigin persónumiðaða matarræði. Þú ert með þinn uppáhaldsmat, jafnvel uppáhalds tíma dags til að borða og vilt hafa þitt matarræði eftir eigin höfði. Þig langar kannski að borða fjölbreyttari fæðu, vera orkumeiri, bæta meltinguna og upplifa líkamlega og andlega vellíðan.', 
-      'Eru matarkúrar eitthvað sem þú hefur verið mikið að prófa? Veltiru stundum fyrir þér hvort þú sért að borða rétt? Langar þig ofboðslega mikið til að skoða þitt matarræði og fá að vita hvort þú þurfir að gera einhverja breytingar? Hugsanlega langar þig bara að bæta millimálið eða fá að vita hvort þú megir borða eftir kvöldmat. Hver svo sem ástæðan er fyrir því að þig langar að eiga spjall um næringu þá er næringarfræðingur tilbúinn að mæta þér þar sem þú ert stödd/staddur.​'
+      'Næring er ein af 4 lykilstoðum þinnar heilsu og þú tekur ákvarðanir á hverjum einstasta degi varðandi mat, meðvitað og ómeðvitað. Rétt samsett næring þarf ekki að vera flókinn matseðill eða stífur matarkúr. Þú ákveður hvernig þín vika lítur út og hvernig þú vilt hafa stjórn á þínum máltíðum yfir daginn.', 
+      'Nauðsynlegt er að þú setjir þér markmið strax í byrjun sem snúa að því hvernig þú getur skapað heilbrigðar fæðuvenjur. ​'
     ]
   },
   {
     src: '/Venjur.png',
     header: 'Venjur',
     content: [
-      'Venjur mótast af umhverfinu sem þú elst upp í heima fyrir, í skóla og síðan í vinnunni. Þú ert að móta þínar fæðuvenjur allt þitt líf og þær taka stöðugum breytingum. Dæmi um fæðuvenju væri að þú færð þér alltaf morgunmat kl. 8 eða þú hefur vanist því að hádegismaturinn sé alltaf kl 12. Þínar fæðuvenjur mótast síðan af ýmsum áhrifaþáttum s.s. heilsu, því ef um veikindi er að ræða, óþol eða ofnæmi þá hefur það mikil áhrif á fæðuvenjur dagsdaglega. Þetta eru áhrifaþættir sem við höfum litla stjórn á og verðum að lifa með. Aðrir áhrifaþættir væru að í uppeldinu þá var þþér kannski sagt að klára alltaf matinn þinn. Ómeðvitað klárarðu því alltaf matinn þinn. Þetta er dæmi um áhrifaþátt sem þú getur haft áhrif á seinna meir, af því þú getur ákveðið að þú þarf ekki alltaf að klára matinn þinn. Fæðuvenja er ákveðin hegðun sem þú sýnir gagnvart þeirri athöfn að næra þig, burt séð frá því hvað nákvæmlega þú ert að fá þér að borða. Önnur dæmi um fæðuvenjur eru föstur, tíðni máltíða, hversu mikinn tíma þú gefur þér til að borða og einnig hvort þú njótir þess að borða. Fæðuvenjur eru því mikilvægur þáttur þegar kemur að því að næra þig og getur haft mikil áhrif á svefn, líkamlega og andlega vellíðan.'
+      'Venjur mótast af umhverfinu sem þú elst upp í, heima fyrir, í skóla og síðan í vinnunni. Þú ert að móta þínar fæðuvenjur allt þitt líf og þær taka stöðugum breytingum. Fæðuvenjur eru því mikilvægur þáttur þegar kemur að því að næra þig og getur haft mikil áhrif á svefn, líkamlega og andlega vellíðan. Fæðuvenjur taka breytingum út ævina en mikilvægt er að þú fáir tækifæri til að móta þínar fæðuvenjur.'
     ]
   },
   {
     src: '/Innsaei.png',
     header: 'Innsæi',
     content: [
-      'Hvernig veistu hversu mikið þú þarft að borða? Hvenær veistu hvenær þú átt að byrja að borða og hvenær þú átt að hætta að borða?',
-      'Þú ert með fullkomið kerfi seddu- og hungurmerkja sem gefa þér merki um hvenær þú ættir að íhuga að fá þér að borða og hvenær þú ert farin(n) að upplifa mikið hungur. Sömu sögu er að segja um sedduna, en líkaminn er stöðugt að senda þér tilkynningar og skilaboð til að láta okkur vita hver staðan sé. Það er þó persónubundið hversu vel þú nærð að rýna í þessar sendingar. Ef þú borðar eftir innsæinu þá ertu að hlusta á náttúruleg hungur- og seddumerki líkamans og þú ert að borða á þínum eigin forsendum. Þú setur þér engar matarreglur, ert með engan mat á bannlista og hlustar þegar líkaminn kallar.', 
-      'Þegar þú borðar eftir innsæinu þá lítur inn á við og áttar þig á því hversu svangur/svöng þú ert, hvað þig langar að fá þér að borða og ímyndar þér hvernig þér myndi líða eftir máltíðina. Þú veltir því fyrir þér hversu lengi sú orka endist, hvort þér hafi orðið illt í maganum eða hvort þessi tiltekna máltíð hafi vakið hjá þér vellíðunartilfinningu. Þú ákveður nákvæmlega hvenær þú borðar, hvað þú borðar og hversu mikið og þú munt treysta þínum líkama. Innsæi þitt til að borða getur hafa orðið fyrir truflun í gegnum lífið og þú upplifir kannski ekki þessa seddutilfinningu eða hungurtilfinningu. Það er alveg eðlilegt og þar spila óteljandi áhrifaþættir inn í. Samfélagið hefur mótað innsæið þitt t.d. ef þér var sagt að klára alltaf matinn þinn og þú gerðir það þrátt fyrir að vera orðin(n) södd/saddur, þá er það dæmi um atvik þar sem þú hlustaðir ekki á líkamann. Þú stýrðist af utanaðkomandi þætti sem sagði þér að þú værir ekki búin(n) að borða fyrr en diskurinn væri tómur. Smám saman glatast hæfileikinn til að hlusta á þessi hungur og seddumerki.'
+      'Líkaminn er stöðugt að senda þér skilaboð og upplýsa þig um stöðuna. Þegar þú borðar eftir innsæinu þá ertu meðvituð/meðvitaður um hungur- og seddumerki líkamans. Þú berð traust til líkamans og setur þér engar matarreglur eða ert með mat á bannlista (t.d. Ís, snakk og nammi). Kostir við að borða eftir innsæinu eru að þú áttar þig á því hvaða matur lætur þér líða vel og hvaða matur gerir það ekki.',
     ]
   }
 ]
 
-const nutrionistHelp = {
-  title: 'Hvernig getur næringarfræðingur aðstoðað mig?',
+// const nutrionistHelp = {
+//   title: 'Hvernig getur næringarfræðingur aðstoðað mig?',
+//   paragraphs: [
+//     'Næringarfræðingur getur aðstoðað með algeng markmið tengd fæðu, svo sem þyngdartap eða þyngaraukningu í formi vöðvamassa. Einnig er eitt markmið sem á það til að gleymast, og það er bætt líkamleg vellíðan og heilsa, burtséð frá líkamsformi. Bætt heilsa leiðir af sér aukið hreysti, minni þreytu, bætta heilastarfsemi o.fl. Ef þú nærir líkamann rétt, þá líður þér vel, hefur meiri orku og getur afkastað meiru í þínu lífi.'
+//   ]
+// }
+
+const nutritionistGuidance = {
+  title: 'Af hverju ættir þú að bóka fjarviðtal hjá næringarfræðing?',
   paragraphs: [
-    'Næringarfræðingur getur aðstoðað með algeng markmið tengd fæðu, svo sem þyngdartap eða þyngaraukningu í formi vöðvamassa. Einnig er eitt markmið sem á það til að gleymast, og það er bætt líkamleg vellíðan og heilsa, burtséð frá líkamsformi. Bætt heilsa leiðir af sér aukið hreysti, minni þreytu, bætta heilastarfsemi o.fl. Ef þú nærir líkamann rétt, þá líður þér vel, hefur meiri orku og getur afkastað meiru í þínu lífi.'
+    'Þú ert að leggja af stað í vegferð og þá skiptir máli að finna út af hverju og hvernig þú leggur af stað. Breyting á þinni matarhegðun er langtímavegferð, ekki spretthlaup. Þig langar til að upplifa frelsi í kringum mat og hefur kannski átt í óheilbrigðu sambandi við mat. Drifkraftur til breytinga býr innra með okkur, en stundum þurfum við aðstoð við að leysa hann úr læðingi. Næringarfræðingur hjálpar þér við að hætta að íhuga breytingar og kemur þér af stað.',
+    'Þú bókar tíma og næringarfræðingur hefur samband við þig og staðfestir tímabókun.​',
+    'Verð: 50 mín myndfundur 12.000 kr.',
+    'ATH! Ef þú bókar viðtal í júní þá færðu viðtalið á 9.000 kr.'
   ]
 }
 
-const nutritionistGuidance = {
-  title: 'Hvað felst í leiðsögn næringarfræðings?',
+const nutrionistHelp = {
+  title: 'Ertu að mæta í fjarviðtal?',
   paragraphs: [
-    'Næringarfræðingur fer með þér yfir núverandi fæðuvenjur þínar, hvaða markmið þú hefur í þeim efnum og leiðbeinir þér við að aðlaga núverandi venjur að þessum markmiðum, án þess að þú þurfir að fórna öllum þeim mat sem þig langar í. Slík leiðsögn veitir þér því frelsi til þess að breyta þínum fæðuvenjum á þínum forsendum með virðingu fyrir þínum sérþörfum.'
+    'Þú skráir þig inn á þitt heimasvæði á Kara Connect með rafrænum skilríkjum. Endurnæring gerir kröfu um að þú skráir þig með rafrænum skilríkjum, en það tryggir öryggi þitt á meðan viðtölum stendur.',
+    'Við mælum alltaf með því að þú notir Chrome vafrann þegar þú skráir þig í viðtöl, aðrir vafrar hafa ekki verið að virka nógu vel.'
   ]
 }
+
+// const nutritionistGuidance = {
+//   title: 'Af hverju ættir þú að bóka fjarviðtal hjá næringarfræðing?',
+//   paragraphs: [
+//     'Næringarfræðingur fer með þér yfir núverandi fæðuvenjur þínar, hvaða markmið þú hefur í þeim efnum og leiðbeinir þér við að aðlaga núverandi venjur að þessum markmiðum, án þess að þú þurfir að fórna öllum þeim mat sem þig langar í. Slík leiðsögn veitir þér því frelsi til þess að breyta þínum fæðuvenjum á þínum forsendum með virðingu fyrir þínum sérþörfum.'
+//   ]
+// }
 
 
 const HomePage = () =>
@@ -75,7 +92,7 @@ const HomePage = () =>
       articleWithImageSrc='/Naeringarfraedingur.png' 
       lastArticle={nutrionistHelp}
       phone='8487407'
-      ssn='123456-7890'
+      ssn='4102210200'
     />
   </>
 

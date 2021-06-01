@@ -22,7 +22,7 @@ const StBtns = styled.div`
 
 
 const Hero: React.FC<Props> = ({ article, img }) =>
-    <Wrapper between alCenter minHeight='80vh' wrap ofHidden>
+    <Wrapper between alCenter minHeight='80vh' fWrap ofHidden>
         <Flex>
             <Article {...article} maxWidth={450} />
         </Flex>

@@ -6,8 +6,9 @@ import Flag from '../../atoms/Flag/Flag'
 import InterviewButton from '../../atoms/InterviewButton/InterviewButton'
 import Logo from '../../atoms/Logo/Logo'
 import Wrapper from '../../atoms/Wrapper/Wrapper'
-import BtnNav from '../../molecules/BtnNav/BtnNav'
+import BtnNav from '../../molecules/InterviewButtons/InterviewButtons'
 import HeaderActions from '../../molecules/HeaderActions/HeaderActions'
+import InterviewButtons from '../../molecules/InterviewButtons/InterviewButtons'
 
 export type Props = {
 }
@@ -22,7 +23,7 @@ const StHeader = styled.header`
     align-items: center;
     z-index: 20;
 
-    @media screen and (max-width: 440px) {
+    @media screen and (max-width: 620px) {
         flex-direction: column;
         align-items: stretch;
     }
@@ -36,7 +37,7 @@ const StNav = styled.nav`
 const Header: React.FC<Props> = () =>
     <StHeader>
             <Logo height={70} bgPrimary />
-            <StNav><InterviewButton /></StNav>
+            <InterviewButtons margin='0.5em 0 0 1em' />
     </StHeader>
 
 export default Header

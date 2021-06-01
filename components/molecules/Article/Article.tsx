@@ -16,14 +16,15 @@ export type Props = {
     apple?: boolean;
     shadow?: boolean;
     center?: boolean;
+    stretch?: boolean;
     lg?: boolean;
     margin?: string;
 }
 
 
-const Article: React.FC<Props> = ({ title, subtitle, paragraphs, maxWidth, shadow, center, children, lg, margin }) =>
-    <Card maxWidth={maxWidth} center={center} margin={margin || '3em 0'}>
-        <ArticleHeader lg={lg} margin='0 0 0.5em 0' >{title}</ArticleHeader>
+const Article: React.FC<Props> = ({ title, subtitle, paragraphs, maxWidth, stretch, center, children, lg, margin }) =>
+    <Card maxWidth={maxWidth} center={center} margin={margin || '3em 0'} stretch={stretch}>
+        <ArticleHeader lg={lg} margin={subtitle ? '0' : '0 0 0.5em 0'}>{title}</ArticleHeader>
         {subtitle && <Subheader margin='0 0 0.5em 0' lg>{subtitle}</Subheader>}
         {paragraphs.map((p, i) => <ArticleText key={i} center={center} lg={lg}>{p}</ArticleText>)}
         {children}

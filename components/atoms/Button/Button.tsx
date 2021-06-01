@@ -46,7 +46,7 @@ const Button = styled.button<Props>`
     ${p => p.marginLeft && css`margin-left: ${p.marginLeft};`}
 
     :hover {
-        background-color: transparent;
+        background-color: ${p => p.theme.colors.white};
         color: ${p => p.theme.colors.primary};
     }
 `

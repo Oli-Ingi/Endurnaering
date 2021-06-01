@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export type Props = {
     margin?: string;
     center?: boolean;
+    stretch?: boolean;
     maxWidth?: number;
     shadow?: boolean;
     bgPrimary?: boolean;
@@ -12,9 +13,9 @@ export type Props = {
 const Card = styled.section<Props>`
     display: flex;
     flex-direction: column;
-    flex-basis: 300px;
+    flex-basis: 450px;
     flex-grow: 2;
-    align-items: ${p => p.center ? 'center' : 'stretch'};
+    align-items: ${p => p.center ? 'center' : p.stretch ? 'stretch' : 'flex-start'};
     padding: 1em;
     background-color: ${p => p.bgPrimary 
         ? p.theme.colors.primary  

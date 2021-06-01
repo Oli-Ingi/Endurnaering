@@ -14,9 +14,13 @@ const StSocialMedia = styled.div`
     flex-direction: column;
     margin: 2em 1em;
     align-self: flex-start;
-    max-width: 325px;
-    width: 100%;
+    justify-content: flex-end;
+    
 
+    @media screen and (max-width: 650px) {
+        max-width: 325px;
+        width: 100%;
+    }
 `
 
 const SMLink = styled.a`
@@ -73,11 +77,10 @@ const StHeader = styled.h3`
 
 const Footer: React.FC<{}> = () =>
     <StFooter>
-        <Wrapper between wrap>
+        <Wrapper between fWrap>
             <StContact>
                 <StHeader>Endurnæring ehf.</StHeader>
-                <p>Kt. 123456-7890</p>
-                <p>Sími: <a href='tel:8487407'>8487407</a></p>
+                <p>Kt. 410221-0200</p>
                 <p>Netfang: <a href={`mailto:endurnaering@endurnaering.is`}>endurnaering@endurnaering.is</a></p>
                 <StEmb>
                     <Image src='/embaetti-landlaeknis.png' width={102} height={44} />

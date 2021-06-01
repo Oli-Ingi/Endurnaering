@@ -11,15 +11,16 @@ export type Props = {
 
 
 const StImgContainer = styled.div`
-    flex-basis: 1;
+    flex-basis: 400px;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
 `
 
 
-const ArticleWithImage: React.FC<Props> = ({ article, src }) =>
+const ArticleWithImage: React.FC<Props> = ({ article, src, children }) =>
     <>
-        <Article {...article} margin='0 0 2em 0' />
+        <Article {...article} margin='0 0 2em 0'>{children}</Article>
         <StImgContainer>
             <Image src={src} height={350} width={550}  />
         </StImgContainer>

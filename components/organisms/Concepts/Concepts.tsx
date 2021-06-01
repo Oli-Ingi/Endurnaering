@@ -13,6 +13,7 @@ export type Props = {
     bgPrimary?: boolean;
     bgSecondary?: boolean;
     shadow?: boolean;
+    cardMargins?: string;
 }
 
 // const StConcepts = styled.section`
@@ -21,10 +22,10 @@ export type Props = {
 //     align-items: stretch;
 // `
 
-const Concepts: React.FC<Props> = ({ concepts, bgPrimary, bgSecondary, shadow }) =>
+const Concepts: React.FC<Props> = ({ concepts, bgPrimary, bgSecondary, shadow, cardMargins }) =>
     <>
         {concepts.map(c => 
-            <ImgCard {...c} bgPrimary={bgPrimary} bgSecondary={bgSecondary} shadow={shadow} />)}
+            <ImgCard {...c} bgPrimary={bgPrimary} bgSecondary={bgSecondary} shadow={shadow} margin={cardMargins} />)}
     </>
 
 

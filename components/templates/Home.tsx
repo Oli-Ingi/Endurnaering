@@ -8,6 +8,7 @@ import Wrapper from "../atoms/Wrapper/Wrapper";
 import Figure from "../elements/Figure";
 import Article from "../molecules/Article/Article";
 import ArticleWithImage from "../molecules/ArticleWithImage/ArticleWithImage";
+import InterviewButtons from "../molecules/InterviewButtons/InterviewButtons";
 import Concepts, { Concept } from "../organisms/Concepts/Concepts";
 import Footer from '../organisms/Footer/Footer'
 
@@ -51,41 +52,28 @@ const StCircle = styled.div`
 const Home: React.FC<Props> = ({ article, bannerImage, concepts, articleWithImage, articleWithImageSrc, lastArticle }) =>
     <>
         <StBg>
-            <Wrapper between alCenter wrap>
-                <Article {...article} maxWidth={500} lg center>
-                    <InterviewButton lg>Bóka viðtal</InterviewButton>
+            <Wrapper between alCenter fWrap>
+                <Article {...article} maxWidth={500} lg>
+                    <InterviewButtons margin='1em 0 0 0' />
                 </Article>
-                <BannerImage src={bannerImage} margin='0 0 0 2em' />
+                <BannerImage src={bannerImage} margin='0' />
             </Wrapper>
         </StBg>
-        <Wrapper between alCenter marginTop='6em' wrap noYPad>
-            <ArticleWithImage article={articleWithImage} src={articleWithImageSrc} />
+        <Wrapper between alCenter marginTop='3em' fWrap noYPad>
+            <ArticleWithImage article={articleWithImage} src={articleWithImageSrc}>
+                <InterviewButton margin='1em 0' />
+            </ArticleWithImage>
         </Wrapper>
-        <Wrapper>
-            <Article {...lastArticle} />
+        <Wrapper noYPad>
+            <Article {...lastArticle} margin='1em 0'>
+                <InterviewButton margin='1em 0' attend />
+            </Article>
+        </Wrapper>
+        <Wrapper col>
+            <Concepts concepts={concepts} bgSecondary shadow cardMargins='2em 0' />
         </Wrapper>
     </>
-    // <GutterGrid as='main' full>
-    //     <Intro />
-    //     <Flag onClick={() => null} />
-    //     <Interview />
-    //     <Concepts />
-    //     {/* <Section full isGray cols={2}>
-    //         <Info col={2} />
-    //         <FoodCircle />
-    //     </Section> */}
-    //     {/* <Section full isGray cols={2} padVertical>
-    //         <StFigure >
-    //             <Image src='/Naeringarfraedingur.png' alt='naeringarfraedingur-mynd' width={950} height={590} />
-    //         </StFigure>
-            
-    //     </Section> */}
-    //     {/* <VpSection>
-    //         <Info />
-    //        <FoodCircle />
-    //     </VpSection>
-    //     <FlexSection color={theme.colors.gray} /> */}
-    // </GutterGrid>
+
 
 
     
