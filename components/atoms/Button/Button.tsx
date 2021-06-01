@@ -23,7 +23,7 @@ type LinkProps = {
     href: string;
 }
 
-type Props = (BaseProps & BtnProps) | (BaseProps & LinkProps)
+export type Props = (BaseProps & BtnProps) | (BaseProps & LinkProps)
 
 const Button = styled.button<Props>`
     transition-duration: 0.2s;
