@@ -9,61 +9,61 @@ const leaves = keyframes`
     }
 `
 
-const logoSplash = keyframes`
-    0% {
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      left: 50%;
-      top: 50vh;
-    }
-    40% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50vh;
-    }
-    75% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50vh;
-    }
+// const logoSplash = keyframes
+//     0% {
+//       transform: translate(-50%, -50%);
+//       opacity: 0;
+//       left: 50%;
+//       top: 50vh;
+//     }
+//     40% {
+//       opacity: 1;
+//       transform: translate(-50%, -50%);
+//       left: 50%;
+//       top: 50vh;
+//     }
+//     75% {
+//       opacity: 1;
+//       transform: translate(-50%, -50%);
+//       left: 50%;
+//       top: 50vh;
+//     }
   
-    /* 100% {
-      transform: translate(0px, 0px);
-      opacity: 1;
-      left: 0;
-      top: 0;
-    } */
-`
+//     /* 100% {
+//       transform: translate(0px, 0px);
+//       opacity: 1;
+//       left: 0;
+//       top: 0;
+//     } */
+// 
 
-const logoSplashMini = keyframes`
-    0% {
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      left: 50%;
-      top: 50vh;
-    }
-    40% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50vh;
-    }
-    75% {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50vh;
-    }
+// const logoSplashMini = keyframes
+//     0% {
+//       transform: translate(-50%, -50%);
+//       opacity: 0;
+//       left: 50%;
+//       top: 50vh;
+//     }
+//     40% {
+//       opacity: 1;
+//       transform: translate(-50%, -50%);
+//       left: 50%;
+//       top: 50vh;
+//     }
+//     75% {
+//       opacity: 1;
+//       transform: translate(-50%, -50%);
+//       left: 50%;
+//       top: 50vh;
+//     }
   
-    100% {
-      transform: translate(-50%, 0px);
-      left: 50%;
-      opacity: 1;
-      top: 0;
-    }
-`
+//     100% {
+//       transform: translate(-50%, 0px);
+//       left: 50%;
+//       opacity: 1;
+//       top: 0;
+//     }
+// `
 
 // const StLogoContainer = styled.div`
 //     grid-column: 2;

@@ -1,0 +1,42 @@
+import React from 'react'
+import styled from 'styled-components'
+import { IAnchor } from '../../../types/general'
+import Button from '../../atoms/Button/Button'
+import Flag from '../../atoms/Flag/Flag'
+import InterviewButton from '../../atoms/InterviewButton/InterviewButton'
+import Logo from '../../atoms/Logo/Logo'
+import Wrapper from '../../atoms/Wrapper/Wrapper'
+import BtnNav from '../../molecules/BtnNav/BtnNav'
+import HeaderActions from '../../molecules/HeaderActions/HeaderActions'
+
+export type Props = {
+}
+
+const StHeader = styled.header`
+    width: 100%;
+    box-shadow: 0 0 10px #aaa;
+    position: fixed;
+    background-color: ${p => p.theme.colors.white};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+
+    @media screen and (max-width: 440px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+`
+
+const StNav = styled.nav`
+    display: flex;
+    justify-content: center;
+`
+
+const Header: React.FC<Props> = () =>
+    <StHeader>
+            <Logo height={70} bgPrimary />
+            <StNav><InterviewButton /></StNav>
+    </StHeader>
+
+export default Header

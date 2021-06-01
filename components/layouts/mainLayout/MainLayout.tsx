@@ -1,21 +1,47 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
-import Footer from "../../modules/footer/Footer";
-import Header from "../../modules/header/Header";
+import Footer from "../../organisms/Footer/Footer";
+import Header from "../../organisms/Header/Header";
 import Home from "../../templates/Home";
 import GutterGrid from '../../elements/GutterGrid';
+import { IAnchor } from "../../../types/general";
 
 
+// TODO: pull content from  language files.
+const anchor1: IAnchor = {
+    content: 'Bóka viðtal',
+    to: '/'
+}
+
+const anchor2: IAnchor = {
+    content: 'Mæta í viðtal',
+    to: '/'
+}
 
 
+// const MainLayout: React.FC<{}> = ({ children }) =>
+//     <GutterGrid>
+//         <Header />
+//         {children}
+//         <Footer />
+//     </GutterGrid>
 
-const MainLayout: React.FC<{}> = ({ children }) =>
-    <GutterGrid>
+// TODO: atom?
+const StMain = styled.main`
+    width: 100%;
+    padding: 70px 0 0 0;
+    margin: 0;
+    overflow: hidden;
+`
+
+const Layout: React.FC<{}> = ({ children }) =>
+    <>
         <Header />
-        {children}
+        <StMain>
+            {children}
+        </StMain>
         <Footer />
-    </GutterGrid>
-
+    </>
 
     
-export default MainLayout
+export default Layout

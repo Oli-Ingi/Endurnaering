@@ -10,6 +10,7 @@ type Props = {
     mediaCols?: string;
     mediaCenter?: boolean;
     pointer?: boolean;
+    hoverScale?: boolean;
 }
 
 const Figure = styled.figure<Props>`
@@ -24,7 +25,7 @@ const Figure = styled.figure<Props>`
     transition-duration: 0.2s;
 
     :hover {
-        transform: scale(1.1);
+        transform: ${props => props.hoverScale ? 'scale(1.1)' : 'none'};
     }
 
     @media (max-width: 730px) {
