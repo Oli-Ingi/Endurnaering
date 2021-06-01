@@ -9,7 +9,7 @@ const flagStory = template.bind({});
 
 flagStory.args = {
     onClick: () => null
-} as Props
+}
 
 
 
