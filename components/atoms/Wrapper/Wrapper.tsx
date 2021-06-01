@@ -44,7 +44,7 @@ const Wrapper = styled.div<Props>`
     ${p => p.wrap && css`flex-wrap: wrap;`}
     ${p => p.col && css`flex-direction: column;`}
 
-    @media screen and (max-width: 1150px){
+    @media screen and (max-width: 750px){
         ${p => p.noMdPad && css`padding: 0px;`}
 
         justify-content: center;
