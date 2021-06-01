@@ -12,9 +12,11 @@ import Home from "../components/templates/Home";
 const article = {
   title: 'Njóttu þess að borða!',
   paragraphs: [
-    'Taktu spjallið við næringarfræðing og lærðu að beita innsæinu við að taka stjórn á þínum fæðuvenjum og vellíðan.'
+    'Löggiltur næringarfræðingur veitir næringarráðgjöf í fjarviðtali. Ráðgjöfin er sniðin að þínum persónulegu markmiðum þegar kemur að næringu og þú ræður ferðinni.'
   ]
 }
+
+//Taktu spjallið við næringarfræðing og lærðu að beita innsæinu við að taka stjórn á þínum fæðuvenjum og vellíðan.
 
 const concepts = [
   {
