@@ -18,7 +18,6 @@ export type Props = {
 const HeaderActions: React.FC<Props> = ({ anchor1, anchor2, onFlagClick, flagImg }) =>
     <List>
         <Button as="a" href={anchor1.to} {...anchor1.title && { title: anchor1.title }}>{anchor1.content}</Button>
-        <Button as="a"  gray href={anchor2.to} {...anchor2.title && { title: anchor2.title }}>{anchor2.content}</Button>
         <Flag onClick={onFlagClick} img={flagImg} />
     </List>
 
