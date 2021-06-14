@@ -13,7 +13,7 @@ const article = {
   title: 'Upplifðu frelsi.',
   subtitle: 'Njóttu þess að borða!',
   paragraphs: [
-    'Löggiltur næringarfræðingur veitir næringarráðgjöf í fjarviðtali. Ráðgjöfin er sniðin að þínum persónulegu markmiðum þegar kemur að næringu og þú ræður ferðinni.'
+    'Bókaðu tíma hjá næringarfræðingi og fáðu ráðgjöf við að byggja upp heilbrigt samband við mat.'
   ]
 }
 
@@ -64,7 +64,7 @@ const nutritionistGuidance = {
 const nutrionistHelp = {
   title: 'Ertu að mæta í fjarviðtal?',
   paragraphs: [
-    'Þú skráir þig inn á þitt heimasvæði á Kara Connect með rafrænum skilríkjum. Endurnæring gerir kröfu um að þú skráir þig með rafrænum skilríkjum, en það tryggir öryggi þitt á meðan viðtölum stendur.',
+    'Þú skráir þig inn á þitt heimasvæði á Kara Connect með rafrænum skilríkjum. Innskráning fer fram með rafrænum skilríkjum, en það tryggir öryggi þitt á meðan viðtölum stendur.',
     'Við mælum alltaf með því að þú notir Chrome vafrann þegar þú skráir þig í viðtöl, aðrir vafrar hafa ekki verið að virka nógu vel.'
   ]
 }
@@ -91,8 +91,6 @@ const HomePage = () =>
       articleWithImage={nutritionistGuidance} 
       articleWithImageSrc='/Naeringarfraedingur.png' 
       lastArticle={nutrionistHelp}
-      phone='8487407'
-      ssn='4102210200'
     />
   </>
 

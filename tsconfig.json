@@ -23,7 +23,7 @@
     "**/*.ts",
     "**/*.tsx",
     "custom.d.ts"
-  ],
+, "pages/skilmalar.js"  ],
   "exclude": [
     "node_modules"
   ]
