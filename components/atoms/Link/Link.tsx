@@ -1,21 +1,24 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 
 export type Props = {
     to: string;
+    bold?: boolean;
 }
 
 
-const StLink = styled.a`
+const StLink = styled.a<{ bold?: boolean }>`
     color: ${p => p.theme.colors.dark};
     display: inline-block;
     position: relative;
+    font-size: 1.2em;
+
+    ${p => p.bold && css`font-weight: bold;`}
 
     span {
         display: block;
         margin-bottom: 1px;
         transition-duration: 0.2s;
-        font-weight: bold;
     }
 
     hr {
@@ -35,12 +38,11 @@ const StLink = styled.a`
 
     :hover span {
         color: ${p => p.theme.colors.green};
-        transform: skew(-10deg);
     }
 `
 
-const Link: React.FC<Props> = ({ children, to }) =>
-    <StLink href={to}>
+const Link: React.FC<Props> = ({ children, to, bold }) =>
+    <StLink href={to} bold={bold}>
         <span>{children}</span>
         <hr />
     </StLink>

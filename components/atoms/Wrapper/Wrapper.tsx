@@ -26,9 +26,9 @@ type Props = {
     ofHidden?: boolean;
 }
 
-const Wrapper = styled.div<Props>`
+const Wrapper = styled.section<Props>`
     display: flex;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     padding: ${p => p.noPad ? '0px' : p.noYPad ? '0 1em' : '3em 1em'};
@@ -44,7 +44,7 @@ const Wrapper = styled.div<Props>`
     ${p => p.fWrap && css`flex-wrap: wrap;`}
     ${p => p.col && css`flex-direction: column;`}
 
-    @media screen and (max-width: 885px){
+    @media screen and (max-width: 1100px){
         ${p => p.noMdPad && css`padding: 0px;`}
 
         justify-content: center;

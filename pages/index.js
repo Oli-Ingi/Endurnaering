@@ -6,15 +6,16 @@ import { mainTheme } from "../styles/themes";
 
 import MainLayout from "../components/layouts/mainLayout/MainLayout";
 import Home from "../components/templates/Home";
+import ArticleText from '../components/atoms/ArticleText/ArticleText';
+import Subheader from '../components/atoms/Subheader/Subheader';
+import InterviewButton from '../components/atoms/InterviewButton/InterviewButton';
 //import { IArticle } from '../types/general';
 
 // TODO: import content here
-const article = {
+const intro = {
   title: 'Upplifðu frelsi.',
   subtitle: 'Njóttu þess að borða!',
-  paragraphs: [
-    'Bókaðu tíma hjá næringarfræðingi og fáðu ráðgjöf við að byggja upp heilbrigt samband við mat.'
-  ]
+  text: 'Bókaðu tíma hjá næringarfræðingi og fáðu ráðgjöf við að byggja upp heilbrigt samband við mat.'
 }
 
 //Taktu spjallið við næringarfræðing og lærðu að beita innsæinu við að taka stjórn á þínum fæðuvenjum og vellíðan.
@@ -52,7 +53,7 @@ const concepts = [
 // }
 
 const nutritionistGuidance = {
-  title: 'Af hverju ættir þú að bóka fjarviðtal hjá næringarfræðing?',
+  title: 'Af hverju ættir þú að bóka viðtal hjá næringarfræðingi?',
   paragraphs: [
     'Þú ert að leggja af stað í vegferð og þá skiptir máli að finna út af hverju og hvernig þú leggur af stað. Breyting á þinni matarhegðun er langtímavegferð, ekki spretthlaup. Þig langar til að upplifa frelsi í kringum mat og hefur kannski átt í óheilbrigðu sambandi við mat. Drifkraftur til breytinga býr innra með okkur, en stundum þurfum við aðstoð við að leysa hann úr læðingi. Næringarfræðingur hjálpar þér við að hætta að íhuga breytingar og kemur þér af stað.',
     'Þú bókar tíma og næringarfræðingur hefur samband við þig og staðfestir tímabókun.​',
@@ -85,11 +86,39 @@ const HomePage = () =>
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"></link>
     </Head>
     <Home 
-      article={article} 
-      bannerImage={'/spread_ppl.png'} 
-      concepts={concepts} 
+      introTitle={intro.title}
+      introSubtitle={intro.subtitle}
+      introText={intro.text}
+      introImgSrc={'/Upphafsmynd.svg'}
+      imgArticleTitle="Viðtal við næringarfræðing"
+      imgArticle={<>
+        <ArticleText>
+          Viðtal við næringarfræðing felur í sér að þú hittir næringarfræðing í staðviðtali eða fjarviðtali
+          í 1 skipti. Ef þú vilt hefja varanlega lífsstílsbreytingu eða hefur áhyggjur af því hvar skal byrja
+          í breytingum á fæðuvenjum, þá er næringarráðgjöf fyrir þig.
+        </ArticleText>
+        <ArticleText>
+          Næringarráðgjöf felur í sér eitt 50mín viðtal og greitt er fyrir viðtalið eftirá.
+        </ArticleText>
+        <ArticleText>
+          <b>Fullt verð:</b> 12.000 kr.
+        </ArticleText>
+        <ArticleText>
+          <b>Sumarverð:</b> 9.000 kr. (ef þú bókar fyrir 15. júlí)
+        </ArticleText>
+        <Subheader margin="1em 0 0.5em 0">Hvernig bóka ég tíma í viðtal?</Subheader>
+        <ArticleText>
+          Þú bókar tíma með því að smella á "Bóka viðtal" takkann hér fyrir neðan og fylgir
+          leiðbeiningum KaraConnect. Næringarfræðingur hefur síðan samband við þig og staðfestir tíma.
+        </ArticleText>
+        <InterviewButton margin="1em 0" />
+        <ArticleText>
+          Ef þú hefur einhverjar spurningar eða ert óviss um hvort þjónustan henti þér, ekki hika
+          við að hafa samband: <a href="mailto:endurnaering@endurnaering.is" style={{ textDecoration: 'underline' }}>endurnaering@endurnaering.is</a>
+        </ArticleText>
+      </>}
       articleWithImage={nutritionistGuidance} 
-      articleWithImageSrc='/Naeringarfraedingur.png' 
+      articleImageSrc='/Naeringarfraedingur.png' 
       lastArticle={nutrionistHelp}
     />
   </>

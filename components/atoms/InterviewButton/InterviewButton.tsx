@@ -18,7 +18,7 @@ const InterviewButton: React.FC<Props> = ({ lg, margin, attend }) =>
         target='_blank'
         {...attend && { secondary: true }}
     >
-        {attend ? 'Mæta í viðtal' : 'Bóka fjarviðtal'}
+        {attend ? 'Mæta í viðtal' : 'Bóka viðtal'}
     </Button>
 
 

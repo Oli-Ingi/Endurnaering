@@ -9,6 +9,7 @@ import Wrapper from '../../atoms/Wrapper/Wrapper'
 import BtnNav from '../../molecules/InterviewButtons/InterviewButtons'
 import HeaderActions from '../../molecules/HeaderActions/HeaderActions'
 import InterviewButtons from '../../molecules/InterviewButtons/InterviewButtons'
+import HeaderNav from '../../molecules/HeaderNav/HeaderNav'
 
 export type Props = {
 }
@@ -37,6 +38,7 @@ const StNav = styled.nav`
 const Header: React.FC<Props> = () =>
     <StHeader>
             <Logo height={70} bgPrimary />
+            <HeaderNav fraedsla={{ to: '/fraedsla', title: 'Fræðsla' }} aboutUs={{ to: '/um-okkur', title: 'Um okkur' }} />
             <InterviewButtons margin='0.5em 0 0 1em' />
     </StHeader>
 
