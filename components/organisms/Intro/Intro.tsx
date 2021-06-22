@@ -18,8 +18,7 @@ type Props = {
 
 
 const StCon = styled.div`
-    max-width: 500px;
-    width: 50%;
+    max-width: 520px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
