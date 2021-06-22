@@ -37,7 +37,7 @@ const StLink = styled.a<{ bold?: boolean }>`
     }
 
     :hover span {
-        color: ${p => p.theme.colors.green};
+        color: ${p => p.theme.colors.primary};
     }
 `
 

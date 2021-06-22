@@ -23,7 +23,7 @@ const StCon = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 2em 0 2em 2em;
+    margin: 2em;
 `
 
 const StLine = styled.hr<{delay?: number}>`
@@ -43,7 +43,7 @@ const Intro: React.FC<Props> = ({ title, subtitle, children }) =>
         <ArticleHeader lg margin="0" fader="right">{title}</ArticleHeader>
         <Subheader lg margin='0' fader="right" fadeDelay={2}>{subtitle}</Subheader>
         <StLine delay={2} />
-        <ArticleText lg bold fader="down" fadeDelay={3.2}>{children}</ArticleText>
+        <ArticleText lg fader="down" fadeDelay={3.2}>{children}</ArticleText>
         <InterviewButtons margin='1em 0 0 0'  fadeDelay={3.2} fader="down" />
     </StCon>
 

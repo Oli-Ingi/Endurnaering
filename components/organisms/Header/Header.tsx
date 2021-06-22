@@ -38,7 +38,7 @@ const StNav = styled.nav`
 const Header: React.FC<Props> = () =>
     <StHeader>
             <Logo height={70} bgPrimary />
-            <HeaderNav fraedsla={{ to: '/fraedsla', title: 'Fræðsla' }} aboutUs={{ to: '/um-okkur', title: 'Um okkur' }} />
+            {/* <HeaderNav fraedsla={{ to: '/fraedsla', title: 'Fræðsla' }} aboutUs={{ to: '/um-okkur', title: 'Um okkur' }} /> */}
             <InterviewButtons margin='0.5em 0 0 1em' />
     </StHeader>
 

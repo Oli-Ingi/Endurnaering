@@ -13,7 +13,6 @@ const InterviewButton: React.FC<Props> = ({ lg, margin, attend }) =>
         as="a" 
         href={attend ? 'https://app.karaconnect.com/register' : 'https://app.karaconnect.com/company/1115/registration?auth=2'}
         lg={lg}
-        bold
         margin={margin || '1em'}
         target='_blank'
         {...attend && { secondary: true }}

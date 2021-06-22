@@ -59,7 +59,7 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
     <>
         <Wrapper center alCenter fWrap minHeight='100vh'>
             <Intro title={introTitle} subtitle={introSubtitle}>{introText}</Intro>
-            <BannerImage src={introImgSrc} margin='0' fadeDelay={2.2} fader="in" />
+            <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" />
         </Wrapper>
         <Wrapper between alCenter marginTop='3em' fWrap noYPad>
             <Article title={imgArticleTitle} margin='0 1em 2em 1em'>{imgArticle}</Article>

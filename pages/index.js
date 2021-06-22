@@ -84,12 +84,15 @@ const HomePage = () =>
       <title>Endurnæring</title>
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"></link>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500;600;900&display=swap" rel="stylesheet"></link>
     </Head>
     <Home 
       introTitle={intro.title}
       introSubtitle={intro.subtitle}
       introText={intro.text}
-      introImgSrc={'/Upphafsmynd.svg'}
+      introImgSrc={'/Upphafsmynd3.svg'}
       imgArticleTitle="Viðtal við næringarfræðing"
       imgArticle={<>
         <ArticleText>

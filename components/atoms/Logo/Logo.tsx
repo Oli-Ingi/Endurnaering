@@ -23,7 +23,7 @@ const Svg = styled.svg<{ bgPrimary?: boolean }>`
 `
 
 const Logo: React.FC<Props> = ({ bgPrimary, height }) =>
-    <StLink bgPrimary={bgPrimary} height={height}>
+    <StLink bgPrimary={bgPrimary} height={height} href="/">
         <Svg bgPrimary={bgPrimary} version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 893.65 281.77" xmlSpace="preserve">
             <circle className="green" cx="853.11" cy="367.73" r="7.87"/>
             <g>
