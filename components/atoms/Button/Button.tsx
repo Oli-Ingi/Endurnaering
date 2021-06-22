@@ -34,8 +34,8 @@ const Button = styled.button<Props>`
 
     background-color: ${p => p.secondary ? p.theme.colors.secondary : p.tertiary ? p.theme.colors.tertiary : p.theme.colors.primary};
     color: ${p => p.tertiary || p.secondary ? p.theme.colors.primary : p.theme.colors.white};
-    padding: ${p => p.width && p.lg ? '10px 0' : p.width ? '5px 0' : p.lg ? '10px 1.5em' : '5px 1.5em'};
-    font-size: ${props => props.lg ? '1.5em' : '1.1em'};
+    padding: ${p => p.width && p.lg ? '7px 0' : p.width ? '5px 0' : p.lg ? '7px 1.5em' : '5px 1.5em'};
+    font-size: ${props => props.lg ? '1.3em' : '1.1em'};
     margin: ${p => p.margin || '3px 5px'};
 
     ${p => p.bold && css`font-weight: bold;`}

@@ -23,6 +23,10 @@ const StCon = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 2em;
+
+    @media screen and (max-width: 800px) {
+        margin: 2em 0;
+    }
 `
 
 const StLine = styled.hr<{delay?: number}>`
@@ -43,7 +47,7 @@ const Intro: React.FC<Props> = ({ title, subtitle, children }) =>
         <Subheader lg margin='0' fader="right" fadeDelay={2}>{subtitle}</Subheader>
         <StLine delay={2} />
         <ArticleText lg fader="down" fadeDelay={3.2}>{children}</ArticleText>
-        <InterviewButtons margin='1em 0 0 0'  fadeDelay={3.2} fader="down" />
+        <InterviewButtons margin='1em 0 0 0'  fadeDelay={3.2} fader="down" lg />
     </StCon>
 
 
