@@ -14,7 +14,7 @@ export type Props = {
 
 const StContainer = styled.div<{ margin?: string, fader?: fadeType; fadeDelay?: number; }>`
     margin: ${p => p.margin || '1em'};
-    flex-basis: 550px;
+    flex-basis: 450px;
     flex-grow: 1;
     display: flex;
     justify-content: center;

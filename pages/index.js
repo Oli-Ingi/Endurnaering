@@ -93,6 +93,10 @@ const HomePage = () =>
       introSubtitle={intro.subtitle}
       introText={intro.text}
       introImgSrc={'/Upphafsmynd3.svg'}
+      conceptsTrio={[{ src: '/Venjur.png', title: 'Venjur' }, { src: '/Innsaei.png', title: 'Innsæi' }, { src: '/Naering.png', title: 'Næring' }]}
+      conceptsArticle={
+        <ArticleText>Hér kemur eitthvað um næringu, innsæi og venjur.</ArticleText>
+      }
       imgArticleTitle="Viðtal við næringarfræðing"
       imgArticle={<>
         <ArticleText>

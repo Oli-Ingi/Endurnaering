@@ -5,8 +5,10 @@ import Image from 'next/image'
 
 
 const StFooter = styled.footer`
-    background-color: ${p => p.theme.colors.secondary};
+    background-color: ${p => p.theme.colors.primary};
     padding: 1em 0;
+    color: ${p => p.theme.colors.white};
+    border-top: 2px solid ${p => p.theme.colors.gray};
 `
 
 const StSocialMedia = styled.div`
@@ -31,13 +33,12 @@ const SMLink = styled.a`
 
     :hover {
         span {
-            color: ${p => p.theme.colors.primary};
+            color: ${p => p.theme.colors.secondary};
         }
     }
 
     img { margin-right: 10px; }
     span {
-        font-weight: bold;
         display: block;
         margin-left: 10px;
         transition-duration: 0.3s;
@@ -73,6 +74,7 @@ const StContact = styled.div`
 
 const StHeader = styled.h3`
     margin-top: 0;
+    font-weight: 400;
 `
 
 const Footer: React.FC<{}> = () =>

@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { IArticle } from "../../types/general";
 import ArticleImage from "../atoms/ArticleImage/ArticleImage";
+import ArticleText from "../atoms/ArticleText/ArticleText";
 import BannerImage from "../atoms/BannerImage/BannerImage";
 import Button from "../atoms/Button/Button";
 import InterviewButton from "../atoms/InterviewButton/InterviewButton";
@@ -14,19 +15,15 @@ import Concepts, { Concept } from "../organisms/Concepts/Concepts";
 import Footer from '../organisms/Footer/Footer'
 import Intro from "../organisms/Intro/Intro";
 
-// const StFigure = styled.figure`
-//     grid-column: 1/3;
-//     margin: 0;
-//     display: flex;
-//     justify-self: center;
-//`
+
 
 export type Props = {
     introTitle: string;
     introSubtitle: string;
     introText: string;
     introImgSrc: string;
-
+    conceptsTrio: [Concept, Concept, Concept];
+    conceptsArticle: ReactNode;
     imgArticleTitle: string;
     imgArticle: ReactNode;
     articleImageSrc: string;
@@ -34,11 +31,10 @@ export type Props = {
     lastArticle: IArticle;
 }
 
-// const StBg = styled.div`
-//     //background: linear-gradient(-20deg, ${p => p.theme.colors.secondary} 30%, #fff 30%);
-//     background-color: ${p => p.theme.colors.secondary};
-//     width: 100%;
-// `
+const StBg = styled.section`
+    background-color: ${p => p.theme.colors.secondary};
+    width: 100%;
+`
 
 // const StCircle = styled.div`
 //     background-color: ${p => p.theme.colors.secondary};
@@ -55,12 +51,18 @@ export type Props = {
 //     }
 // `
 
-const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, imgArticleTitle, imgArticle, articleImageSrc, lastArticle }) =>
+const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, conceptsTrio, conceptsArticle, imgArticleTitle, imgArticle, articleImageSrc, lastArticle,  }) =>
     <>
         <Wrapper center alCenter fWrap minHeight='100vh'>
             <Intro title={introTitle} subtitle={introSubtitle}>{introText}</Intro>
             <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" />
         </Wrapper>
+        <StBg>
+            <Wrapper as="div" col marginTop="6em" noYPad>
+                <Concepts concepts={conceptsTrio} margin="-150px 0 1em 0" />
+                {conceptsArticle}
+            </Wrapper>
+        </StBg>
         <Wrapper between alCenter marginTop='3em' fWrap noYPad>
             <Article title={imgArticleTitle} margin='0 1em 2em 1em'>{imgArticle}</Article>
             <ArticleImage src={articleImageSrc} margin="0 1em" />
