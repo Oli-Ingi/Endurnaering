@@ -94,9 +94,25 @@ const HomePage = () =>
       introText={intro.text}
       introImgSrc={'/Upphafsmynd3.svg'}
       conceptsTrio={[{ src: '/Venjur.png', title: 'Venjur' }, { src: '/Innsaei.png', title: 'Innsæi' }, { src: '/Naering.png', title: 'Næring' }]}
-      conceptsArticle={
-        <ArticleText>Hér kemur eitthvað um næringu, innsæi og venjur.</ArticleText>
-      }
+      conceptsArticle={<>
+        <ArticleText>
+          Endurnæring býður upp á ráðgjöf hjá löggiltum næringarfræðingi. 
+          Notast er við aðferðarfræði áhugahvetjandi samtals (e. Motivational Interviewing) 
+          sem hefur reynst afar skilvirk leið í að hjálpa fólki að takast á við 
+          erfiðar og flóknar lífsstílsbreytingar. 
+          Aðferðafræðin miðar að því að vekja upp innri hvata til breytinga 
+          sem eykur líkurnar á varanlegum árangri. 
+          Með þessari nálgun stýrir þú ferðinni og er ráðgjöfin stuðningur við þín markmið 
+          við að byggja upp heilbrigt samband við mat.
+        </ArticleText>
+        <ArticleText>
+          Ráðgjöfin er í formi viðtala sem taka 50 mínútur hvert og getur þú valið
+           á milli þess að fá staðviðtal eða fjarviðtal. 
+           Staðviðtöl fara fram á skrifstofu Endurnæringar í Ármúla 42, 3. hæð. 
+           Fjarviðtöl fara fram í fjarbúnaði „KaraConnect“ sem er viðurkennt kerfi
+           fyrir fjarheilbrigðisþjónustu og má bæði nota það í tölvu og sem app í farsíma.
+        </ArticleText>
+      </>}
       imgArticleTitle="Viðtal við næringarfræðing"
       imgArticle={<>
         <ArticleText>

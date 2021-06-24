@@ -58,7 +58,7 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
             <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" />
         </Wrapper>
         <StBg>
-            <Wrapper as="div" col marginTop="6em" noYPad>
+            <Wrapper as="div" col marginTop="6em">
                 <Concepts concepts={conceptsTrio} margin="-150px 0 1em 0" />
                 {conceptsArticle}
             </Wrapper>

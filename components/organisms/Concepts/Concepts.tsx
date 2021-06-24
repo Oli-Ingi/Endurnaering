@@ -24,7 +24,7 @@ const StConcepts = styled.div<{ margin?: string}>`
 
 const Concepts: React.FC<Props> = ({ concepts, margin }) =>
     <StConcepts margin={margin}>
-        {concepts.map(c => <Concept src={c.src} title={c.title}  margin="0 2em"/>)}
+        {concepts.map(c => <Concept src={c.src} title={c.title} imgSize={0.4} margin="0 0.8em"/>)}
     </StConcepts>
 
 
