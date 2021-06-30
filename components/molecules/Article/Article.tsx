@@ -27,7 +27,7 @@ export type Props = {
 const Article: React.FC<Props> = ({ title, subtitle, paragraphs, maxWidth, stretch, center, children, lg, margin, boldContent }) =>
     <Card maxWidth={maxWidth} center={center} margin={margin || '3em 0'} stretch={stretch}>
         <ArticleHeader lg={lg} margin={subtitle ? '0' : '0 0 0.5em 0'}>{title}</ArticleHeader>
-        {subtitle && <Subheader margin='0' lg>{subtitle}</Subheader>}
+        {subtitle && <Subheader margin='0'>{subtitle}</Subheader>}
         {paragraphs && paragraphs.map((p, i) => <ArticleText key={i} center={center} lg={lg} bold={boldContent}>{p}</ArticleText>)}
         {children}
     </Card>

@@ -19,8 +19,8 @@ const StNav = styled.nav`
 
 const HeaderNav: React.FC<Props> = ({ fraedsla, aboutUs }) =>
     <StNav>
-        <Link bold to={fraedsla.to}>{fraedsla.title}</Link>
-        <Link bold to={aboutUs.to}>{aboutUs.title}</Link>
+        <Link to={fraedsla.to}>{fraedsla.title}</Link>
+        <Link to={aboutUs.to}>{aboutUs.title}</Link>
     </StNav>
 
 

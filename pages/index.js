@@ -70,6 +70,17 @@ const nutrionistHelp = {
   ]
 }
 
+
+const bookInterview = {
+  title: 'Hvernig bóka ég viðtal?',
+  btnParagraph: 'Þú bókar tíma með því að smella á "Bóka viðtal" takkann hér fyrir neðan og fylgir leiðbeiningum KaraConnect. Næringarfræðingur hefur síðan samband við þig og staðfestir tíma.',
+  contactParagraph: 'Ef þú hefur einhverjar spurningar eða ert óviss um hvort þjónustan henti þér, ekki hika við að hafa samband:',
+  email: {
+    title: 'endurnaering@endurnaering.is',
+    url: 'mailto:endurnaering@endurnaering.is'
+  }
+}
+
 // const nutritionistGuidance = {
 //   title: 'Af hverju ættir þú að bóka fjarviðtal hjá næringarfræðing?',
 //   paragraphs: [
@@ -116,12 +127,15 @@ const HomePage = () =>
       imgArticleTitle="Viðtal við næringarfræðing"
       imgArticle={<>
         <ArticleText>
-          Viðtal við næringarfræðing felur í sér að þú hittir næringarfræðing í staðviðtali eða fjarviðtali
-          í 1 skipti. Ef þú vilt hefja varanlega lífsstílsbreytingu eða hefur áhyggjur af því hvar skal byrja
-          í breytingum á fæðuvenjum, þá er næringarráðgjöf fyrir þig.
+          Endurnæring býður upp á ráðgjöf hjá löggiltum næringarfræðingi. Notast er við aðferðafræði áhugahvetjandi samtals (e. Motivational Interviewing)
+          sem hefur reynst afar skilvirk leið til að hjálpa fólki að takast á við erfiðar og flóknar lífsstílbreytingar.
+          Aðferðafræðin miðar að því að vekja upp innri hvata til breytinga sem eykur líkurnar á varanlegum árangri.
+          Með þessari nálgun stýrir þú ferðinni og er ráðgjöfin stuðningur við þín markmið við að byggja upp heilbrigt samband við mat.
         </ArticleText>
         <ArticleText>
-          Næringarráðgjöf felur í sér eitt 50mín viðtal og greitt er fyrir viðtalið eftirá.
+          Ráðgjöfin er í formi viðtala sem taka 50 mínútur hvert og getur þú valið á milli þess að fá staðviðtal eða fjarviðtal. Staðviðtöl fara fram
+          á skrifstofu Endurnæringar í Ármúla 42. 3. hæð. Fjarviðtöl fara fram í gegnum fjarfundarbúnað KaraConnect sem er viðurkennt
+          kerfi fyrir fjarheilbrigðisþjónustu og má bæði nota það í gegnum vafra eða sem app í farsíma.
         </ArticleText>
         <ArticleText>
           <b>Fullt verð:</b> 12.000 kr.
@@ -129,20 +143,12 @@ const HomePage = () =>
         <ArticleText>
           <b>Sumarverð:</b> 9.000 kr. (ef þú bókar fyrir 15. júlí)
         </ArticleText>
-        <Subheader margin="1em 0 0.5em 0">Hvernig bóka ég tíma í viðtal?</Subheader>
-        <ArticleText>
-          Þú bókar tíma með því að smella á "Bóka viðtal" takkann hér fyrir neðan og fylgir
-          leiðbeiningum KaraConnect. Næringarfræðingur hefur síðan samband við þig og staðfestir tíma.
-        </ArticleText>
-        <InterviewButton margin="1em 0" />
-        <ArticleText>
-          Ef þú hefur einhverjar spurningar eða ert óviss um hvort þjónustan henti þér, ekki hika
-          við að hafa samband: <a href="mailto:endurnaering@endurnaering.is" style={{ textDecoration: 'underline' }}>endurnaering@endurnaering.is</a>
-        </ArticleText>
+        
       </>}
       articleWithImage={nutritionistGuidance} 
       articleImageSrc='/Naeringarfraedingur.png' 
       lastArticle={nutrionistHelp}
+      bookInterviewArticle={bookInterview}
     />
   </>
 

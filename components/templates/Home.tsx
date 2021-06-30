@@ -1,18 +1,13 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { IArticle } from "../../types/general";
-import ArticleImage from "../atoms/ArticleImage/ArticleImage";
-import ArticleText from "../atoms/ArticleText/ArticleText";
 import BannerImage from "../atoms/BannerImage/BannerImage";
-import Button from "../atoms/Button/Button";
 import InterviewButton from "../atoms/InterviewButton/InterviewButton";
 import Wrapper from "../atoms/Wrapper/Wrapper";
-import Figure from "../elements/Figure";
 import Article from "../molecules/Article/Article";
-import ArticleWithImage from "../molecules/ArticleWithImage/ArticleWithImage";
-import InterviewButtons from "../molecules/InterviewButtons/InterviewButtons";
+import ArticleWithImage from "../organisms/ArticleWithImage/ArticleWithImage";
+import BookInterview, { Props as BookInterviewArticle } from "../organisms/BookInterview/BookInterview";
 import Concepts, { Concept } from "../organisms/Concepts/Concepts";
-import Footer from '../organisms/Footer/Footer'
 import Intro from "../organisms/Intro/Intro";
 
 
@@ -22,13 +17,17 @@ export type Props = {
     introSubtitle: string;
     introText: string;
     introImgSrc: string;
+
     conceptsTrio: [Concept, Concept, Concept];
     conceptsArticle: ReactNode;
+
     imgArticleTitle: string;
-    imgArticle: ReactNode;
+    imgArticle: JSX.Element;
     articleImageSrc: string;
 
     lastArticle: IArticle;
+
+    bookInterviewArticle: BookInterviewArticle;
 }
 
 const StBg = styled.section`
@@ -51,24 +50,28 @@ const StBg = styled.section`
 //     }
 // `
 
-const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, conceptsTrio, conceptsArticle, imgArticleTitle, imgArticle, articleImageSrc, lastArticle,  }) =>
+const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, conceptsTrio, conceptsArticle, imgArticleTitle, imgArticle, articleImageSrc, lastArticle, bookInterviewArticle  }) =>
     <>
         <Wrapper center alCenter fWrap minHeight='100vh'>
             <Intro title={introTitle} subtitle={introSubtitle}>{introText}</Intro>
-            <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" />
+            <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" maxWidth="600px" />
         </Wrapper>
-        <StBg>
+        {/* <StBg>
             <Wrapper as="div" col marginTop="6em">
                 <Concepts concepts={conceptsTrio} margin="-150px 0 1em 0" />
                 {conceptsArticle}
             </Wrapper>
+        </StBg> */}
+        <StBg>
+            <Wrapper between alCenter marginTop='300px' fWrap>
+                <ArticleWithImage src={articleImageSrc} title={imgArticleTitle} margin="-300px 0 0 0" imgBasis={450}>
+                    {imgArticle}
+                </ArticleWithImage>
+            </Wrapper>
         </StBg>
-        <Wrapper between alCenter marginTop='3em' fWrap noYPad>
-            <Article title={imgArticleTitle} margin='0 1em 2em 1em'>{imgArticle}</Article>
-            <ArticleImage src={articleImageSrc} margin="0 1em" />
-        </Wrapper>
-        <Wrapper>
-            <Article {...lastArticle} margin='1em 0'>
+        <Wrapper fWrap>
+            <BookInterview {...bookInterviewArticle} margin="0 1em" />
+            <Article {...lastArticle} margin='0 1em'>
                 <InterviewButton margin='1em 0' attend />
             </Article>
         </Wrapper>
