@@ -109,8 +109,8 @@ const Footer: React.FC<{}> = () =>
                     <StSkilmalarLink href="/skilmalar">Skilmálar</StSkilmalarLink>
                 </StContact>
                 <StSocialMedia>
-                    <SMLink href='https://www.facebook.com/endurnaering' target='_blank'><Image src='/facebook_icon.png' height={30} width={30} /> <span>Endurnæring á Facebook</span></SMLink>
-                    <SMLink href='https://www.instagram.com/endurnaering/' target='_blank'><Image src='/instagram_icon.png' height={30} width={30} /> <span>Endurnæring á Instagram</span></SMLink>
+                    <SMLink href='https://www.facebook.com/endurnaering' target='_blank'><Image src='/facebook.png' height={30} width={30} /> <span>Endurnæring á Facebook</span></SMLink>
+                    <SMLink href='https://www.instagram.com/endurnaering/' target='_blank'><Image src='/instagram.png' height={30} width={30} /> <span>Endurnæring á Instagram</span></SMLink>
                 </StSocialMedia>
             </Wrapper>
         </StTopFooter>
