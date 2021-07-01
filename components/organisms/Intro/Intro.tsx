@@ -43,7 +43,7 @@ const StLine = styled.hr<{delay?: number}>`
 
 const Intro: React.FC<Props> = ({ title, subtitle, children }) =>
     <StCon>
-        <ArticleHeader lg margin="0" fader="right">{title}</ArticleHeader>
+        <ArticleHeader huge margin="0" fader="right">{title}</ArticleHeader>
         <Subheader lg margin='0' fader="right" fadeDelay={2}>{subtitle}</Subheader>
         <StLine delay={2} />
         <ArticleText lg fader="down" fadeDelay={3.2}>{children}</ArticleText>

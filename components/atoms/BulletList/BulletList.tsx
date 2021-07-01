@@ -10,9 +10,9 @@ const StList = styled.ul`
 
 `
 
-const BulletList: React.FC<Props> = ({ items }) =>
+const BulletList: React.FC<Props> = ({ children }) =>
     <StList>
-        {items}
+        {children}
     </StList>
 
 

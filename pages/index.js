@@ -9,6 +9,7 @@ import Home from "../components/templates/Home";
 import ArticleText from '../components/atoms/ArticleText/ArticleText';
 import Subheader from '../components/atoms/Subheader/Subheader';
 import InterviewButton from '../components/atoms/InterviewButton/InterviewButton';
+import TextLink from '../components/atoms/TextLink/TextLink';
 //import { IArticle } from '../types/general';
 
 // TODO: import content here
@@ -105,25 +106,6 @@ const HomePage = () =>
       introText={intro.text}
       introImgSrc={'/Upphafsmynd3.svg'}
       conceptsTrio={[{ src: '/Venjur.png', title: 'Venjur' }, { src: '/Innsaei.png', title: 'Innsæi' }, { src: '/Naering.png', title: 'Næring' }]}
-      conceptsArticle={<>
-        <ArticleText>
-          Endurnæring býður upp á ráðgjöf hjá löggiltum næringarfræðingi. 
-          Notast er við aðferðarfræði áhugahvetjandi samtals (e. Motivational Interviewing) 
-          sem hefur reynst afar skilvirk leið í að hjálpa fólki að takast á við 
-          erfiðar og flóknar lífsstílsbreytingar. 
-          Aðferðafræðin miðar að því að vekja upp innri hvata til breytinga 
-          sem eykur líkurnar á varanlegum árangri. 
-          Með þessari nálgun stýrir þú ferðinni og er ráðgjöfin stuðningur við þín markmið 
-          við að byggja upp heilbrigt samband við mat.
-        </ArticleText>
-        <ArticleText>
-          Ráðgjöfin er í formi viðtala sem taka 50 mínútur hvert og getur þú valið
-           á milli þess að fá staðviðtal eða fjarviðtal. 
-           Staðviðtöl fara fram á skrifstofu Endurnæringar í Ármúla 42, 3. hæð. 
-           Fjarviðtöl fara fram í fjarbúnaði „KaraConnect“ sem er viðurkennt kerfi
-           fyrir fjarheilbrigðisþjónustu og má bæði nota það í tölvu og sem app í farsíma.
-        </ArticleText>
-      </>}
       imgArticleTitle="Viðtal við næringarfræðing"
       imgArticle={<>
         <ArticleText>
@@ -135,13 +117,13 @@ const HomePage = () =>
         <ArticleText>
           Ráðgjöfin er í formi viðtala sem taka 50 mínútur hvert og getur þú valið á milli þess að fá staðviðtal eða fjarviðtal. Staðviðtöl fara fram
           á skrifstofu Endurnæringar í Ármúla 42. 3. hæð. Fjarviðtöl fara fram í gegnum fjarfundarbúnað KaraConnect sem er viðurkennt
-          kerfi fyrir fjarheilbrigðisþjónustu og má bæði nota það í gegnum vafra eða sem app í farsíma.
+          kerfi fyrir fjarheilbrigðisþjónustu og má bæði nota það í gegnum vafra eða í gegnum <TextLink target="_blank" href="https://help.karaconnect.com/en/articles/4331728-koru-smaforritid">app í farsíma.</TextLink>
         </ArticleText>
         <ArticleText>
           <b>Fullt verð:</b> 12.000 kr.
         </ArticleText>
         <ArticleText>
-          <b>Sumarverð:</b> 9.000 kr. (ef þú bókar fyrir 15. júlí)
+          <b>Sumarverð:</b> 9.000 kr. (ef þú bókar tíma í júlí)
         </ArticleText>
         
       </>}

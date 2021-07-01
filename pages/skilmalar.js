@@ -7,6 +7,7 @@ import Link from '../components/atoms/Link/Link'
 import TextLink from '../components/atoms/TextLink/TextLink'
 import SkilmalarArticle from '../components/organisms/SkilmalarArticle/SkilmalarArticle'
 import BulletList from '../components/atoms/BulletList/BulletList'
+import ArticleHeader from '../components/atoms/ArticleHeader/ArticleHeader'
 
 const Skilmalar = ({}) =>
     <>
@@ -19,7 +20,7 @@ const Skilmalar = ({}) =>
             <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500;600;900&display=swap" rel="stylesheet"></link>
         </Head>
         <SkilmalarTemplate>
-            <SkilmalarArticle header="Skilmálar Endurnæringar ehf.">
+            <SkilmalarArticle header="Skilmálar Endurnæringar ehf." lgHeader>
                 <ArticleText>
                     Þjónusta Endurnæring ehf. er háð eftirfarandi skilmálum. 
                     Þegar þú notar vefsíðuna eða kaupir þjónustu samþykkir þú þessa skilmála, vinsamlegast lestu vel yfir þá. 
@@ -45,7 +46,7 @@ const Skilmalar = ({}) =>
                     Persónugögn eru gögn sem hægt er að tengja við einstaklinga. Endurnæring ehf. safnar og vinnur eftirfarandi persónugögn sem hægt er að tengja við þig: 
                 </ArticleText>
                 <BulletList>
-                    <li>
+                    <ArticleText as="li">
                         <span>Upplýsingar um þig (Aðgangsupplýsingar) fela í sér eftirfarandi upplýsingar:</span>
                         <BulletList>
                             <li>Nafn</li>
@@ -55,19 +56,19 @@ const Skilmalar = ({}) =>
                             <li>Kennitala</li>
                             <li>Upplýsingar um tengilið einstaklings í þjónustu ef við á (nafn, sími, heimilisfang), t.d. forráðamaður eða maki</li>
                         </BulletList>
-                    </li>
-                    <li>
+                    </ArticleText>
+                    <ArticleText as="li">
                         <b>Heilbrigðisupplýsingar (sjúkraskrá).</b> Samkvæmt lögum um sjúkraskrár nr. 55/2009 skal heilbrigðisstarfsmaður 
                         sem fær sjúkling til meðferðar halda sjúkraskrá. 
                         Heilbrigðisupplýsingar eru upplýsingar sem verða til við meðferð sjúklings og heilbrigðisstarfsmanns.  
-                    </li>
-                    <li>
+                    </ArticleText>
+                    <ArticleText as="li">
                         <p><b>Greiðsluupplýsingar.</b> Endurnæring ehf. sér hvorki um né geymir kortaupplýsingar hjá sér.</p>
                         <BulletList>
                             <li>Kortaupplýsingar sem settar eru inn í hugbúnað Köru eru hýstar hjá greiðsluveitunni Stripe.</li>
                             <li><b>Greiðslur fara fram með kreditkorti eða debetkorti og fara allar kortafærslur fram í gegnum örugga greiðslusíðu.</b></li>
                         </BulletList>
-                    </li>
+                    </ArticleText>
                 </BulletList>
             </SkilmalarArticle>
             <SkilmalarArticle header="Meðhöndlun á persónugögnum">
@@ -92,21 +93,72 @@ const Skilmalar = ({}) =>
                     Tilgangur með vinnslu persónuupplýsinga og heimildir til vinnslu til fyrrnefndra gagna er eftirfarandi: 
                 </ArticleText>
                 <BulletList>
-                    <li>
+                    <ArticleText as="li">
                         Vinnsla á upplýsingum um aðgangsorð og netfang eru nauðsynlegar til að beina skjólstæðingum rétt aðgengi að sérfræðing, 
                         geta haft samband við viðkomandi, sent út reikninga eða fylgt eftir meðferð. 
                         Heimildin er samþykki þess sem persónuupplýsingarnar eru um (hins skráða) fyrir vinnslunni í þágu eins eða fleiri tiltekinna markmiða.  
-                    </li>
-                    <li>
+                    </ArticleText>
+                    <ArticleText as="li">
                         Vinnsla á heilsuupplýsingum (sjúkraskrá) er nauðsynleg til að skrá niður upplýsingar sem snúa að meðferðinni og framgangi meðferðar. 
                         Heimildin er samþykki þess sem persónuupplýsingarnar eru um (hins skráða) fyrir vinnslunni í þágu eins eða fleiri tiltekinna markmiða. 
                         Einnig veitendum heilbrigðisþjónustu skylt að halda sjúkraskrá og því er vinnsla nauðsynleg til að fullnægja lagaskyldu sem hvílir á þeim sem ákveður vinnsluna (ábyrgðaraðila). 
-                    </li>
-                    <li>
+                    </ArticleText>
+                    <ArticleText as="li">
                         Vinnsla á greiðsluupplýsingum er nauðsynleg til að skjólstæðingar geti greitt fyrir þjónustu Endurnæring ehf ef og þegar við á. 
                         Heimildin er samþykki þess sem persónuupplýsingarnar eru um (hins skráða) fyrir vinnslunni í þágu eins eða fleiri tiltekinna markmiða. 
-                    </li>
+                    </ArticleText>
                 </BulletList>
+            </SkilmalarArticle>
+            <SkilmalarArticle header="Rekstur heilbrigðisþjónustu">
+                Endurnæring ehf er rekin með leyfi frá Embætti landlæknis. Allir veitendur heilbrigðisþjónustu hjá Endurnæring ehf eru með löggilt starfsleyfi frá Embætti landlæknis. 
+            </SkilmalarArticle>
+            <SkilmalarArticle header="Skilmálar um greiðslu og afbókanir">
+                Greiðsla er innt af hendi eftir hvert viðtal en þá er upphæð viðtalsins tekin út af kredit- eða debetkortinu sem var gefið upp við nýskráningu. 
+                Skjólstæðingur fær kvittun fyrir greiðslunni á heimasvæði inni í Köru. 
+            </SkilmalarArticle>
+            <ArticleHeader line margin="1em 0 0 0">
+                Ef skjólstæðingur mætir ekki í bókaðan tíma gilda eftirfarandi reglur:
+            </ArticleHeader>
+            <SkilmalarArticle header="Afbókanir" inner>
+                <ArticleText>
+                    Geti skjólstæðingur ekki nýtt sér bókaðan viðtalstíma er mikilvægt að afboða hann með minnst 24 klst. fyrirvara. 
+                    Forfallagjald er sem nemur 6000 kr og áskilur Endurnæring ehf sér rétt á innheimtu þess gjalds með greiðsluseðli í heimabanka mæti viðkomandi ekki í bókaðan tíma. 
+                    Ef um veikindi er að ræða þarf að afboða tímann fyrir kl 9:00 að morgni veikindadags. 
+                </ArticleText>
+                <ArticleText>
+                    Hægt er að tilkynna afbókanir með því að senda póst á <TextLink href="mailto:endurnaering@endurnaering.is">endurnaering@endurnaering.is</TextLink>. 
+                    Athuga skal að <b>EKKI</b> er hægt að tilkynna forföll í gegnum hugbúnaðinn Kara connect.  
+                </ArticleText>
+            </SkilmalarArticle>
+            <SkilmalarArticle header="Ábyrgð þín" inner>
+                <ArticleText>
+                    Þú berð ábyrgð á að muna eftir að mæta í viðtalstímann þinn en þú getur séð hvenær þú átt bókaðan tíma á heimasvæðinu þínu á karaconnect.com. 
+                </ArticleText>
+                <ArticleText>
+                    Þú berð sömuleiðis ábyrgð á því að þú hafir næði á meðan þú ert í viðtalstíma hjá næringarfræðingnum þínum í gegnum myndfundabúnað 
+                    og að netsamband þitt og tækjabúnaður sé nægilega góður.   
+                </ArticleText>
+            </SkilmalarArticle>
+            <SkilmalarArticle header="Greiðslumáti" marginTop>
+                <ArticleText>
+                    Hægt er að greiða með kreditkorti eða debetkorti í gegnum örugga greiðslusíðu PayDay. 
+                    Greiðslustaðfesting er send í tölvupósti eftir að greiðsla hefur verið gerð. 
+                    Endurnæring ehf hefur ekki aðgang að kortaupplýsingum kaupenda.
+                </ArticleText>
+                <ArticleText>
+                    Hægt er að nálgast kvittun á heimasvæði þínu í Köru sem hægt er framvísa til stéttarfélaga 
+                    vegna greiðsluþátttöku en sum stéttarfélög styrkja sína félagsmenn til að sækja veitta þjónustu. 
+                </ArticleText>
+                <ArticleText>
+                    Mörg stéttarfélög taka þátt í kostnaði vegna þjónustu sem veitt ef af Endurnæring ehf . 
+                    Kvittanir fyrir stéttafélög má finna á heimasvæði skjólstæðings. 
+                </ArticleText>
+            </SkilmalarArticle>
+            <SkilmalarArticle header="Verð">
+                <ArticleText>
+                    Öll verð eru í íslenskum krónum og eru verð og upplýsingar um þjónustu birt með fyrirvara um innsláttarvillur. 
+                    Við áskiljum okkur rétt til verðbreytinga án fyrirvara. 
+                </ArticleText>
             </SkilmalarArticle>
         </SkilmalarTemplate>
     </>

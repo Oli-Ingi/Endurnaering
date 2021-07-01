@@ -70,8 +70,8 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
             </Wrapper>
         </StBg>
         <Wrapper fWrap>
-            <BookInterview {...bookInterviewArticle} margin="0 1em" />
-            <Article {...lastArticle} margin='0 1em'>
+            <BookInterview {...bookInterviewArticle} margin="0" />
+            <Article {...lastArticle} margin='0'>
                 <InterviewButton margin='1em 0' attend />
             </Article>
         </Wrapper>
