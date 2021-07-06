@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import Image from 'next/image'
+//import Image from 'next/image'
 import PersonImg, { Person } from '../../atoms/PersonImg/PersonImg'
 
 

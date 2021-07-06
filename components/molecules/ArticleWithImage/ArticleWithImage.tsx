@@ -1,6 +1,6 @@
 import React from 'react'
 import { IArticle } from '../../../types/general'
-import Image from 'next/image'
+//import Image from 'next/image'
 import styled from 'styled-components'
 import Article from '../Article/Article'
 
@@ -22,7 +22,8 @@ const ArticleWithImage: React.FC<Props> = ({ article, src, children }) =>
     <>
         <Article {...article} margin='0 0 2em 0'>{children}</Article>
         <StImgContainer>
-            <Image src={src} height={350} width={550}  />
+            <img src={src} height={350} width={550} />
+            {/* <Image src={src} height={350} width={550}  /> */}
         </StImgContainer>
     </>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+//import Image from 'next/image'
 import styled, { css } from 'styled-components'
 
 
@@ -18,7 +18,7 @@ const StImgContainer = styled.div<{ margin?: string }>`
 
 const ArticleImage: React.FC<Props> = ({ src, margin }) =>
     <StImgContainer margin={margin}>
-        <Image src={src} height={350} width={550} />
+        {/* <Image src={src} height={350} width={550} /> */}
     </StImgContainer>
 
 

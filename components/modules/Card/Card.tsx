@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from '../Image'
+//import Image from '../Image'
 
 type Props = {
     img?: string;
@@ -9,6 +9,6 @@ type Props = {
 
 const Card = ({ children, img, alt, gridCol }) =>
     <article>
-        <Image center src={img} width={300} height={300} greenText hoverScale pointer />
+        {/* <Image center src={img} width={300} height={300} greenText hoverScale pointer /> */}
         {children}
     </article>

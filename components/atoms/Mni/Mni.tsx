@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Image from 'next/image'
+//import Image from 'next/image'
 
 type Props = {
     title: string;
@@ -23,9 +23,13 @@ const StContainer = styled.div`
     }
 `
 
+const StImg = styled.img`
+    height: 44px;
+`
+
 const Mni: React.FC<Props> = ({ title }) =>
     <StContainer>
-        <Image src='/mni.png' width={52} height={44} />
+        <StImg src='/mni.png' />
         <small>{title}</small>
     </StContainer>
 

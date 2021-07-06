@@ -1,4 +1,4 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { fade, fadeRight, fadeType } from '../../../styles/keyframes'
@@ -27,9 +27,15 @@ const StContainer = styled.div<{ margin?: string, fader?: fadeType; fadeDelay?: 
     ${p => p.maxWidth && css`max-width: ${p.maxWidth};`}
 `
 
+const StImg = styled.img`
+    width: 600px;
+    max-width: 100%;
+`
+
 const BannerImage: React.FC<Props> = ({ src, margin, fader, fadeDelay, maxWidth }) => 
     <StContainer margin={margin} fadeDelay={fadeDelay} fader={fader} maxWidth={maxWidth}>
-        <Image src={src} alt='aðalmynd' width={764} height={775} />
+        <StImg src={src} />
+        {/* <Image src={src} alt='people-eating-picture' width={764} height={775} />  */}
     </StContainer>
 
 

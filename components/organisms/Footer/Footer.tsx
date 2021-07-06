@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Wrapper from '../../atoms/Wrapper/Wrapper'
-import Image from 'next/image'
+//import Image from 'next/image'
 import SubFooter from '../../molecules/SubFooter/SubFooter'
 
 
@@ -109,13 +109,13 @@ const Footer: React.FC<{}> = () =>
                     <StSkilmalarLink href="/skilmalar">Skilmálar</StSkilmalarLink>
                 </StContact>
                 <StSocialMedia>
-                    <SMLink href='https://www.facebook.com/endurnaering' target='_blank'><Image src='/facebook.png' height={30} width={30} /> <span>Endurnæring á Facebook</span></SMLink>
-                    <SMLink href='https://www.instagram.com/endurnaering/' target='_blank'><Image src='/instagram.png' height={30} width={30} /> <span>Endurnæring á Instagram</span></SMLink>
+                    <SMLink href='https://www.facebook.com/endurnaering' target='_blank'><img src='/facebook.png' height={30} width={30} /> <span>Endurnæring á Facebook</span></SMLink>
+                    <SMLink href='https://www.instagram.com/endurnaering/' target='_blank'><img src='/instagram.png' height={30} width={30} /> <span>Endurnæring á Instagram</span></SMLink>
                 </StSocialMedia>
             </Wrapper>
         </StTopFooter>
         <SubFooter 
-            embLandlaeknisTitle="Vefurinn er rekinn með leyfi frá Embætti landlæknis."
+            embLandlaeknisTitle="Vefurinn er rekinn með leyfi frá embætti landlæknis."
             mniTitle="Endurnæring er meðlimur í Matvæla- og næringafræðifélagi Íslands."
         />
     </StFooter>

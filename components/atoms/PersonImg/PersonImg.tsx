@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+//import Image from 'next/image'
 
 type Props = {
     type: Person
@@ -16,7 +16,7 @@ export enum Person {
 
 
 const PersonImg: React.FC<Props> = ({ type }) =>
-    <Image src={type} height={246} width={131} />
+    <div></div>
 
 
 export default PersonImg

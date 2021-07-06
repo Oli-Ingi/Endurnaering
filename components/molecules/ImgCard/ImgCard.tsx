@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import Image from 'next/image'
+//import Image from 'next/image'
 import ArticleHeader from '../../atoms/ArticleHeader/ArticleHeader'
 import ArticleText from '../../atoms/ArticleText/ArticleText'
 
@@ -57,7 +57,7 @@ const StArticleContainer = styled.div<{ bgPrimary?: boolean, bgSecondary?: boole
 
 const ImgCard: React.FC<Props> = ({ src, header, content, ...styleProps }) =>
     <StCard {...styleProps}>
-        <StImgContainer ><Image src={src} height={300} width={300} /></StImgContainer>
+        <StImgContainer ><img src={src} height={300} width={300} /></StImgContainer>
         <StArticleContainer {...styleProps}>
             <ArticleHeader>{header}</ArticleHeader>
             {content.map(pg => <ArticleText>{pg}</ArticleText>)}

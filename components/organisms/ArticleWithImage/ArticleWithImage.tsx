@@ -1,6 +1,6 @@
 import React from 'react'
 import ArticleHeader from '../../atoms/ArticleHeader/ArticleHeader'
-import Image from 'next/image'
+//import Image from 'next/image'
 import styled from 'styled-components'
 
 type TextProps = {
@@ -71,7 +71,7 @@ const ArticleWithImage: React.FC<Props> = ({ src, children, title, margin, imgBa
                 <ArticleHeader margin="0">{title}</ArticleHeader>
             </TitleContainer>
             <ImgContainer imgBasis={imgBasis}>
-                <Image src={src} height={350} width={550} />
+                <img src={src} height={350} width={550} />
             </ImgContainer>
         </StHeader>
         <TextContainer>
