@@ -30,7 +30,7 @@ const Skilmalar = ({}) =>
                 </ArticleText>
                 <ArticleText>
                     Þjónustan er rekin af Endurnæring ehf., kt. 410221-0200, Ármúla 42, 105 Reykjavík. 
-                    Umhverfi þjónustunnar er hýst af <TextLink href="https://www.karaconnect.com/">Köru Connect ehf.</TextLink> sem er vinnsluaðili gagna (sjá notkunarskilmála Köru Connect <TextLink href="/">hér</TextLink>).  
+                    Umhverfi þjónustunnar er hýst af <TextLink href="https://www.karaconnect.com/">Köru Connect ehf.</TextLink> sem er vinnsluaðili gagna (sjá notkunarskilmála Köru Connect <TextLink href="https://www.karaconnect.com/is/terms-and-conditions">hér</TextLink>).  
                 </ArticleText>
                 <ArticleText>
                     Endurnæring ehf. er ábyrgðaraðili vinnslu persónuupplýsinga sem fram fer í tengslum við þjónustuna. Hægt er að hafa samband með því að senda tölvupóst á <TextLink href="mailto:endurnaering@endurnaering.is">endurnaering@endurnaering.is</TextLink>. 
@@ -110,13 +110,15 @@ const Skilmalar = ({}) =>
                 </BulletList>
             </SkilmalarArticle>
             <SkilmalarArticle header="Rekstur heilbrigðisþjónustu">
-                Endurnæring ehf er rekin með leyfi frá Embætti landlæknis. Allir veitendur heilbrigðisþjónustu hjá Endurnæring ehf eru með löggilt starfsleyfi frá Embætti landlæknis. 
+                <ArticleText>Endurnæring ehf er rekin með leyfi frá Embætti landlæknis. Allir veitendur heilbrigðisþjónustu hjá Endurnæring ehf eru með löggilt starfsleyfi frá Embætti landlæknis.</ArticleText>
             </SkilmalarArticle>
             <SkilmalarArticle header="Skilmálar um greiðslu og afbókanir">
-                Greiðsla er innt af hendi eftir hvert viðtal en þá er upphæð viðtalsins tekin út af kredit- eða debetkortinu sem var gefið upp við nýskráningu. 
-                Skjólstæðingur fær kvittun fyrir greiðslunni á heimasvæði inni í Köru. 
+                <ArticleText>
+                    Greiðsla er innt af hendi eftir hvert viðtal en þá er upphæð viðtalsins tekin út af kredit- eða debetkortinu sem var gefið upp við nýskráningu. 
+                    Skjólstæðingur fær kvittun fyrir greiðslunni á heimasvæði inni í Köru. 
+                </ArticleText>
             </SkilmalarArticle>
-            <ArticleHeader line margin="1em 0 0 0">
+            <ArticleHeader line>
                 Ef skjólstæðingur mætir ekki í bókaðan tíma gilda eftirfarandi reglur:
             </ArticleHeader>
             <SkilmalarArticle header="Afbókanir" inner>
