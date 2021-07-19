@@ -30,8 +30,14 @@ const ImgContainer = styled.div<{ imgBasis?: number }>`
     flex-basis: ${p => p.imgBasis || 350}px;
     margin: auto;
     margin-bottom: 50px;
+    max-width: 550px;
+    flex-grow: 1;
 
-    @media screen and (max-width: 940px) {
+    img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
         display: none;
     }
     
@@ -41,9 +47,9 @@ const TitleContainer = styled.div`
     background-color: ${p => p.theme.colors.gray};
     border-radius: 15px;
     padding: 1em 2.5em;
-    margin: 0 0 4.5em -2.5em;
+    margin: 0 0 3em -2.5em;
 
-    @media screen and (max-width: 940px){
+    @media screen and (max-width: 800px){
         margin: 0 0 2em 0;
         padding: 0;
     }
@@ -59,7 +65,7 @@ const StHeader = styled.header`
 const ArticleContainer = styled.div<{ margin?: string }>`
     margin: ${p => p.margin || 0};
 
-    @media screen and (max-width: 940px) {
+    @media screen and (max-width: 800px) {
         margin: 0;
     }
 `
@@ -71,7 +77,7 @@ const ArticleWithImage: React.FC<Props> = ({ src, children, title, margin, imgBa
                 <ArticleHeader margin="0">{title}</ArticleHeader>
             </TitleContainer>
             <ImgContainer imgBasis={imgBasis}>
-                <img src={src} height={350} width={550} />
+                <img src={src} />
             </ImgContainer>
         </StHeader>
         <TextContainer>

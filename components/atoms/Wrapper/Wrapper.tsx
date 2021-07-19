@@ -50,7 +50,7 @@ const Wrapper = styled.section<Props>`
         justify-content: center;
     }
 
-    @media screen and (max-width: 940px){
+    @media screen and (max-width: 800px){
         margin-top: 1em;
     }
 `

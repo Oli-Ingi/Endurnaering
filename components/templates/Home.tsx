@@ -52,7 +52,7 @@ const StBg = styled.section`
 
 const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, conceptsTrio, conceptsArticle, imgArticleTitle, imgArticle, articleImageSrc, lastArticle, bookInterviewArticle  }) =>
     <>
-        <Wrapper center alCenter fWrap minHeight='100vh'>
+        <Wrapper center alCenter fWrap minHeight='80vh'>
             <Intro title={introTitle} subtitle={introSubtitle}>{introText}</Intro>
             <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" maxWidth="600px" />
         </Wrapper>
@@ -64,7 +64,7 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
         </StBg> */}
         <StBg>
             <Wrapper between alCenter marginTop='300px' fWrap>
-                <ArticleWithImage src={articleImageSrc} title={imgArticleTitle} margin="-300px 0 0 0" imgBasis={450}>
+                <ArticleWithImage src={articleImageSrc} title={imgArticleTitle} margin="-300px 0 0 0" imgBasis={410}>
                     {imgArticle}
                 </ArticleWithImage>
             </Wrapper>
