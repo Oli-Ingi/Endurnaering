@@ -37,7 +37,7 @@ const ImgContainer = styled.div<{ imgBasis?: number }>`
         width: 100%;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         display: none;
     }
     
@@ -49,7 +49,7 @@ const TitleContainer = styled.div`
     padding: 1em 2.5em;
     margin: 0 0 3em -2.5em;
 
-    @media screen and (max-width: 800px){
+    @media screen and (max-width: 900px){
         margin: 0 0 2em 0;
         padding: 0;
     }
@@ -65,7 +65,7 @@ const StHeader = styled.header`
 const ArticleContainer = styled.div<{ margin?: string }>`
     margin: ${p => p.margin || 0};
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 900px) {
         margin: 0;
     }
 `

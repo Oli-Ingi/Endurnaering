@@ -28,6 +28,16 @@ export const fadeIn = keyframes`
     to { opacity: 1; }
 `
 
+export const displayFadeIn = keyframes`
+    from {
+        display: flex;
+        opacity: 0;
+    }
+    to {
+        display: flex;
+        opacity: 1;
+    }
+`
 
 export const fadeLeft = keyframes`
     from {

@@ -4,6 +4,7 @@ import { IArticle } from "../../types/general";
 import BannerImage from "../atoms/BannerImage/BannerImage";
 import InterviewButton from "../atoms/InterviewButton/InterviewButton";
 import Wrapper from "../atoms/Wrapper/Wrapper";
+import PopupAd from "../modules/PopupAd/PopupAd";
 import Article from "../molecules/Article/Article";
 import ArticleWithImage from "../organisms/ArticleWithImage/ArticleWithImage";
 import BookInterview, { Props as BookInterviewArticle } from "../organisms/BookInterview/BookInterview";
@@ -52,7 +53,7 @@ const StBg = styled.section`
 
 const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgSrc, conceptsTrio, conceptsArticle, imgArticleTitle, imgArticle, articleImageSrc, lastArticle, bookInterviewArticle  }) =>
     <>
-        <Wrapper center alCenter fWrap minHeight='80vh'>
+        <Wrapper center alCenter fWrap minHeight='90vh'>
             <Intro title={introTitle} subtitle={introSubtitle}>{introText}</Intro>
             <BannerImage src={introImgSrc} margin='0 2em' fadeDelay={2.2} fader="in" maxWidth="600px" />
         </Wrapper>
@@ -78,6 +79,7 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
         {/* <Wrapper col>
             <Concepts concepts={concepts} bgSecondary shadow cardMargins='2em 0' />
         </Wrapper> */}
+        {/* <PopupAd img='/sumartilbod.png' width={500} /> */}
     </>
 
 
