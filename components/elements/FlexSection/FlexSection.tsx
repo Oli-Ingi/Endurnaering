@@ -1,6 +1,11 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
 
+/******************************/
+/*                            */
+/*   kept for grid reference  */
+/*                            */
+/******************************/
 
 export enum GridColumns {
     single = '[full-start] minmax(1em, 1fr) [main-start] minmax(0, 80em) [main-end] minmax(1em, 1fr) [full-end]',

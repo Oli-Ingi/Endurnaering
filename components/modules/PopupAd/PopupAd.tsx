@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled, { css } from 'styled-components'
 import { Ls } from '../../../cache/ls'
 import { fade, fadeLeft } from '../../../styles/keyframes'
@@ -33,11 +33,14 @@ const StImg = styled.img<{}>`
     }
 `
 
-const setSeen = () => 
-    Ls.set("adS", true);
 
 const PopupAd: React.FC<Props> = ({ img, onClick, href, width }) => {
-    const isSeen = Ls.get("adS");
+    const lsIsSeen = () => Ls.get("adS") || false;
+    const [isSeen, setIsSeen] = useState(lsIsSeen);
+    const setSeen = () => setIsSeen(true);
+
+    useEffect(() => Ls.set("adS", isSeen), [isSeen]);
+    console.log("here");
     const delay = 10;
     
     return isSeen 

@@ -30,12 +30,14 @@ export const fadeIn = keyframes`
 
 export const displayFadeIn = keyframes`
     from {
-        display: flex;
+        z-index: -1;
+        visibility: visible;
         opacity: 0;
     }
     to {
-        display: flex;
+        z-index:10;
         opacity: 1;
+        visibility: visible;
     }
 `
 

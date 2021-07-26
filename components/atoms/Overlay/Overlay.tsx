@@ -17,7 +17,8 @@ const Overlay = styled.div<Props>`
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,0.4);
-    z-index: 100;
+    z-index: -1;
+    visibility: hidden;
     animation: ${displayFadeIn} 1s forwards;
     animation-delay: ${p => p.delay}s;
 `
