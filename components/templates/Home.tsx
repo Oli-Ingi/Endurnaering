@@ -79,7 +79,7 @@ const Home: React.FC<Props> = ({ introTitle, introSubtitle, introText, introImgS
         {/* <Wrapper col>
             <Concepts concepts={concepts} bgSecondary shadow cardMargins='2em 0' />
         </Wrapper> */}
-        <PopupAd img='/sumartilbod.png' width={500} />
+        {/* <PopupAd img='/sumartilbod.png' width={500} /> */}
     </>
 
 

@@ -128,10 +128,7 @@ const HomePage = () =>
           kerfi fyrir fjarheilbrigðisþjónustu og má bæði nota það í gegnum vafra eða í gegnum <TextLink target="_blank" href="https://help.karaconnect.com/en/articles/4331728-koru-smaforritid">app í farsíma.</TextLink>
         </ArticleText>
         <ArticleText>
-          <b>Fullt verð:</b> 12.000 kr.
-        </ArticleText>
-        <ArticleText>
-          <b>Sumarverð:</b> 9.000 kr. (ef þú bókar tíma í júlí)
+          <b>Verð:</b> 12.000 kr.
         </ArticleText>
         
       </>}

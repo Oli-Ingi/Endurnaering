@@ -40,7 +40,6 @@ const PopupAd: React.FC<Props> = ({ img, onClick, href, width }) => {
     const setSeen = () => setIsSeen(true);
 
     useEffect(() => Ls.set("adS", isSeen), [isSeen]);
-    console.log("here");
     const delay = 10;
     
     return isSeen 
