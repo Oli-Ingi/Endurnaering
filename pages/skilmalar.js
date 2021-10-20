@@ -1,13 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import SkilmalarTemplate from '../components/templates/Skilmalar'
-import Article from '../components/molecules/Article/Article'
-import ArticleText from '../components/atoms/ArticleText/ArticleText'
-import Link from '../components/atoms/Link/Link'
-import TextLink from '../components/atoms/TextLink/TextLink'
-import SkilmalarArticle from '../components/organisms/SkilmalarArticle/SkilmalarArticle'
-import BulletList from '../components/atoms/BulletList/BulletList'
-import ArticleHeader from '../components/atoms/ArticleHeader/ArticleHeader'
+
 
 const Skilmalar = ({}) =>
     <>
@@ -19,7 +12,8 @@ const Skilmalar = ({}) =>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
             <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500;600;900&display=swap" rel="stylesheet"></link>
         </Head>
-        <SkilmalarTemplate>
+        <div>Skilmálar endurnæringar WIP</div>
+        {/* <SkilmalarTemplate>
             <SkilmalarArticle header="Skilmálar Endurnæringar ehf." lgHeader>
                 <ArticleText>
                     Þjónusta Endurnæring ehf. er háð eftirfarandi skilmálum. 
@@ -162,7 +156,7 @@ const Skilmalar = ({}) =>
                     Við áskiljum okkur rétt til verðbreytinga án fyrirvara. 
                 </ArticleText>
             </SkilmalarArticle>
-        </SkilmalarTemplate>
+        </SkilmalarTemplate> */}
     </>
 
     

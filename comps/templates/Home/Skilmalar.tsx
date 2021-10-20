@@ -1,6 +1,5 @@
 import React from 'react'
-import Wrapper from '../atoms/Wrapper/Wrapper'
-import Article from '../molecules/Article/Article'
+import Container from '../../elements/Container/Container'
 
 
 
@@ -8,10 +7,10 @@ import Article from '../molecules/Article/Article'
 
 
 const Skilmalar: React.FC<{}> = ({ children }) =>
-    <Wrapper col>
+    <Container>
         {React.Children.map(children, child => 
             React.cloneElement(child as any, { margin: '0' }))}
-    </Wrapper>
+    </Container>
 
 
 export default Skilmalar

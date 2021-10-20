@@ -7,10 +7,13 @@ export type Props = {
     variant?: Variants;
     size?: "lg" | "sm";
     thick?: boolean;
-} & (
-    | { values: Array<{ caption: string; to?: never; newTab?: never }>; animateLinks?: never;  }
-    | { values: Array<{ to: string; caption: string; newTab?: boolean; }>; animateLinks?: true; }
-)
+    animateLinks?: boolean;
+    values: Array<
+        { caption: string; to?: never; newTab?: never } |
+        { to: string; caption: string; newTab?: boolean; }
+    >
+}
+
 
 const StDivider = styled.div`
     display: flex;
