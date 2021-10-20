@@ -31,6 +31,7 @@ const Button = styled.button<Props>`
     border: 1px solid ${p => p.theme.colors.primary};
     border-radius: ${p => p.lg ? '25px' : '15px'};
     display: block;
+    font-family: "arial";
 
     background-color: ${p => p.secondary ? p.theme.colors.secondary : p.tertiary ? p.theme.colors.tertiary : p.theme.colors.primary};
     color: ${p => p.tertiary || p.secondary ? p.theme.colors.primary : p.theme.colors.white};

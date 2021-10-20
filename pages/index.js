@@ -10,6 +10,9 @@ import ArticleText from '../components/atoms/ArticleText/ArticleText';
 import Subheader from '../components/atoms/Subheader/Subheader';
 import InterviewButton from '../components/atoms/InterviewButton/InterviewButton';
 import TextLink from '../components/atoms/TextLink/TextLink';
+import HomeTemplate from '../comps/templates/Home/Home'
+import HomeContent from '../content/Home'
+
 //import { IArticle } from '../types/general';
 
 // TODO: import content here
@@ -94,11 +97,12 @@ const HomePage = () =>
   <>
     <Head>
       <title>Endurnæring</title>
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"></link>
+      
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;500;600;900&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
+
+
 
       <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
@@ -108,7 +112,8 @@ const HomePage = () =>
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff"></meta>
     </Head>
-    <Home 
+    <HomeTemplate {...HomeContent} />
+    {/* <Home 
       introTitle={intro.title}
       introSubtitle={intro.subtitle}
       introText={intro.text}
@@ -136,7 +141,7 @@ const HomePage = () =>
       articleImageSrc='/Naeringarfraedingur.png' 
       lastArticle={nutrionistHelp}
       bookInterviewArticle={bookInterview}
-    />
+    /> */}
   </>
 
 

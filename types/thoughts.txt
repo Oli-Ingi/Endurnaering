@@ -1,0 +1,182 @@
+
+Elements
+
+    Logo X
+    - variant (white, primary, secondary)
+    - lg
+
+    Link X
+    - variant (primary, secondary)
+    - onDark
+    
+    Button X
+    - variant (primary, secondary, white)
+    - as
+    - lg
+    - sameColorHover
+
+    Flag (single use, no variance)
+    - onClick 
+
+    Burger
+
+    Text X
+    - as (h1, h2, p, small, etc)
+    - xl, lg, med (default), sm, xs
+    - italic
+    - bold
+    - uppercase
+    - primary
+    - white
+
+    Line X
+    - 
+
+    Container X
+    - column
+    - variant (primary, secondary)
+
+    Image:src (images required)
+    - scale
+
+    Arrow X
+    - variant (primary, secondary, white)
+    - length (1-10)
+
+    Plus
+    - variant (primary, white)
+    - lg
+    - sm
+
+    Social:src
+    - lg
+
+
+
+Modules
+    VideoContainer?
+
+    Nav
+    - variant (primary, secondary)
+    - onDark
+    - innerMargins
+    - links
+    
+    NavDropdown
+
+
+    Actions
+    - links
+        - variant (primary, secondary, white)
+        - sm
+    - flag
+    
+    Intro  X
+    - title
+    - line
+    - text
+
+    Card X
+    - line
+    - title
+    - text
+    - button? (to somewhere)
+
+    Article X
+    - title
+    - text
+    - variant (affects button)
+    - button, button data
+
+    Carousel? any item
+
+    FaQuestion
+    - variant 
+
+    ContactList
+
+    LinkList
+
+    Divider
+
+    SocialMedia
+
+Entities
+    
+    Header
+    - variant (primary, secondary, tertiary)
+    - navLinks
+    - actions
+    - flag
+
+    IntroBanner
+    - img
+    - intro, intro data
+
+    Services
+    - title
+    - variant (primary, secondary)
+    - lines
+    - cards
+        - cards, cards data
+
+    Concept X
+    - article, article data
+    - img
+    - imgPos (bottomRight, bottomLeft, topLeft, topRight)
+    - variant (primary, secondary, tertiary)
+
+    Reviews
+    - cards, card data
+    - title
+    - variant (primary, secondary)
+
+    FaQ
+    - title
+    - questions, and answers
+    - variant
+
+Templates
+    BurgerPage
+    Landing
+
+
+Sticky header on mobile
+Media - burger
+Observer for Services
+Observer for concepts
+
+
+Hugmyndir
+ í algengar spurningar
+ - 
+
+
+
+TODO:
+
+Setja upp layout
+Gera burger menu page
+Gera responsive header
+Laga links liti í 
+Láta header vera noShadow white við scrolltop
+hover shadow á card links..............................X
+Færa örvar í slider í media............................X
+svg myndir fyrir social media........................2
+gera link gracefully underlined........................X
+concepts hugmyndir: from right?
+hover effect þegar accordion item er lokað.............C
+prefers no animation vantar
+fá myndir frá Stebba...................................X
+laga skilmálasíðu
+um okkur síða
+síða fyrir þjónustuleiðir
+síða fyrir 
+
+
+White header scrolltop
+instagram icon laga
+laga storybook
+Um okkur síða
+áherslusíður
+burger menu

@@ -105,7 +105,7 @@ const Footer: React.FC<{}> = () =>
                 <StContact>
                     <StHeader>Endurnæring ehf.</StHeader>
                     <p>Kt. 410221-0200</p>
-                    <p>Sími: <a href="tel:5771771"></a></p>
+                    <p>Sími: <a href="tel:5771771">577 1771</a></p>
                     <p>Netfang: <a href={`mailto:endurnaering@endurnaering.is`}>endurnaering@endurnaering.is</a></p>
                     <StSkilmalarLink href="/skilmalar">Skilmálar</StSkilmalarLink>
                 </StContact>

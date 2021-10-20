@@ -7,14 +7,16 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export && mv out _static",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@types/uuid": "^8.3.1",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

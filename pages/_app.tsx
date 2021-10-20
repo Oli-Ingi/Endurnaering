@@ -3,12 +3,18 @@ import { ThemeProvider } from "styled-components";
 import '../styles/globals.css'
 import { mainTheme } from "../styles/themes";
 import MainLayout from "../components/layouts/mainLayout/MainLayout";
+import Header from '../comps/Entities/Header/Header'
+import HeaderContent from '../content/Header'
+import Footer from '../comps/Entities/Footer/Footer'
+import FooterContent from '../content/Footer'
 
 function Endurnaering({ Component, pageProps }: AppProps) {
   return <ThemeProvider theme={mainTheme}>
-    <MainLayout>
+    <>
+      <Header {...HeaderContent} shadow />
       <Component {...pageProps} />
-    </MainLayout>
+      <Footer {...FooterContent} smallOrgInfo />
+    </>
   </ThemeProvider>
 }
 
