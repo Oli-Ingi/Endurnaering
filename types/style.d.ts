@@ -18,5 +18,5 @@ declare type FadeProps =
 
 declare type Fade = "in" | "right" | "down" | "left" | "up";
 declare type Variants = "primary" | "secondary" | "white";
-declare type Typography = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "small" | "strong" | "em" | "span";
+declare type Typography = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "small" | "strong" | "em" | "span" | "li";
 

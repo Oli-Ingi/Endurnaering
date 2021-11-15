@@ -2,7 +2,7 @@ module.exports = {
   "stories": [
     //"../stories/**/*.stories.mdx",
     //"../stories/**/*.stories.@(js|jsx|ts|tsx)",
-    "../comps/**/*.stories.tsx",
+    "../components/**/*.stories.tsx",
     // "../components/elements/**/*.stories.tsx",
     // "../components/modules/**/*.stories.tsx",
     // "../components/atoms/**/*.stories.tsx",

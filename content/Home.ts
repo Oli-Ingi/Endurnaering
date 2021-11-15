@@ -3,7 +3,7 @@ export default {
         intro: {
             title: "Njótum þess að borða!",
             content: [
-                "Veitir stuðning, ráðgjöf og fræðslu í átt að heilbrigðu sambandi við mat og jákvæða heilsu.",
+                "Veitum stuðning, ráðgjöf og fræðslu í átt að heilbrigðu sambandi við mat og jákvæða heilsu.",
                 "Mætum þér þar sem þú ert í þinni vegferð og vinnum út frá áherslum sem eru sniðnar að þér."
             ]
         },

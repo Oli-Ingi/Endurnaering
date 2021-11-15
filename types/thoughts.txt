@@ -173,6 +173,18 @@ um okkur síða
 síða fyrir þjónustuleiðir
 síða fyrir 
 
+Laga:
+Slider hlusta á matchMedia
+youtube svg dottin út?
+instagram svg
+lausn á Divider
+stækka myndina af barninu
+laga header nav staðsetningu
+Laga skilmálasíðu
+Reyna að fá betri Embætti landlæknis mynd, og jafnvel mní
+Accordion matchmedia
+
+Gera ghost möguleika í takka. link neðst ættu að nota, og Lesa meira.
 
 White header scrolltop
 instagram icon laga
@@ -180,3 +192,43 @@ laga storybook
 Um okkur síða
 áherslusíður
 burger menu
+laga accordion resize reikning
+
+
+colors:
+ligthGreen: #ECF3E2
+radial-gradient(farthest-corner at 80% 75%, #D6E6C6, #ECF3E3)
+
+
+TODO 31.10
+must:
+bulletList með grænum bullets
+generic article layout fyrir skilmála, o.fl.?
+gera hard versions fyrir um okkur, konuna og panta tíma
+pages fyrir um okkur og hitt.
+want:
+Gera height transition fyrir dropdown frekar?
+padding á arrows fyrir clicks
+social media takkar þurfa pointer, effect? scale? color?
+
+
+
+TODO:
+Laga instagram icon
+    - gera icon component sbr. landeignaskrá
+social media green on hover
+    - inline svg
+outsideclicklistener á dropdown
+dropdown height i stað transform scale y
+
+hvort átti að vera á undan, heilbrigt samband við mat eða áhugahvetjandi samtal
+gera burger overlay síðu
+þurfum að klára gögn á undirsíðum
+    - þarf að sjá gögn til að geta gert þetta
+vantar upplýsingar um algengar spurningar
+setja meira í theme - font stuff t.d. | almennar margin stærðir ?
+fá betri myndir, minni
+skella í fontawesome fyrir phone o.fl. icons
+
+Get gert næst:
+um okkur síðu , byrja bara á síðunni held ég..

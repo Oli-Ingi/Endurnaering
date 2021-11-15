@@ -1,8 +1,43 @@
 import Head from 'next/head'
 import React from "react";
 
-import HomeTemplate from '../comps/templates/Home/Home'
-import HomeContent from '../content/Home'
+import Column from '../components/templates/Column/Column';
+
+import Hero from '../domain/Home/Hero/Hero-is';
+import Services from '../domain/Home/Services/Services-is';
+import Concepts from '../domain/Home/Concepts/Concepts-is';
+import Reviews from '../domain/Home/Reviews/Reviews-is';
+import Faq from '../domain/Home/FAQ/FAQ-is';
+
+
+const HomePage = () =>
+  <>
+    <Head>
+      <title>Endurnæring</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
+      <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+      <link rel="manifest" href="/favicon/site.webmanifest" />
+      <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+      <meta name="msapplication-TileColor" content="#da532c" />
+      <meta name="theme-color" content="#ffffff"></meta>
+    </Head>
+    <Column>
+      <Hero />
+      <Services />
+      <Concepts />
+      <Reviews />
+      <Faq />
+    </Column>
+  </>
+
+
+export default HomePage;
+
+
 
 //import { IArticle } from '../types/general';
 
@@ -82,27 +117,3 @@ import HomeContent from '../content/Home'
 //     'Næringarfræðingur fer með þér yfir núverandi fæðuvenjur þínar, hvaða markmið þú hefur í þeim efnum og leiðbeinir þér við að aðlaga núverandi venjur að þessum markmiðum, án þess að þú þurfir að fórna öllum þeim mat sem þig langar í. Slík leiðsögn veitir þér því frelsi til þess að breyta þínum fæðuvenjum á þínum forsendum með virðingu fyrir þínum sérþörfum.'
 //   ]
 // }
-
-
-const HomePage = () =>
-  <>
-    <Head>
-      <title>Endurnæring</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
-      <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-      <link rel="manifest" href="/favicon/site.webmanifest" />
-      <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-      <meta name="msapplication-TileColor" content="#da532c" />
-      <meta name="theme-color" content="#ffffff"></meta>
-    </Head>
-    <HomeTemplate {...HomeContent} />
-  </>
-
-
-export default HomePage;
-
-

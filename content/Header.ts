@@ -1,4 +1,4 @@
-import { Props } from '../comps/Entities/Header/Header'
+import { Props } from '../components/entities/Header/Header'
 
 export default {
     navItems: [
@@ -21,3 +21,6 @@ export default {
         title: "Viðtöl"
     }
 } as Props 
+
+
+

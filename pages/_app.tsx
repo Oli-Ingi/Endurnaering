@@ -2,17 +2,20 @@ import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import '../styles/globals.css'
 import { mainTheme } from "../styles/themes";
-import Header from '../comps/Entities/Header/Header'
-import HeaderContent from '../content/Header'
-import Footer from '../comps/Entities/Footer/Footer'
-import FooterContent from '../content/Footer'
+// import Header from '../components/entities/Header/Header'
+// import HeaderContent from '../content/Header'
+// import Footer from '../components/entities/Footer/Footer'
+// import FooterContent from '../content/Footer'
+import Header from '../domain/Header/Header-is'
+import Footer from '../domain/Footer/Footer-is'
+
 
 function Endurnaering({ Component, pageProps }: AppProps) {
   return <ThemeProvider theme={mainTheme}>
     <>
-      <Header {...HeaderContent} shadow />
-      <Component {...pageProps} />
-      <Footer {...FooterContent} smallOrgInfo />
+      <Header />
+        <Component {...pageProps} />
+      <Footer />
     </>
   </ThemeProvider>
 }

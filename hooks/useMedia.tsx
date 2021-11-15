@@ -15,8 +15,9 @@ export const useMedia = query => {
         
         media.addEventListener("change", listener)
 
-        return media.removeEventListener("change", listener)
+        return () => media.removeEventListener("change", listener)
     }, [query, matches]);
 
     return matches;
 }
+
