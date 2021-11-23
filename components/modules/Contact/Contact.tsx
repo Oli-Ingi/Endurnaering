@@ -2,6 +2,7 @@ import { FC } from "react"
 import styled from 'styled-components'
 import Link from "../../elements/Link/Link"
 import Text from "../../elements/Text/Text"
+import Button from "../../elements/Button/Button"
 
 export type Props = {
     title: string;
@@ -36,10 +37,10 @@ const StContact = styled.div`
 const Contact: FC<Props> = ({ title, tel, hours, email }) => 
     <StContact>
         <Text marginBottom="1em" thick variant="primary">{title}</Text>
-        <Link to={tel.link} thick border marginBottom="1em" variant="primary" keepColorOnHover>{tel.caption}</Link>
+        <Button to={tel.link} marginBottom="1em" variant="ghost" color="white">{tel.caption}</Button>
         <Text sm marginBottom="0.3em">{hours.desc}</Text>
         <Text thick>{hours.period}</Text>
-        <Link to={`mailto:${email}`} thick marginTop="1em" border variant="primary" keepColorOnHover>{email}</Link>
+        <Button to={`mailto:${email}`} marginTop="1em" variant="ghost" color="white">{email}</Button>
     </StContact>
 
 

@@ -6,7 +6,6 @@ import { MarginHandler } from '../../../styles/common'
 export type Props = {
     title: string;
     links: Array<{ caption: string; to: string; }>;
-    animate?: boolean;
 } & Margins
 
 
@@ -29,11 +28,11 @@ const StLinkList = styled.ul<Margins>`
 `
 
 
-const LinkList: FC<Props> = ({ links, title, animate }) =>
+const LinkList: FC<Props> = ({ links, title }) =>
     <StLinkList>
         <li>{title}</li>
         {links.map(link => <li key={link.caption}>
-            <Link to={link.to} animatedLine={animate}>{link.caption}</Link>
+            <Link to={link.to}>{link.caption}</Link>
         </li>)}
     </StLinkList>
 

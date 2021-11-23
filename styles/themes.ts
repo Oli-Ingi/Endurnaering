@@ -18,10 +18,23 @@ export const mainTheme = {
         red: '#AB4405',
         brown: '#594B32',
         white: '#FFF',
-        testGreen: '#fff'
+    },
+    font: {
+        family: "roboto",
+        sizes: {
+            xxl: 72,
+            xl: 42, // 
+            l: 32, // normal titles, sections
+            m: 20, // small titles
+            s: 16 // texti almennt eða bold subsection title
+        },
+        space: {
+            text: 0.3,
+            title: 0
+        }
     },
     shadow: "0 0 15px #ccc",
-    deepShadow: "0 0 20px #aaa",
+    deepShadow: "0 0 25px #a1a1a1",
     layout: {
         containerWidth: "1200px",
         columns: '[full-start] minmax(1em, 1fr) [main-start] minmax(0, 80em) [main-end] minmax(1em, 1fr) [full-end]',

@@ -232,3 +232,66 @@ skella í fontawesome fyrir phone o.fl. icons
 
 Get gert næst:
 um okkur síðu , byrja bara á síðunni held ég..
+
+Rethink!
+
+Elements
+    Logo
+    link (icon slot, color)
+    button (icon slot, variants: white, primary, grey, sm/lg)
+    title (variant: huge, page, article, section, subsection)
+    text (color, bold, italic, sm?)
+    section (container)
+    arrow
+    card (s, m, lg)
+    Icon (.Social, .Brand, .Arrow)
+    listItem
+    List
+    divider (util)
+    videoPlayer
+    BannerImg (500x500)
+    articleImg (350x350)
+    Header (container, slotted?)
+    Footer (container, slotted?)
+    page (container)
+    Flexy ? (if similarity between containers)
+    Overlay
+    Burger
+    BurgerPage (container)
+
+Modules
+    Intro
+    TitleSection
+    Concept
+    IconArticle ?
+    Slider
+    Accordion
+    ContactUs
+    LinkList
+    Modal
+    Dropdown
+    PersonCard (About)
+
+
+Entities
+    Banner
+    Services
+    Concepts
+    Reviews
+    WhyUs
+    Benefits
+    Questions
+
+    Terms
+    Privacy
+
+    Header
+    Footer
+
+
+
+    todo:
+    linka social media
+    einstaklingsviðtal link á kara, hitt á nýja WIP síðu
+    burger menu
+    

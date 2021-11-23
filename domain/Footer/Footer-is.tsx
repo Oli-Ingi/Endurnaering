@@ -11,14 +11,14 @@ const nav = [
             { caption: "Fyrirlestrar", to: "https://visir.is" },
         ]
     },
-    {
-        title: "Lykiláherslur",
-        links: [
-            { caption: "Áhugahvetjandi samtal", to: "https://visir.is" },
-            { caption: "Heilbrigt samband við mat", to: "https://visir.is" },
-            { caption: "Jákvæð heilsa", to: "https://visir.is" }
-        ]
-    },
+    // {
+    //     title: "Lykiláherslur",
+    //     links: [
+    //         { caption: "Áhugahvetjandi samtal", to: "https://visir.is" },
+    //         { caption: "Heilbrigt samband við mat", to: "https://visir.is" },
+    //         { caption: "Jákvæð heilsa", to: "https://visir.is" }
+    //     ]
+    // },
     {
         title: "Um okkur",
         links: [
@@ -45,7 +45,7 @@ const orgInfo = [
     { caption: "Endurnæring ehf."},
     { caption: "kt. 410221-0200" },
     { caption: "Ármúli 42, 3. hæð" },
-    { caption: "105 Reykjavík" },
+    { caption: "108 Reykjavík" },
     { caption: "577-1771" },
     { caption: "endurnaering@endurnaering.is" },
 ]
@@ -56,13 +56,13 @@ const subLinks = [
 ]
 
 const affiliates = [
-    { img: "/Embaetti_landlaeknis.png", to: "https://www.landlaeknir.is/", alt: "Embætti landlæknis" },
-    { img: "/mni.png", to: "http://www.mni.is", alt: "MNI" }
+    { img: "/landlaeknir.svg", to: "https://www.landlaeknir.is/", alt: "Embætti landlæknis" },
+    { img: "/mni.svg", to: "http://www.mni.is", alt: "MNI" }
 ]
 
 const socialMedia = [
     {
-        src: "/Facebook.svg",
+        src: "/facebook.svg",
         to: "https://www.facebook.com/endurnaering",
         alt: "facebook"
     },
@@ -72,24 +72,9 @@ const socialMedia = [
         alt: "instagram"
     },
     {
-        src: "/LinkedIn.svg",
+        src: "/linked-in.svg",
         to: "https://www.instagram.com/endurnaering/",
         alt: "linked-in"
-    },
-    {
-        src: "/Twitter.svg",
-        to: "https://www.instagram.com/endurnaering/",
-        alt: "twitter"
-    },
-    {
-        src: "/Youtube.svg",
-        to: "https://www.instagram.com/endurnaering/",
-        alt: "youtube"
-    },
-    {
-        src: "/Pinterest.svg",
-        to: "https://www.instagram.com/endurnaering/",
-        alt: "pinterest"
     }
 ]
 

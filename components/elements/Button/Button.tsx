@@ -36,7 +36,7 @@ const Button = styled.button.attrs((p: Props) => ({
     text-decoration: none;
     white-space: nowrap;
     font-family: ${p => p.theme.fontFamily};
-    font-weight: 500;
+    font-weight: bold;
     ${MarginHandler}
 
     :hover {

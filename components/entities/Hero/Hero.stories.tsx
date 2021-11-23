@@ -14,22 +14,25 @@ const Template: Story<Props> = props => <Hero {...props} />
 
 export const Default = Template.bind({})
 Default.args = {
-    intro: {
-        title: "Hér er titill",
-        content: ["Hér er texti"]
-    },
-    img: "/melonu_barn.png"
+    title: "Hér er titill",
+    content: ["Hér er texti"],
+    img: "/melonu_barn.png",
+    buttonCaption: "Horfa á kynningarmyndband"
 } as Props
 
+export const WithSub = Template.bind({})
+WithSub.args = {
+    ...Default.args,
+    subtitle: "og meira",
+} as Props
 
 export const Realistic = Template.bind({})
 Realistic.args = {
-    intro: {
-        title: "Njótum þess að borða!",
-        content: [
-            "Endurnæring veitir stuðning, ráðgjöf og fræðslu í átt að heilbrigðu sambandi við mat og jákvæða heilsu.",
-            "Fáðu aðstoð hjá löggildum næringarfræðingi við að ná þínum markmiðum."
-        ]
-    },
-    img: "/Upphafsmynd3.svg"
+    title: "Njótum þess",
+    subtitle: "að borða",
+    content: [
+        "Við veitum ráðgjöf, stuðning og fræðslu í átt að heilbrigðu sambandi við mat og jákvæðri heilsu."
+    ],
+    img: "/melonu_barn.png",
+    buttonCaption: "Horfa á kynningarmyndband"
 } as Props

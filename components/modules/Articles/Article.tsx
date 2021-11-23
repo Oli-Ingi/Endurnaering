@@ -34,9 +34,10 @@ const Article: FC<Props> = ({ title, content, button, variant, darkBg, shadow, a
     <StArticle shadow={shadow} as={as}>
         <Text size="xl" as="h3" variant={darkBg ? "white" : "primary"} thick marginBottom="0.5em">{title}</Text>
         {content.map((p, i) => <Text key={i} marginBottom={8} {...darkBg && { variant: "white" }}>{p}</Text>)}
-        {button && <Button {...button} color={variant} marginTop={15} keepColorOnHover={["secondary", "white"].includes(variant)} />}
     </StArticle>
 
 
 
 export default Article
+
+//{button && <Button {...button} color={variant} marginTop={15} keepColorOnHover={["secondary", "white"].includes(variant)} />}

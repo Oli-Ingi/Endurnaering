@@ -8,7 +8,6 @@ export type Props = {
         title: string;
         links: { caption: string; to: string; }[];
     }[];
-    animateLinks?: boolean;
 }
 
 
@@ -29,9 +28,9 @@ const StListNav = styled.nav`
     }
 `
 
-const ListNav: FC<Props> = ({ navItems, animateLinks }) => 
+const ListNav: FC<Props> = ({ navItems }) => 
     <StListNav>
-        {navItems.map(list => <LinkList key={list.title} animate={animateLinks} {...list} />)}
+        {navItems.map(list => <LinkList key={list.title} {...list} />)}
     </StListNav>
 
 

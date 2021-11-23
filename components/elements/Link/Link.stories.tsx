@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import React from "react";
+import Icon from "../Icon/Icon";
 import Link, { Props } from "./Link";
 
 export default {
@@ -17,8 +18,8 @@ export default {
         },
         keepColorOnHover: { type: 'boolean' },
         bold: { type: 'boolean' },
-        lined: { type: 'boolean' },
-        border: { type: 'boolean' },
+        permaLine: { type: 'boolean' },
+        iconRight: { type: "boolean" }
     },
   } as Meta;
 
@@ -42,20 +43,16 @@ Secondary.args = {
     variant: "secondary"
 } as Props
 
-export const Bordered = Template.bind({})
-Bordered.args = {
+
+export const PermaLine = Template.bind({})
+PermaLine.args = {
     ...Default.args,
-    border: true,
+    permaLine: true
 } as Props
 
-export const Lined = Template.bind({})
-Lined.args = {
+export const WithIcon = Template.bind({})
+WithIcon.args = {
     ...Default.args,
-    lined: true
-} as Props
-
-export const AnimatedLine = Template.bind({})
-AnimatedLine.args = {
-    ...Default.args,
-    animatedLine: true
+    icon: <Icon type="play" />,
+    variant: "primary"
 } as Props

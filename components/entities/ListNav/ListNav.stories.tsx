@@ -49,9 +49,3 @@ Default.args = {
         },
     ]
 } as Props
-
-export const AnimatedLinks = Template.bind({})
-AnimatedLinks.args = {
-    ...Default.args,
-    animateLinks: true
-} as Props

@@ -55,7 +55,7 @@ const StHome = styled.main`
 
 const Home: FC<Props> = ({ hero, concepts, references, faq, services }) => 
     <StHome>
-        <Hero {...hero} />
+        {/* <Hero {...hero} /> */}
         <Section title={services.title} variant="secondary">
             <GridGroup items={services.items} border shadow="hover" />
         </Section>
@@ -77,6 +77,7 @@ const Home: FC<Props> = ({ hero, concepts, references, faq, services }) =>
             <Accordion items={faq.questions} />
         </Section>
     </StHome>
+
 
 
 export default Home

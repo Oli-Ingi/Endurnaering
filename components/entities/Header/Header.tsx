@@ -76,7 +76,7 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
     return <StHeader shadow={shadow} as="header">
         <Logo variant="primary" />
         <div>
-            <Nav items={navItems} lgMarginBetween thick dropShadow={shadow} />
+            <Nav items={navItems} lgMarginBetween dropShadow={shadow} />
         </div>
         <InterviewNav {...interview} dropShadow={shadow} />
         <Burger onClick={() => setBurgerMenuIsOpen(!burgerMenuIsOpen)} isOpen={burgerMenuIsOpen} variant="white" />

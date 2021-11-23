@@ -7,6 +7,8 @@ import Hero from '../domain/Home/Hero/Hero-is';
 import Services from '../domain/Home/Services/Services-is';
 import Concepts from '../domain/Home/Concepts/Concepts-is';
 import Reviews from '../domain/Home/Reviews/Reviews-is';
+import WhyUs from '../domain/Home/WhyUs/WhyUs';
+import Benefits from '../domain/Home/Benefits/Benefits';
 import Faq from '../domain/Home/FAQ/FAQ-is';
 
 
@@ -29,6 +31,8 @@ const HomePage = () =>
       <Hero />
       <Services />
       <Concepts />
+      <WhyUs />
+      <Benefits />
       <Reviews />
       <Faq />
     </Column>

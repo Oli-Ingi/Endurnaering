@@ -75,7 +75,9 @@ const Dropdown: FC<Props> = ({ links, title, shadow }) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return <StDropDown isOpen={isOpen} shadow={shadow} onBlur={() => setTimeout(() => setIsOpen(false), 100)}>
-        <Link as="button" onClick={() => setIsOpen(!isOpen)} animatedLine thick><span>{title} <Caret isOpen={isOpen} /></span></Link>
+        <Link onClick={() => setIsOpen(!isOpen)} icon={<Caret isOpen={isOpen} />} iconRight>
+            {title}
+        </Link>
         <ul>
             {links.map(link => <li key={link.caption} onClick={e => e.stopPropagation()}>
                 <Link to={link.to} newTab={link.newTab} noHoverLine>{link.caption}</Link>

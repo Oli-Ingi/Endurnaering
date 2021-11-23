@@ -1,5 +1,6 @@
 import Slider from "../../../components/entities/Slider/Slider";
 import Entitled from "../../../components/modules/Entitled/Entitled";
+import Section from "../../../components/modules/Section/Section";
 
 // SSR ?
 const reviews = [
@@ -10,9 +11,9 @@ const reviews = [
 ]
 
 const ReviewsIs = () =>
-    <Entitled title="Ummæli">
+    <Section title="Ummæli" variant="secondary">
         <Slider items={reviews} autoSlide autoSlideInterval={5} variant="white" />
-    </Entitled>
+    </Section>
 
 
 export default ReviewsIs

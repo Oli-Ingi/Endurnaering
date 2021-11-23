@@ -71,7 +71,7 @@ const Footer: FC<Props> = ({ contact, nav, orgInfo, smallOrgInfo, subLinks, affi
         <Container variant="secondary">
             <StTopFooter>
                 <Contact {...contact} />
-                <ListNav navItems={nav} animateLinks />
+                <ListNav navItems={nav} />
             </StTopFooter>
         </Container>
         <Container variant="primary">
@@ -80,7 +80,7 @@ const Footer: FC<Props> = ({ contact, nav, orgInfo, smallOrgInfo, subLinks, affi
         <Container variant="white">
             <StSubFooter>
                 <Affiliates logos={affiliates} height={40} />
-                <Divider values={subLinks} animateLinks />
+                <Divider values={subLinks} />
                 <SocialMedia logos={socialMedia} />
             </StSubFooter>
         </Container>

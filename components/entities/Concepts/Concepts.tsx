@@ -29,7 +29,7 @@ const Concepts: FC<Props> = ({ concepts, ...margins }) =>
             <Concept 
                 {...c} 
                 key={c.article.title}
-                imgPos={i % 2 === 1 ? "bottomLeft" : "bottomRight"} 
+                imgPos={i % 2 === 0 ? "bottomLeft" : "bottomRight"} 
                 imgOffset 
                 variant="secondary"
                 marginBottom="7em" 

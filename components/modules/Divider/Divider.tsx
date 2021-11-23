@@ -7,7 +7,6 @@ export type Props = {
     variant?: Variants;
     size?: "lg" | "sm";
     thick?: boolean;
-    animateLinks?: boolean;
     values: Array<
         { caption: string; to?: never; newTab?: never } |
         { to: string; caption: string; newTab?: boolean; }
@@ -32,11 +31,11 @@ const StLine = styled.hr<Pick<Props, "variant" | "size">>`
     border: none;
 `
 
-const Divider: FC<Props> = ({ values, animateLinks, ...style }) =>
+const Divider: FC<Props> = ({ values, ...style }) =>
     <StDivider>
         {values.map((val, i) => <Fragment key={val.caption}> 
             {val.to 
-                ?   <Link to={val.to} newTab={val.newTab} animatedLine={animateLinks} {...style} keepColorOnHover={style.variant === "primary"}>{val.caption}</Link>
+                ?   <Link to={val.to} newTab={val.newTab} {...style} keepColorOnHover={style.variant === "primary"}>{val.caption}</Link>
                 :   <Text {...style}>{val.caption}</Text>}
             {i + 1 < values.length && <StLine variant={style.variant} size={style.size} />}
         </Fragment>)}

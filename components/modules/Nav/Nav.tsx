@@ -17,7 +17,6 @@ export type Props = {
     lg?: boolean;
     lgMarginBetween?: boolean;
     as?: "div" | "section";
-    thick?: boolean;
     bold?: boolean;
     dropShadow?: boolean;
 }
@@ -32,12 +31,12 @@ const StNav = styled.nav<Pick<Props, "lg" | "lgMarginBetween">>`
 `
 
 
-const Nav: FC<Props> = ({ items, lg, lgMarginBetween, thick, bold, dropShadow }) =>
+const Nav: FC<Props> = ({ items, lg, lgMarginBetween, bold, dropShadow }) =>
     <StNav lg={lg} lgMarginBetween={lgMarginBetween}>
         {items && items.map(it => 
             it.links 
                 ? <Dropdown key={it.caption} title={it.caption} links={it.links} shadow={dropShadow} />
-                : <Link to={it.to} key={it.caption} thick={thick} bold={bold} animatedLine>{it.caption}</Link>)}
+                : <Link to={it.to} key={it.caption} bold={bold}>{it.caption}</Link>)}
     </StNav>
 
 

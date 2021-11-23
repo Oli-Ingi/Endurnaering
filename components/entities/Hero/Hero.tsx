@@ -1,14 +1,15 @@
 import styled from 'styled-components'
-import { FC } from 'react'
+import { FC, MouseEventHandler } from 'react'
 import Container from '../../elements/Container/Container'
 import Intro from '../../modules/Intro/Intro'
 
 
 export type Props = {
-    intro: {
-        title: string;
-        content: string[];
-    }
+    title: string;
+    subtitle?: string;
+    content: string[];
+    onButtonClick: MouseEventHandler<HTMLElement>;
+    buttonCaption: string;
     img: string;
 }
 
@@ -39,10 +40,10 @@ const StHero = styled.div`
 
 
 
-const Hero: FC<Props> = ({ intro, img }) => 
+const Hero: FC<Props> = ({ img, ...intro }) => 
     <Container as="section" variant="white">
         <StHero>
-            <Intro {...intro} animate variant="white" />
+            <Intro {...intro} buttonIcon="play" animate variant="white" />
             <img src={img} />
         </StHero>
     </Container>

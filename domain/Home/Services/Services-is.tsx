@@ -1,29 +1,32 @@
-import GridGroup from "../../../components/entities/GridGroup/GridGroup";
-import Section from "../../../components/modules/Section/Section";
-
-// SSR ?
-const services = [
-    { 
-        title: "Fullorðnir", 
-        content: ["Einstaklingsmiðuð næringarráðgjöf unnin út frá markmiðum og persónulegum áherslum."], 
-        to: "https://worldofwarcraft.com" 
-    },
-    { 
-        title: "Börn og unglingar", 
-        content: ["Einstaklingsmiðuð næringarráðgjöf unnin út frá markmiðum og persónulegum áherslum í gegnum fjarfundarbúnað Köru Connect."], 
-        to: "https://worldofwarcraft.com" 
-    },
-    { 
-        title: "Fyrirtæki", 
-        content: ["Næringarfræðingur kemur í heimsókn í fyrirtæki eða samkomur."], 
-        to: "https://worldofwarcraft.com" 
-    },
-]
-
-const ServicesIs = () =>
-    <Section title="Þjónustuleiðir" variant="secondary">
-        <GridGroup items={services} border shadow="hover" />
-    </Section>
+import DefinitionSection from "../../../components/entities/DefinitionSection/DefinitionSection";
 
 
-export default ServicesIs
+const Services = () => 
+    <DefinitionSection 
+        title="Þjónustuleiðir"
+        variant="secondary"
+        definitions={[
+            { 
+                title: "Einstaklingsviðtal", 
+                content: "Fáðu einkatíma hjá næringafræðingi þar sem við förum yfir þín mál. Bæði hægt að fá staðviðtal og fjarviðtal.", 
+                to: "https://worldofwarcraft.com" ,
+                icon: "person"
+            },
+            { 
+                title: "Námskeið", 
+                content: "Komdu með öðrum á námskeið til að finna fyrir meðbyr og hafa það nice með öðrum",
+                to: "https://worldofwarcraft.com" ,
+                icon: "reward"
+            },
+            { 
+                title: "Fyrirlestrar", 
+                content: "Bókaðu fyrirlestur, hallaðu þér aftur í sætinu og hlustaðu á Heiðdísi tala um næringu.", 
+                to: "https://worldofwarcraft.com",
+                icon: "mic"
+            },
+        ]}
+    />
+
+    
+
+export default Services
