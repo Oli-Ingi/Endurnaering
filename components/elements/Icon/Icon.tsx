@@ -1,10 +1,19 @@
 import { FC } from "react"
-
+import styled from 'styled-components'
 
 export type Props = {
     type: "play" | "target" | "chat" | "chart" | "recycle" | "like" | 
-        "heart" | "suitcase" | "lightning" | "sun" | "person" | "reward" | "mic";
+        "heart" | "suitcase" | "lightning" | "sun" | "person" | "reward" | "mic" | "facebook";
 }
+
+const HoverSvg = styled.svg`
+    transition-duration: .2s;
+    cursor: pointer;
+
+    :hover {
+        transform: scale(1.05);
+    }
+`
 
 const assertNever = (anything: never): never => { throw new Error(`${anything} not implemented`); }
 
@@ -138,6 +147,11 @@ const Icon: FC<Props> = ({ type }) => {
                     </clipPath>
                 </defs>
             </svg>
+
+        case "facebook":
+            return <HoverSvg width="35" height="35" viewBox="0 0 200 200">
+                <path d="M100,0.6C44.8,0.6,0,45.4,0,100.6c0,49.9,36.6,91.3,84.4,98.8v-69H59v-28.9h25.4v-22 c0-25.1,14.9-38.9,37.8-38.9c10.9,0,22.4,2,22.4,2v24.6h-12.6c-12.4,0-16.3,7.7-16.3,15.6v18.8h27.7l-4.4,28.9h-23.3v69 c47.8-7.5,84.4-48.9,84.4-98.8C200,45.4,155.2,0.6,100,0.6z" fill="#3D69B2" />
+            </HoverSvg>
         
         default:
             return assertNever(type)

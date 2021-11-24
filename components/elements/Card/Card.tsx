@@ -15,6 +15,7 @@ const Card = styled.div.attrs<Props>(p => ({
     display: flex;
     flex-direction: column;
     padding: 20px;
+    justify-content: "stretch";
     background-color: ${p => p.variant && p.theme.colors[p.variant]};
     box-shadow: ${p => p.shadow === "always" ? p.theme.shadow : undefined}; 
     ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.variant === "primary" ? "white" : "primary"]};`}
@@ -24,7 +25,7 @@ const Card = styled.div.attrs<Props>(p => ({
 
     :hover {
         color: black;
-        
+
         ::before {
             opacity: 1;
         }

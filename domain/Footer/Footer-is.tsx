@@ -5,10 +5,10 @@ const nav = [
     { 
         title: "Þjónustuleiðir", 
         links: [
-            { caption: "Staðviðtöl", to: "https://visir.is" },
-            { caption: "Fjarviðtöl", to: "https://visir.is" },
-            { caption: "Námskeið", to: "https://visir.is" },
-            { caption: "Fyrirlestrar", to: "https://visir.is" },
+            { caption: "Staðviðtöl", to: "/vidtol" },
+            { caption: "Fjarviðtöl", to: "/vidtol" },
+            { caption: "Námskeið", to: "/vidtol" },
+            { caption: "Fyrirlestrar", to: "/vidtol" },
         ]
     },
     // {
@@ -61,11 +61,6 @@ const affiliates = [
 ]
 
 const socialMedia = [
-    {
-        src: "/facebook.svg",
-        to: "https://www.facebook.com/endurnaering",
-        alt: "facebook"
-    },
     {
         src: "/instagram.svg",
         to: "https://www.instagram.com/endurnaering/",

@@ -41,6 +41,7 @@ const AllStory: Story<Props> = () =>
         <Icon type="person" />
         <Icon type="reward" />
         <Icon type="mic" />
+        <Icon type="facebook" />
     </div>
 
 export const All = AllStory.bind({})

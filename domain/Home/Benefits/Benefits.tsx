@@ -4,7 +4,7 @@ import DefinitionSection from "../../../components/entities/DefinitionSection/De
 
 const Benefits = () => 
     <DefinitionSection 
-        title="Ávinningur af þjónustu okkar"
+        title="Ávinningur sem vænta má af þjónustunni"
         definitions={[
             { 
                 title: "Betri melting", 

@@ -1,10 +1,11 @@
 import styled from 'styled-components'
+import { MarginHandler } from '../../../styles/common';
 
 
 export type Props = {
     variant?: "huge" | "page" | "article" | "section" | "subsection";
     $color?: "primary" | "dark";
-}
+} & Margins
 
 const titleSizeMap = {
     huge: "xxl",
@@ -25,6 +26,7 @@ const Title = styled.h1.attrs<Props>(p => ({
     font-size: ${p => p.theme.font.sizes[titleSizeMap[p.variant]]}px;
     color: ${p => p.theme.colors[p.$color]};
     font-weight: bold;
+    ${MarginHandler}
 `
 
 export default Title;

@@ -16,8 +16,8 @@ const Attendance = () =>
         </SubArticleSection>
         <SubArticleSection title="Ábyrgð þín">
             <Text>
-                Þú berð ábyrgð á að muna eftir að mæta í viðtalstímann þinn en þú getur séð hvenær þú átt bókaðan tíma á heimasvæðinu þínu hjá 
-                <Link to="https://www.karaconnect.com/is" inline permaLine>Köru Connect</Link>.
+                Þú berð ábyrgð á að muna eftir að mæta í viðtalstímann þinn en þú getur séð hvenær þú átt bókaðan tíma á heimasvæðinu þínu 
+                hjá <Link to="https://www.karaconnect.com/is" inline permaLine>Köru Connect</Link>.
                 Þú berð sömuleiðis ábyrgð á því að þú hafir næði á meðan þú ert í viðtalstíma hjá næringarfræðingnum þínum í gegnum 
                 myndfundabúnað og að netsamband þitt og tækjabúnaður sé nægilega góður.
             </Text>

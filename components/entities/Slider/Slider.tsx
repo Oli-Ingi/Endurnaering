@@ -4,11 +4,13 @@ import Arrow from '../../elements/Arrow/Arrow'
 import { v4 as uuid } from 'uuid'
 import Card from '../../modules/Card/Card'
 import Arrows from '../../modules/Arrows/Arrows'
+import Cardicle from '../../modules/Cardicle/Cardicle'
 
 export type Props = {
     items: {
         title: string;
         content: string[];
+        subtitle?: string;
     }[];
     cardWidth?: number; // default 250px
     maxCardsInView?: 1 | 2 | 3 | 4; // default 3 or what media query allows.
@@ -142,7 +144,7 @@ const Slider: FC<Props> = ({ items, variant, cardWidth = 250, maxCardsInView = 4
         <StViewBox cardWidth={cardWidth} maxCards={screenMaxCards || 1}>
             <StCardHolder ref={sliderNode} count={items.length} cardWidth={cardWidth} noStretch={noStretch}>
                 {render.items.map(ri => items[ri] && 
-                    <Card key={uuid()} border {...items[ri]} variant={variant} shadow="always" />)}
+                    <Cardicle key={uuid()} {...items[ri]} />)}
             </StCardHolder>
         </StViewBox>
         {screenMaxCards > 1 && <Arrow onClick={() => slide()} right marginTop={noStretch ? "3.5em" : 0} />}

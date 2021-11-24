@@ -80,7 +80,15 @@ const Intro: FC<Props> = ({ title, subtitle, variant, content, animate, onButton
         </StLineContainer>
         <StContent animate={animate} round={style.round}>
             {content.map(p => 
-                <Text key={uuid()} marginBottom={8} {...variant === "primary" && { variant: "white" }} center={style.round}>{p}</Text>)}
+                <Text 
+                    key={uuid()} 
+                    marginBottom={8} 
+                    {...variant === "primary" && { variant: "white" }} 
+                    center={style.round}
+                    size="lg"
+                >
+                    {p}
+                </Text>)}
         </StContent>
         {onButtonClick && buttonCaption && <Link 
             onClick={onButtonClick} 

@@ -10,6 +10,7 @@ export type Props = {
     italic?: boolean;
     caps?: boolean;
     as?: Typography;
+    faded?: boolean;
     id?: string;
     center?: boolean;
 } & Margins & (
@@ -35,10 +36,12 @@ const Text = styled.p<Props>`
                     : p.size === "xl" 
                         ? 2.2
                         : 2.6}rem;
+    line-height: 1.5em;
     font-weight: ${p => p.thick ? 600 : p.bold ? 'bold' : 300};
     ${p => p.italic && css`font-style: italic;`}
     ${p => p.caps && css`text-transform: uppercase;`}
     ${p => p.center && css`text-align: center;`}
+    opacity: ${p => p.faded && 0.6};
     
     ${MarginHandler}
     ${FadeHandler}

@@ -70,9 +70,9 @@ const StLink = styled.a.attrs<Omit<Props, "children" | "icon">>(p => ({
     }
 
     :hover > span {
-        color: ${p => p.permaLine && p.theme.colors.primary};
+        color: ${p => p.theme.colors.primary};
 
-        ${p => !p.permaLine && css`
+        ${p => (!p.permaLine && !p.noHoverLine) && css`
             ::after {
                 left: 0;
                 right: 0;

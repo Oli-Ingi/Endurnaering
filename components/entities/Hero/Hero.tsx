@@ -23,7 +23,7 @@ const StHero = styled.div`
 
     > div {
         max-width: 100%;
-        width: 500px;
+        width: 570px;
     }
 
     img {
@@ -31,7 +31,7 @@ const StHero = styled.div`
         width: 50%;
     }
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 920px) {
         flex-wrap: wrap;
 
         img { width: 90vw; }

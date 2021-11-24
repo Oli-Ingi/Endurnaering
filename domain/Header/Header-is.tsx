@@ -2,11 +2,15 @@ import Header from '../../components/entities/Header/Header'
 
 // SSR ?
 const navItems = [
-    { caption: "Áherslur", to: "https://visir.is" },
+    { caption: "Þjónustuleiðir", links: [
+        { caption: "Viðtöl", to: "/vidtol" },
+        { caption: "Námskeið", to: "/vidtol" },
+        { caption: "Fyrirlestrar", to: "/vidtol" },
+    ] },
     { caption: "Um okkur", links: [
         { caption: "Endurnæring", to: "/um-okkur" },
         { caption: "Starfsfólk", to: "/um-okkur#starfsfolk" },
-        { caption: "Skilmálar", to: "/um-okkur#skilmalar" },
+        { caption: "Skilmálar", to: "/skilmalar" },
     ]}
 ] as Array<
     { caption: string; to: string; links?: never; } | 
