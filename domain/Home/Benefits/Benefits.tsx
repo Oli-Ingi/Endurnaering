@@ -5,11 +5,13 @@ import DefinitionSection from "../../../components/entities/DefinitionSection/De
 const Benefits = () => 
     <DefinitionSection 
         title="Ávinningur sem vænta má af þjónustunni"
+        color="tertiary"
+        justIconColor
         definitions={[
             { 
                 title: "Betri melting", 
                 content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
-                icon: "recycle"
+                icon: "recycle",
             },
             { 
                 title: "Jákvæð líkamsímynd", 

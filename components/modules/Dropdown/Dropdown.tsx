@@ -1,7 +1,9 @@
 import styled from 'styled-components'
-import { FC, useState } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import Link from '../../elements/Link/Link'
 import Caret from '../../elements/Caret/Caret'
+import DropView from '../../elements/DropView/DropView'
+import useOutsideClickListener from '../../../hooks/useOutsideClickListener'
 
 
 export type Props = {
@@ -31,28 +33,21 @@ const StDropDown = styled.div<{ isOpen: boolean, shadow?: boolean }>`
     }
 
     ul {
-        position: absolute;
-        top: 2.8rem;
         border-radius: 5px;
         list-style: none;
-        transition-duration: 0.5s;
         margin: 0;
         padding: 0;
-        left: -0.5em;
-        border: 1px solid #eee;
         border-top-left-radius: -5px;
         width: auto;
         z-index: 5;
         box-shadow: ${p => p.shadow ? " #eee 0px 10px 10px 0px" : undefined };
         border-top: ${p => p.shadow ? "none" : undefined};
 
-        visibility: ${p => p.isOpen ? "visible" : "hidden"};
-        transform-origin: 0 0;
-        transform: ${p => p.isOpen ? "scaleY(1)" : `scaleY(0)`};
-        opacity: ${p => p.isOpen ? 1 : 0};
+
 
         li {
-            border-bottom: 1px solid #eee;
+            border: 1px solid #eee;
+            border-top: none;
             background: white;
         }
 
@@ -72,17 +67,28 @@ const StDropDown = styled.div<{ isOpen: boolean, shadow?: boolean }>`
 
 
 const Dropdown: FC<Props> = ({ links, title, shadow }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [height, setHeight] = useState(0);
+    const listNode = useRef<HTMLUListElement>(null);
+    const dropdownNode = useRef<HTMLDivElement>(null);
 
-    return <StDropDown isOpen={isOpen} shadow={shadow} onBlur={() => setTimeout(() => setIsOpen(false), 100)}>
+    useOutsideClickListener(dropdownNode, () => setIsOpen(false));
+
+    useEffect(() => {
+        listNode.current?.offsetHeight !== height && setHeight(listNode.current?.offsetHeight)
+    }, [listNode])
+   
+    return <StDropDown isOpen={isOpen} shadow={shadow} ref={dropdownNode}>
         <Link onClick={() => setIsOpen(!isOpen)} icon={<Caret isOpen={isOpen} />} iconRight>
             {title}
         </Link>
-        <ul>
-            {links.map(link => <li key={link.caption} onClick={e => e.stopPropagation()}>
-                <Link to={link.to} newTab={link.newTab} noHoverLine>{link.caption}</Link>
-            </li>)}
-        </ul>
+        <DropView isOpen={isOpen} $height={height} absolute>
+            <ul ref={listNode}>
+                {links.map(link => <li key={link.caption} onClick={e => e.stopPropagation()}>
+                    <Link to={link.to} newTab={link.newTab} noHoverLine>{link.caption}</Link>
+                </li>)}
+            </ul>
+        </DropView>
     </StDropDown>
 }
     

@@ -21,7 +21,7 @@ const StSection = styled.section`
 
 const ArticleSection: FC<Props> = ({ title, children }) => 
     <StSection>
-        <Text as="h2" variant="primary" size="lg" bold>{title}</Text>
+        <Text as="h2" color="primary" size="lg" bold>{title}</Text>
         {children}
     </StSection>
 

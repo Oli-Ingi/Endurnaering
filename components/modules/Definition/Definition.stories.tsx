@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import React from "react";
+import { mainTheme } from "../../../styles/themes";
 import Definition, { Props } from "./Definition";
 
 export default {
@@ -9,6 +10,17 @@ export default {
         layout: 'centered'
     },
     argTypes: {
+        icon: {
+            control: {
+                type: "select",
+                options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun", "mic", "person", "reward"]
+            }
+        },
+        color: {
+            control: {
+                type: "select", options: Object.keys(mainTheme.colors)
+            }
+        }
     }
 } as Meta;
 
@@ -18,6 +30,11 @@ export const Default = Template.bind({})
 Default.args = {
     icon: "target",
     title: "Lorem ipsum",
-    content: ["Lorem ipsum dolor sit amet", "lorem ipsum 2 dolor stuff"]
+    children: "Lorem ipsum dolor sit amet"
 } as Props
 
+export const Yellow = Template.bind({})
+Yellow.args = {
+    ...Default.args,
+    color: "tertiary"
+} as Props

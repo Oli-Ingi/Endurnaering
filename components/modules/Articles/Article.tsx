@@ -2,6 +2,7 @@ import { FC, MouseEventHandler } from 'react'
 import styled, { css } from 'styled-components'
 import Button from '../../elements/Button/Button'
 import Text from '../../elements/Text/Text'
+import Title from '../../elements/Title/Title'
 
 
 export type Props = {
@@ -32,8 +33,8 @@ const StArticle = styled.article<Pick<Props, "shadow">>`
 
 const Article: FC<Props> = ({ title, content, button, variant, darkBg, shadow, as }) => 
     <StArticle shadow={shadow} as={as}>
-        <Text size="xl" as="h3" variant={darkBg ? "white" : "primary"} thick marginBottom="0.5em">{title}</Text>
-        {content.map((p, i) => <Text key={i} marginBottom={8} {...darkBg && { variant: "white" }}>{p}</Text>)}
+        <Title variant="section" marginBottom="1em">{title}</Title>
+        {content.map((p, i) => <Text key={i} marginBottom={8} {...darkBg && { color: "white" }}>{p}</Text>)}
     </StArticle>
 
 

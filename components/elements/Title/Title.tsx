@@ -4,7 +4,7 @@ import { MarginHandler } from '../../../styles/common';
 
 export type Props = {
     variant?: "huge" | "page" | "article" | "section" | "subsection";
-    $color?: "primary" | "dark";
+    color?: Colors;
 } & Margins
 
 const titleSizeMap = {
@@ -15,12 +15,15 @@ const titleSizeMap = {
     subsection: "m"
 }
 
-const Title = styled.h1.attrs<Props>(p => ({
+type AttrsOut = Omit<Props, "color"> & { $color: NonNullable<Props["color"]> }
+
+const Title = styled.h1.attrs<Props, AttrsOut>(p => ({
     as: p.variant === "section" ? "h2" 
         : p.variant === "subsection" ? "h3" 
         : "h1",
     variant: p.variant || "article",
-    $color: p.$color || "primary"
+    $color: p.color || "primary",
+    color: undefined
 }))<Props>`
     font-family: ${p => p.theme.fontFamily};
     font-size: ${p => p.theme.font.sizes[titleSizeMap[p.variant]]}px;

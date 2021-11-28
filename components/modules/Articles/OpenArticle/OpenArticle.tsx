@@ -26,7 +26,7 @@ const StArticle = styled.article`
 
 const OpenArticle: FC<Props> = ({ title, children, titleID }) => 
     <StArticle>
-        <Text as="h1" variant="primary" size="xl" bold id={titleID}>{title}</Text>
+        <Text as="h1" color="primary" size="xl" bold id={titleID}>{title}</Text>
         {children}
     </StArticle>
 

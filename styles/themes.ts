@@ -4,19 +4,20 @@ export const mainTheme = {
     colors: {
         primary: '#77A03F',
         secondary: '#E9E9DF', // #ECF3E2
-        tertiary: '#F4F1DE',
-        green: '#1b6535',
+        tertiary: '#C79900', // yellow
+        red: '#B85B33',
+        blue: '#387278',
         //green: '#77A03F',
-        lightGreen: '#a8c66c',
-        lightBlue: '#e1dd72',
+        //lightGreen: '#a8c66c',
+        //lightBlue: '#e1dd72',
         
-        gray: '#E9E9DF',
+        //gray: '#E9E9DF',
         dark: '#001A00',
-        blue: '#295F83',
-        yellow: '#e1dd72',
+        //blue: '#295F83',
+        //yellow: '#e1dd72',
         //yellow: '#C7AB01',
-        red: '#AB4405',
-        brown: '#594B32',
+        //red: '#AB4405',
+        //brown: '#594B32',
         white: '#FFF',
     },
     font: {
@@ -42,6 +43,9 @@ export const mainTheme = {
     fontFamily: "'Roboto', sans-serif"
 }
 
+declare global {
+    type Colors = keyof typeof mainTheme["colors"]
+}
 // FB8B24
 
 // #DDF8E8 slime green

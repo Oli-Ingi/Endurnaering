@@ -3,25 +3,35 @@ import Grid from "../../elements/Grid/Grid"
 import Definition from "../../modules/Definition/Definition"
 import Section from "../../modules/Section/Section"
 import { Props as IconProps } from "../../elements/Icon/Icon"
-import Card from "../../elements/Card/Card"
 
 
 export type Props = {
     title: string;
     variant?: "secondary" | "white";
+    bigCards?: boolean;
     definitions: {
         title: string;
         icon: IconProps["type"]
         content: string;
-        to?: string;
-    }[]
+        color?: Colors; // takes precedence for color.
+    }[];
+    color?: Colors; // if same color is applied to all.
+    justIconColor?: boolean;
 }
 
-const DefinitionSection: FC<Props> = ({ title, variant, definitions }) => 
+const DefinitionSection: FC<Props> = ({ title, variant, definitions, bigCards, justIconColor, color }) => 
     <Section title={title} variant={variant}>
-        <Grid min="230px" max="310px" gap={60}>
-            {definitions[0].to ? definitions.map(d => <Card variant="white" border shadow="hover" href={d.to}><Definition iconRight key={d.title} title={d.title} icon={d.icon}>{d.content}</Definition></Card>)
-                : definitions.map(d => <Definition key={d.title} title={d.title} icon={d.icon}>{d.content}</Definition>)}
+        <Grid min="200px" max={bigCards ? "500px" : "300px"} gap={40}>
+            {definitions.map(d => 
+                <Definition 
+                    key={d.title} 
+                    title={d.title} 
+                    icon={d.icon} 
+                    color={d.color || color}
+                    justIconColor={justIconColor}
+                >
+                    {d.content}
+                </Definition>)}
         </Grid>
     </Section>
 

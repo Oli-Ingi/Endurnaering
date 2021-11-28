@@ -8,6 +8,8 @@ export type Props = {
     icon?: IconProps["type"];
     title: string;
     iconRight?: boolean;
+    color?: Colors;
+    justIconColor?: boolean;
 }
 
 const StDefinition = styled.div<Pick<Props, "iconRight">>`
@@ -15,12 +17,11 @@ const StDefinition = styled.div<Pick<Props, "iconRight">>`
     flex-direction: ${p => p.iconRight && "row-reverse"};
 
     > div {
-        flex: 3;
+        flex: 1;
     }
 
     > svg { 
         margin: ${p => p.iconRight ? "0 0 0 12px" : "0 12px 0 0 "}; 
-        flex: 1; 
     }
 
     h3 { margin: 12px 0 7px 0; }
@@ -31,12 +32,12 @@ const StDefinition = styled.div<Pick<Props, "iconRight">>`
 
 `
 
-const Definition: FC<Props> = ({ icon, title, children, iconRight }) => 
+const Definition: FC<Props> = ({ icon, title, children, iconRight, color, justIconColor }) => 
     <StDefinition iconRight={iconRight}>
-        <Icon type={icon} />
+        <Icon type={icon} color={color || "primary"} />
         <div>
-            <Title variant="subsection">{title}</Title>
-            <Text size="sm">{children}</Text>
+            <Title variant="subsection" color={!justIconColor ? color : undefined}>{title}</Title>
+            <Text size="sm" color="dark">{children}</Text>
         </div>
     </StDefinition>
 

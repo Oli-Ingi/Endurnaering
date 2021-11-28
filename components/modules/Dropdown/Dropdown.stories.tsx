@@ -13,7 +13,9 @@ export default {
     }
   } as Meta;
 
-const Template: Story<Props> = props => <Dropdown {...props} />
+const Template: Story<Props> = props => <div style={{ padding: "5rem", border: "1px solid black" }}>
+    <Dropdown {...props} />
+</div>
 
 
 export const Default = Template.bind({})

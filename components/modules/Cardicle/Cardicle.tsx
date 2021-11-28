@@ -18,7 +18,7 @@ const Cardicle: FC<Props> = ({ title, content, subtitle }) =>
                 <Title variant="subsection" marginBottom={20}>{title}</Title>
                 {content.map(c => <Text size="sm">{c}</Text>)}
             </div>
-            {subtitle && <Text size="sm" bold marginTop={15} faded>{subtitle}</Text>}
+            {subtitle && <Text size="sm" bold marginTop={15} color="tertiary">{subtitle}</Text>}
         </Flex>
     </Card>
 

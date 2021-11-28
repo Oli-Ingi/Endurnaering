@@ -1,8 +1,7 @@
 import { FC, useRef, useState, useEffect, useLayoutEffect } from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import Arrow from '../../elements/Arrow/Arrow'
 import { v4 as uuid } from 'uuid'
-import Card from '../../modules/Card/Card'
 import Arrows from '../../modules/Arrows/Arrows'
 import Cardicle from '../../modules/Cardicle/Cardicle'
 

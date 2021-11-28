@@ -5,12 +5,11 @@ import Img from "../../elements/Img/Img"
 import Text from '../../elements/Text/Text'
 import Accordion from "../../entities/Accordion/Accordion"
 import Concept from "../../entities/Concept/Concept"
-import GridGroup from "../../entities/GridGroup/GridGroup"
 import Hero from "../../entities/Hero/Hero"
 import Slider from "../../entities/Slider/Slider"
 import Section from "../../modules/Section/Section"
 
-
+/* not used, i think */
 export type Props = {
     hero: { 
         intro: { title: string; content: string[]; }
@@ -57,7 +56,6 @@ const Home: FC<Props> = ({ hero, concepts, references, faq, services }) =>
     <StHome>
         {/* <Hero {...hero} /> */}
         <Section title={services.title} variant="secondary">
-            <GridGroup items={services.items} border shadow="hover" />
         </Section>
         <Section variant="white">
             {concepts.map((c, i) => 

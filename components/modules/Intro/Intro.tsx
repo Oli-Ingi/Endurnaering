@@ -83,7 +83,7 @@ const Intro: FC<Props> = ({ title, subtitle, variant, content, animate, onButton
                 <Text 
                     key={uuid()} 
                     marginBottom={8} 
-                    {...variant === "primary" && { variant: "white" }} 
+                    {...variant === "primary" && { color: "white" }} 
                     center={style.round}
                     size="lg"
                 >
@@ -94,7 +94,7 @@ const Intro: FC<Props> = ({ title, subtitle, variant, content, animate, onButton
             onClick={onButtonClick} 
             variant="primary"
             bold
-            icon={buttonIcon && <Icon type={buttonIcon} />}
+            icon={buttonIcon && <Icon type={buttonIcon} color="primary" />}
         >
             {buttonCaption}
         </Link>}

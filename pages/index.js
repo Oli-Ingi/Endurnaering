@@ -30,8 +30,8 @@ const HomePage = () =>
     <Column>
       <Hero />
       <Services />
-      <Concepts />
       <WhyUs />
+      <Concepts />
       <Benefits />
       <Reviews />
       <Faq />

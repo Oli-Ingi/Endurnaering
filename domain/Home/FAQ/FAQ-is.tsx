@@ -3,9 +3,35 @@ import Section from '../../../components/modules/Section/Section'
 
 
 const questions = [
-    { title: "Fyrir hverja hentar þjónusta Endurnæringar?", content: ["Fatlafól", "Í spítthjólastól"]},
-    { title: "Hvernig bóka ég tíma hjá næringarfræðingi?", content: ["Það fer eftir því hver næringarfræðingurinn er, en ef það er Heiðdís, þá seturðu X á rúðuna þína áður en þú ferð að sofa á miðvikudagskvöldi. Heiðdís hefur svo samband við þig daginn eftir."]},
-    { title: "Hvað græði ég á því að tala við næringarfræðing?", content: ["Þú græðir ekkert á því þar sem það kostar pening að tala við næringarfræðing, en þú gætir fengið góða heilsu út úr því ef þú fylgir leiðbeiningum."]},
+    { 
+        title: "Fyrir hverja hentar þjónusta Endurnæringar?", 
+        content: ["Þjónustan hentar öllum sem eru reiðubúnir að takast á við breytingar á sínum lífsstíl. Hún er einkum miðuð að þeim sem vilja bæta meltingu, efla jákvæða líkamsímynd, auka orku, úthald og vellíðan. Jafnframt hentar þjónustan þeim sem vilja minnka streitu og efla líkamlega heilsu."]
+    },
+    { 
+        title: "Hvernig fer bókunarferli viðtals fram?", 
+        content: ['Eftir að smellt er á "Bóka viðtal" hlekk á síðunni, er farið yfir á vefsíðu Köru Connect. Þar þarf að fylla út umbeðnar upplýsingar og næringarfræðingur hefur svo samband símleiðis í kjölfarið.']
+    },
+    {
+        title: "Af hverju að leita til næringarfræðings frekar en í önnur úrræði?",
+        content: ["Næringarfræðingar Endurnæringar hafa lokið meistaraprófi í næringarfræði og eru með starfsleyfi frá embætti landlæknis. Þeir hafa því þekkinguna sem þarf til að geta boðið upp á persónumiðaðar lausnir frekar en staðlaðar, sem eru sérsniðnar að þínum markmiðum og venjum. Slík persónumiðuð nálgun eykur líkur á langtíma ávinningi."]
+    },
+    {
+        title: "Er einhver munur á fjarviðtölum eða staðviðtölum?",
+        content: ["Efnislega er enginn munur á þessum þjónustuleiðum, markmiðin eru þau sömu. Fjarviðtöl eru hugsuð fyrir þá sem hafa ekki tök á því að sækja þjónustuna á staðnum, eiga erfitt með það eða líður einfaldlega betur að fá þjónustuna heim til sín. Fjarviðtöl fara fram í gegnum kerfi Köru Connect sem býður upp á örugg samskipti yfir netið."]
+    },
+    {
+        title: "Er þjónusta Endurnæringar niðurgreidd?",
+        content: ["Hægt er að nálgast kvittun hjá okkur sem hægt er að framvísa til stéttarfélaga. Við hvetjum skjólstæðinga okkar til að leita til síns stéttarfélags fyrir nánari upplýsingar."]
+    },
+    {
+        title: "Hvaða greiðsluleiðir eru í boði?",
+        content: ["Greiðsla er innt af hendi eftir hvert viðtal í gegnum innheimtuþjónustu Íslandsbanka eða með millifærslu. Skjólstæðingur fær kvittun fyrir greiðslunni senda í tölvupósti eftir að greiðsla hefur verið framkvæmd."]
+    },
+    {
+        title: "Eru einhverjar kringumstæður þar sem maður ætti ekki að leita til ykkar?",
+        content: ["Einstaklingar sem hafa lagst inn á spítala á síðastliðnum 3. mánuðum eða liggja inni á heilbrigðisstofnun, t.d. á hjúkrunarheimilum, geta ekki nýtt þjónustu Endurnæringar."]
+    },
+    
 ]
 
 const FaqIs = () =>

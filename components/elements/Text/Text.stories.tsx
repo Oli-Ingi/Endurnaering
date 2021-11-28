@@ -1,5 +1,6 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import React from "react";
+import { mainTheme } from "../../../styles/themes";
 import Text, { Props } from "./Text";
 
 export default {
@@ -13,10 +14,10 @@ export default {
       bold: { type: 'boolean' },
       italic: { type: 'boolean' },
       caps: { type: 'boolean' },
-      variant: { 
+      color: { 
         control: { 
-            type: 'radio',
-            options: ["primary", "secondary", "white"]
+            type: 'select',
+            options:  Object.keys(mainTheme.colors)
           }
       },
       size: { 
@@ -44,7 +45,7 @@ Default.args = {
 export const Primary = Template.bind({})
 Primary.args = {
     ...Default.args,
-    variant: "primary"
+    color: "primary"
 } as Props
 
 export const Thick = Template.bind({})

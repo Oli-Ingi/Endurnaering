@@ -21,7 +21,7 @@ const StArticlesPage = styled.main`
 const ArticlesPage: React.FC<Props> = ({ pageTitle, children }) => 
     <StArticlesPage>
         {pageTitle && <header>
-                <Text as="h1" variant="primary" size="xxl" bold>{pageTitle}</Text>
+                <Text as="h1" color="primary" size="xxl" bold>{pageTitle}</Text>
         </header>}
         {children}
     </StArticlesPage>

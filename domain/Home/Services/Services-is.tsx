@@ -1,28 +1,31 @@
-import DefinitionSection from "../../../components/entities/DefinitionSection/DefinitionSection";
+import CardLinkSection from "../../../components/entities/CardLinkSection/CardLinkSection";
 
 
 const Services = () => 
-    <DefinitionSection 
+    <CardLinkSection 
         title="Þjónustuleiðir"
         variant="secondary"
-        definitions={[
+        links={[
             { 
                 title: "Einstaklingsviðtal", 
-                content: "Fáðu einkatíma hjá næringafræðingi þar sem við förum yfir þín mál. Bæði hægt að fá staðviðtal og fjarviðtal.", 
-                to: "/vidtol" ,
-                icon: "person"
+                description: "Sérsniðin næringarráðgjöf", 
+                href: "/vidtol" ,
+                icon: "person",
+                hoverColor: "tertiary"
             },
             { 
                 title: "Námskeið", 
-                content: "Komdu með öðrum á námskeið til að finna fyrir meðbyr og hafa það nice með öðrum",
-                to: "/vidtol",
-                icon: "reward"
+                description: "Endurnærandi lausnir.",
+                href: "/vidtol",
+                icon: "reward",
+                hoverColor: "red"
             },
             { 
                 title: "Fyrirlestrar", 
-                content: "Bókaðu fyrirlestur, hallaðu þér aftur í sætinu og hlustaðu á Heiðdísi tala um næringu.", 
-                to: "/vidtol",
-                icon: "mic"
+                description: "Fræðsla og innblástur", 
+                href: "/vidtol",
+                icon: "mic",
+                hoverColor: "blue"
             },
         ]}
     />

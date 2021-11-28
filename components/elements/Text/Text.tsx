@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components"
-import { FadeHandler, MarginHandler, VariantHandler } from "../../../styles/common"
+import { FadeHandler, MarginHandler } from "../../../styles/common"
 
 
 export type Props = {
     size?: "xs" | "sm" | "med" | "lg" | "xl" | "xxl";
     lg?: boolean;
     sm?: boolean;
-    variant?: Variants;
+    color?: Colors;
     italic?: boolean;
     caps?: boolean;
     as?: Typography;
@@ -23,7 +23,7 @@ export type Props = {
 
 
 const Text = styled.p<Props>`
-    ${p => p.variant && css`color: ${VariantHandler};`} /* black default */
+    color: ${p => p.color ? p.theme.colors[p.color] : "inherit"};
     font-family: ${p => p.theme.fontFamily};
     font-size: ${p => !p.size || p.size === "med" 
         ? 1.2

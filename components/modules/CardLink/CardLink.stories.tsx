@@ -1,28 +1,27 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import React from "react";
-import Card, { Props } from "./Card";
+import { mainTheme } from "../../../styles/themes";
+import Card, { Props } from "./CardLink";
 
 export default {
-    title: 'Modules/Card',
+    title: 'Modules/CardLink',
     component: Card,
     parameters: {
         layout: 'centered'
     },
     argTypes: {
-        variant: { 
-            control: { 
-                type: 'radio',
-                options: ["primary", "secondary", "white"]
-              }
-        },
-        title: { type: "string" },
-        border: { type: "boolean" },
-        shadow: { 
+        icon: {
             control: {
-                type: "radio",
-                options: ["always", "hover"]
+                type: "select",
+                options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun", "mic", "person", "reward"]
             }
-        }
+        },
+        hoverColor: { 
+            control: { 
+                type: 'select',
+                options:  Object.keys(mainTheme.colors)
+              }
+          },
     }
   } as Meta;
 
@@ -32,7 +31,9 @@ const Template: Story<Props> = props => <Card {...props} />
 export const Default = Template.bind({})
 Default.args = {
     title: "Hér er titill",
-    content: ["Hér er texti"]
+    description: "Hér er texti",
+    icon: "chart",
+    hoverColor: "red"
 } as Props
 
 export const Secondary = Template.bind({})
@@ -63,8 +64,8 @@ AsLink.args = {
 export const Realistic = Template.bind({})
 Realistic.args = {
     title: "Einstaklingsviðtöl",
-    content: ["Unnið er með einstaklinga í viðtölum. Bæði er hægt að velja um staðviðtal og fjarviðtal í gegnum síma eða tölvu."],
-    border: true
+    description: "Unnið er með einstaklinga í viðtölum. Bæði er hægt að velja um staðviðtal og fjarviðtal í gegnum síma eða tölvu.",
+    icon: "person"
 } as Props
 
 const GridTemplate: Story<Props> = props => 

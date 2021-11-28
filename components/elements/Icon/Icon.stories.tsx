@@ -1,6 +1,8 @@
 import { Story, Meta } from "@storybook/react/types-6-0";
 import React from "react";
 import Icon, { Props } from "./Icon";
+import { mainTheme } from "../../../styles/themes";
+import { useTheme } from "styled-components";
 
 export default {
     title: 'Elements/Icon',
@@ -12,11 +14,17 @@ export default {
       type: { 
           control: { 
               type: 'select',
-              options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun"]
+              options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun", "mic", "person", "reward"]
             }
         },
+        color: {
+            control: {
+                type: "select",
+                options: Object.keys(mainTheme.colors)
+            }
+        }
     },
-  } as Meta;
+} as Meta;
 
 
 const DefaultStory: Story<Props> = args => <Icon {...args} />
@@ -26,8 +34,10 @@ Default.args = {
     type: "play"
 } as Props
 
-const AllStory: Story<Props> = () => 
-    <div style={{ display: "flex", gap: 30, flexWrap: "wrap" }}>
+const AllStory: Story<Props> = args => {
+    const theme = useTheme();
+
+    return <div style={{ display: "flex", gap: 30, flexWrap: "wrap", color: theme.colors[args.color] }}>
         <Icon type="play" />
         <Icon type="target" />
         <Icon type="chat" />
@@ -43,6 +53,8 @@ const AllStory: Story<Props> = () =>
         <Icon type="mic" />
         <Icon type="facebook" />
     </div>
+}
+    
 
 export const All = AllStory.bind({})
 

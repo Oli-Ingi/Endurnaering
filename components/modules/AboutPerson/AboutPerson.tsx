@@ -1,7 +1,6 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Img from '../../elements/Img/Img'
-import Card from '../Card/Card'
 
 export type Props = {
     title: string;

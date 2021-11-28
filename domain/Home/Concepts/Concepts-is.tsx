@@ -15,6 +15,18 @@ const concepts = [
         }
     },
     { 
+        img: "/coffee-girl-350.png", 
+        article: { 
+            title: "Jákvæð heilsa", 
+            content: ["Jákvæð heilsa er heildræn nálgun á heilsu sem stuðlar að getu okkar til að takast á við líkamlegar, tilfinningalegar og félagslegar áskoranir í lífinu. Áherslan er því ekki lögð á veikindi og sjúkdóma, heldur á seiglu og hvað gefur lífi okkar tilgang."],
+            button: {
+                caption: "Lesa meira",
+                to: "https://worldofwarcraft.com",
+                newTab: true
+            } 
+        }
+    },
+    { 
         img: "/green-girl-350.png", 
         article: { 
             title: "Áhugahvetjandi samtal", 
@@ -26,25 +38,10 @@ const concepts = [
             } 
         }
     },
-
-    { 
-        img: "/coffee-girl-350.png", 
-        article: { 
-            title: "Jákvæð heilsa", 
-            content: ["Jákvæð heilsa er heildræn nálgun á heilsu sem stuðlar að getu okkar til að takast á við líkamlegar, tilfinningalegar og félagslegar áskoranir í lífinu. Áherslan er því ekki lögð á veikindi og sjúkdóma, heldur á seiglu og hvað gefur lífi okkar tilgang."],
-            button: {
-                caption: "Lesa meira",
-                to: "https://worldofwarcraft.com",
-                newTab: true
-            } 
-        }
-    }
 ]
 
 const HeroIs = () =>
-    <Section>
-        <Concepts concepts={concepts} />
-    </Section>
+    <Concepts concepts={concepts} title="Þjónustan byggir á gagnreyndum og þekktum aðferðum" />
 
 
 

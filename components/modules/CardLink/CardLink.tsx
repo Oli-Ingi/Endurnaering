@@ -1,66 +1,24 @@
-import { FC, ReactNode } from 'react'
+import { FC } from 'react'
 import styled, { css } from 'styled-components'
+import Text from '../../elements/Text/Text'
+import { v4 as uuid } from 'uuid'
+import Card, { Props as CardProps } from '../../elements/Card/Card'
+import Icon, { Props as IconProps } from '../../elements/Icon/Icon'
+import Title from '../../elements/Title/Title'
 
 export type Props = {
-    variant?: Variants;
-    shadow?: "always" | "hover";
-    href?: string;
-    children: ReactNode;
-    row?: boolean;
-} & (
-    | { border: boolean; borderHoverColor?: Colors; }
-    | { border?: never; borderHoverColor?: never; }
-)
+    title: string;
+    href: string;
+    icon: IconProps["type"];
+    description: string;
+    hoverColor?: Colors;
+}
 
-const Card = styled.div.attrs<Props>(p => ({
-    as: p.href ? "a" : "div",
-}))<Props>`
-    display: flex;
-    flex-direction: ${p => p.row ? "row" : "column"};
-    padding: 20px;
-    justify-content: ${p => !p.row && "stretch"};
-    align-items: ${p => p.row && "center"};
-    background-color: ${p => p.variant && p.theme.colors[p.variant]};
-    box-shadow: ${p => p.shadow === "always" ? p.theme.shadow : undefined}; 
-    ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.variant === "primary" ? "white" : "primary"]};`}
-    position: relative;
-    text-decoration: none;
-    color: black;
-    transition-duration: .2s;
-
-    :hover {
-        border-color: ${p => p.borderHoverColor && p.theme.colors[p.borderHoverColor]};
-
-        ::before {
-            opacity: 1;
-        }
-    }
-
-    ${p => p.shadow === "hover" && css`
-        cursor: pointer;
-
-        ::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            opacity: 0;
-            box-shadow: ${p => p.theme.deepShadow};
-            transition-duration: 0.3s;
-        }
-    `}
-`
-
-export default Card
-
-// const StCard = css<Pick<Props, "variant" | "border" | "shadow">>`
-//     display: flex;
-//     flex-direction: column;
+// const CardStyle = css<Pick<Props, "variant" | "border" | "shadow">>`
+//     display: block;
 //     box-sizing: border-box;
 //     padding: 1.5em;
-//     background-color: ${p => p.variant && p.theme.colors[p.variant]};
+//     background-color: ${p => p.variant ? p.theme.colors[p.variant] : undefined};
 //     box-shadow: ${p => p.shadow === "always" ? p.theme.shadow : undefined}; 
 //     ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.variant === "primary" ? "white" : "primary"]};`}
 //     position: relative;
@@ -88,7 +46,36 @@ export default Card
 //         }
 //     `}
 // `
-// // Typescript doesn't like "as".
+
+const StCardLink = styled(Card)<CardProps>`
+    color: ${p => p.theme.colors[p.color || "primary"]};
+    
+    h3 { 
+        transition-duration: .3s; 
+    }
+
+    ${p => p.borderHoverColor && css`
+        :hover {
+            color: ${p.theme.colors[p.borderHoverColor]};
+
+            h3 { 
+                color: ${p.theme.colors[p.borderHoverColor]}; 
+            }
+        }
+    `}
+`
+
+const CardLink: FC<Props> = ({ icon, title, description, href, hoverColor }) => 
+    <StCardLink row href={href} border variant="white" shadow="hover" borderHoverColor={hoverColor}>
+        <Icon type={icon} marginRight={12} />
+        <div>
+            <Title variant="subsection" color="primary">{title}</Title>
+            <Text color="dark" size="sm">{description}</Text>
+        </div>
+    </StCardLink>
+
+export default CardLink
+// Typescript doesn't like "as".
 // const StCard = styled.div<Pick<Props, "border" | "shadow" | "variant">>`${CardStyle}`
 // const StLink = styled.a<Pick<Props, "variant" | "border" | "shadow" | "href">>`${CardStyle}`
 
@@ -110,4 +97,4 @@ export default Card
     
 
 
-// export default Card
+//export default Card

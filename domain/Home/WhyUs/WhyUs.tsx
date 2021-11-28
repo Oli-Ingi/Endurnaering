@@ -4,24 +4,32 @@ import DefinitionSection from "../../../components/entities/DefinitionSection/De
 
 const WhyUs = () => 
     <DefinitionSection 
-        title="Af hverju Endurnæring?"
-        variant="secondary"
+        title="Við leggjum áherslu á gæðaþjónustu"
+        bigCards
         definitions={[
             { 
+                title: "Viðurkenndir sérfræðingar", 
+                icon: "reward", 
+                content: "Veitum löggilta heilbrigðisþjónustu með starfsleyfi frá Embætti landlæknis.", 
+                color: "tertiary"
+            },
+            { 
                 title: "Persónumiðuð þjónusta", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
-                icon: "target"
+                icon: "target", 
+                content: "Mætum þér þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                color: "red"
             },
             { 
                 title: "Faglegur stuðningur", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.",
-                icon: "chat"
+                icon: "chat", 
+                content: "Leiðbeinum þér á þinni vegferð og erum ávallt innan handar þér til halds og trausts.", 
             },
             { 
                 title: "Langvarandi árangur", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
-                icon: "chart"
-            },
+                icon: "chart", 
+                content: "Brjótum vegferð þína upp í lítil og raunhæf skref til að byggja upp traustan grunn sem endist.", 
+                color: "blue"
+            }
         ]}
     />
 

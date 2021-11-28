@@ -4,6 +4,7 @@ import Text from '../../elements/Text/Text'
 import { v4 as uuid } from 'uuid'
 import Toggler from '../../elements/Toggler/Toggler'
 import { useResizeObserver } from '../../../hooks/useResize'
+import DropView from '../../elements/DropView/DropView'
 
 export type Props = {
     onClick: MouseEventHandler;
@@ -14,7 +15,6 @@ export type Props = {
 
 const StAccordionItem = styled.li`
     border-bottom: 1px solid #eee;
-
 `
 
 const StHeader = styled.button<{ isOpen: boolean}>`
@@ -33,12 +33,6 @@ const StHeader = styled.button<{ isOpen: boolean}>`
     :hover p { color: ${p => p.theme.colors.primary}; }
 `
 
-const StView = styled.div<{ isOpen: boolean; $height: number; }>`
-    height: ${p => p.isOpen ? p.$height : 0}px;
-    overflow: hidden;
-    transition: height 0.3s cubic-bezier(0.9,.05,.2,1);
-    margin-left: 40px;
-`
 
 
 const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
@@ -53,11 +47,11 @@ const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
             <Toggler isOpen={isOpen} />
             <Text bold>{item.title}</Text>
         </StHeader>
-        <StView isOpen={isOpen} $height={height}>
+        <DropView isOpen={isOpen} $height={height}>
             <div ref={contentNode} style={{ paddingBottom: '1em' }}>
                 {item.content.map(p => <Text key={uuid()}>{p}</Text>)}
             </div>
-        </StView>
+        </DropView>
     </StAccordionItem>
 }
     

@@ -294,4 +294,19 @@ Entities
     linka social media
     einstaklingsviðtal link á kara, hitt á nýja WIP síðu
     burger menu
+    taka út mail og síma við media Q
+    facebook bilað
     
+
+    todo:
+    hover color á social media
+    linkar á social media vantar
+    Textar í ávinning af þjónustunni
+    Burger menu
+    taka út í divider í footer síðustu tvö , setja í tvo dálka sennilega hitt.
+    Laga síðu fyrir einstaklingsviðtöl
+    Setja upp síðu fyrir námskeið - coming soon
+    Setja upp síðu fyrir fyrirlestra - coming soon
+    Um okkur síða, subsection með Heiðdísi
+    Concepts eru enn biluð í responsive
+    Plúsar í algengar spurningar beyglast inn í responsive með nýju spurningunum
