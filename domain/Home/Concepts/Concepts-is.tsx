@@ -1,3 +1,4 @@
+import Title from "../../../components/elements/Title/Title";
 import Concepts from "../../../components/entities/Concepts/Concepts";
 import Section from '../../../components/modules/Section/Section'
 
@@ -41,7 +42,10 @@ const concepts = [
 ]
 
 const HeroIs = () =>
-    <Concepts concepts={concepts} title="Þjónustan byggir á gagnreyndum og þekktum aðferðum" />
+    <Concepts 
+        title={<Title light variant="huge" marginBottom={70} center>Byggjum á <b>gagnreyndum</b> og <b>viðurkenndum</b> aðferðum</Title>}
+        concepts={concepts} 
+    />
 
 
 

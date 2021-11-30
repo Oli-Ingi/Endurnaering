@@ -6,7 +6,7 @@ import Concept from '../Concept/Concept'
 
 
 export type Props = {
-    title: string;
+    title: string | JSX.Element;
     concepts: Array<{
         img: string;
         article: {

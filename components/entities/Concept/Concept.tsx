@@ -31,6 +31,7 @@ const StConcept = styled.article<Pick<Props, "variant" | "imgPos" | "shadow"> & 
     justify-content: center;
     ${p => p.shadow && css`box-shadow: ${p.theme.shadow};`}
     ${p => p.variant && css`background-color: ${p.theme.colors[p.variant]};`}
+    background-color: ${p => p.variant && p.theme.colors[p.variant]};
     position: relative;
     flex-direction: ${p => p.imgPos === "bottomRight" || p.imgPos === "topRight" 
         ? "row-reverse" 

@@ -5,6 +5,8 @@ import { MarginHandler } from '../../../styles/common';
 export type Props = {
     variant?: "huge" | "page" | "article" | "section" | "subsection";
     color?: Colors;
+    light?: boolean;
+    center?: boolean;
 } & Margins
 
 const titleSizeMap = {
@@ -28,7 +30,8 @@ const Title = styled.h1.attrs<Props, AttrsOut>(p => ({
     font-family: ${p => p.theme.fontFamily};
     font-size: ${p => p.theme.font.sizes[titleSizeMap[p.variant]]}px;
     color: ${p => p.theme.colors[p.$color]};
-    font-weight: bold;
+    font-weight: ${p => p.light ? 300 : "bold"};
+    text-align: ${p => p.center && "center"};
     ${MarginHandler}
 `
 

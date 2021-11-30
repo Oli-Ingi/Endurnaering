@@ -13,7 +13,7 @@ export type Props = {
         description: string;
         hoverColor?: Colors;
     }[]
-    title: string;
+    title: string | JSX.Element;
     variant?: "primary" | "secondary";
 }
 

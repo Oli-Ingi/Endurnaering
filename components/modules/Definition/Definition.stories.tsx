@@ -20,7 +20,10 @@ export default {
             control: {
                 type: "select", options: Object.keys(mainTheme.colors)
             }
-        }
+        },
+        border: { type: "boolean" },
+        iconRight: { type: "boolean" },
+        justIconColor: { type: "boolean" }
     }
 } as Meta;
 
@@ -37,4 +40,11 @@ export const Yellow = Template.bind({})
 Yellow.args = {
     ...Default.args,
     color: "tertiary"
+} as Props
+
+export const Bordered = Template.bind({})
+Bordered.args = {
+    ...Default.args,
+    color: "blue",
+    border: true
 } as Props

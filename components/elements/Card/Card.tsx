@@ -17,7 +17,7 @@ const Card = styled.div.attrs<Props>(p => ({
 }))<Props>`
     display: flex;
     flex-direction: ${p => p.row ? "row" : "column"};
-    padding: 20px;
+    padding: 30px 20px;
     justify-content: ${p => !p.row && "stretch"};
     align-items: ${p => p.row && "center"};
     background-color: ${p => p.variant && p.theme.colors[p.variant]};

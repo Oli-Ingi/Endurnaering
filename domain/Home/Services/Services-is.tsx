@@ -1,13 +1,14 @@
+import Title from "../../../components/elements/Title/Title";
 import CardLinkSection from "../../../components/entities/CardLinkSection/CardLinkSection";
 
 
 const Services = () => 
     <CardLinkSection 
-        title="Þjónustuleiðir"
+        title={<Title light variant="section"><b>Þjónustuleiðir</b> okkar</Title>}
         variant="secondary"
         links={[
             { 
-                title: "Einstaklingsviðtal", 
+                title: "Einstaklingsviðtöl", 
                 description: "Sérsniðin næringarráðgjöf", 
                 href: "/vidtol" ,
                 icon: "person",

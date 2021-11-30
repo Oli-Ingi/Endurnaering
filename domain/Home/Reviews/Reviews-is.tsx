@@ -1,3 +1,4 @@
+import Title from "../../../components/elements/Title/Title";
 import Slider from "../../../components/entities/Slider/Slider";
 import Entitled from "../../../components/modules/Entitled/Entitled";
 import Section from "../../../components/modules/Section/Section";
@@ -32,7 +33,10 @@ const reviews = [
 ]
 
 const ReviewsIs = () =>
-    <Section title="Ummæli" variant="secondary">
+    <Section 
+        title={<Title light variant="section"><b>Ummæli</b> skjólstæðinga</Title>} 
+        variant="secondary"
+    >
         <Slider items={reviews} autoSlide autoSlideInterval={10} variant="white" />
     </Section>
 

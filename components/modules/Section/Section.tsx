@@ -6,7 +6,7 @@ import Title from '../../elements/Title/Title'
 
 
 export type Props = {
-    title?: string;
+    title?: string | JSX.Element;
     variant?: Variants;
 }
 
@@ -29,7 +29,7 @@ const StInner = styled.div`
 const Section: FC<Props> = ({ title, variant = "white", children }) => 
     <Container as="section" variant={variant}>
         <StInner>
-            {title && <Title variant="section">{title}</Title>}
+            {typeof title === "string" ? <Title variant="section">{title}</Title> : title}
             {children}
         </StInner>
     </Container>

@@ -6,29 +6,41 @@ import { Props as IconProps } from "../../elements/Icon/Icon"
 
 
 export type Props = {
-    title: string;
+    title: string | JSX.Element;
     variant?: "secondary" | "white";
     bigCards?: boolean;
     definitions: {
         title: string;
+        subtitle?: string;
         icon: IconProps["type"]
         content: string;
         color?: Colors; // takes precedence for color.
     }[];
     color?: Colors; // if same color is applied to all.
     justIconColor?: boolean;
+    borders?: boolean;
+    cols?: "2" | "3" | "4";
+    gap?: "sm" | "normal";
 }
 
-const DefinitionSection: FC<Props> = ({ title, variant, definitions, bigCards, justIconColor, color }) => 
+const sizeMap = {
+    "2": "500px",
+    "3": "300px",
+    "4": "265px"
+}
+
+const DefinitionSection: FC<Props> = ({ title, variant, definitions, gap, justIconColor, color, cols, borders }) => 
     <Section title={title} variant={variant}>
-        <Grid min="200px" max={bigCards ? "500px" : "300px"} gap={40}>
+        <Grid min="220px" max={sizeMap[cols || "3"]} gap={gap === "sm" ? "30px" : "60px"}>
             {definitions.map(d => 
                 <Definition 
                     key={d.title} 
                     title={d.title} 
+                    subtitle={d.subtitle}
                     icon={d.icon} 
                     color={d.color || color}
                     justIconColor={justIconColor}
+                    border={borders}
                 >
                     {d.content}
                 </Definition>)}

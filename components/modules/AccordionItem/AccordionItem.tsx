@@ -44,7 +44,7 @@ const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
 
     return <StAccordionItem>
         <StHeader onClick={onClick} isOpen={isOpen}>
-            <Toggler isOpen={isOpen} />
+            <div><Toggler isOpen={isOpen} /></div>
             <Text bold>{item.title}</Text>
         </StHeader>
         <DropView isOpen={isOpen} $height={height}>

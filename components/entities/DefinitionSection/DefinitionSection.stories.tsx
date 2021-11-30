@@ -18,6 +18,7 @@ const Template: Story<Props> = props => <DefinitionSection {...props} />
 export const Default = Template.bind({})
 Default.args = {
     title: "Lorem ipsum",
+    cols: "3",
     definitions: [
         { title: "Lorem ipsum1", icon: "like", content: "Lorem ipsum dolor sit amet" },
         { title: "Lorem ipsum2", icon: "person", content: "Lorem ipsum dolor sit amet" },
@@ -28,6 +29,7 @@ Default.args = {
 export const Colorful = Template.bind({})
 Colorful.args = {
     ...Default.args,
+    cols: "4",
     definitions: [
         { title: "Lorem ipsum1", icon: "like", content: "Lorem ipsum dolor sit amet", color: "tertiary"  },
         { title: "Lorem ipsum2", icon: "person", content: "Lorem ipsum dolor sit amet", color: "red" },
