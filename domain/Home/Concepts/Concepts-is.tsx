@@ -7,7 +7,7 @@ const concepts = [
         img: "/burger-guy-350.png", 
         article: { 
             title: "Heilbrigt samband við mat", 
-            content: ["Matur er meira en bara næring og orka til að mæta ákveðinni líkamlegri þörf. Matur á einnig að láta okkur líða vel, bæði andlega og líkamlega. Heilbrigt samband við mat byggir á þessari grunnhugsun og leggur áherslu á þrjá þætt: venjur, innsæi og næringu."],
+            content: ["Matur er meira en bara næring og orka til að mæta ákveðinni líkamlegri þörf. Matur á einnig að láta okkur líða vel, bæði andlega og líkamlega. Heilbrigt samband við mat byggir á þessari grunnhugsun og leggur áherslu á þrjá þætti: venjur, innsæi og næringu."],
             button: {
                 caption: "Lesa meira",
                 to: "https://worldofwarcraft.com",
@@ -31,7 +31,7 @@ const concepts = [
         img: "/green-girl-350.png", 
         article: { 
             title: "Áhugahvetjandi samtal", 
-            content: ["Endurnæring notast við aðferðafræði  áhugahvetjandi samtals sem hefur reynst afar skilvirk leið til að hjálpa fólki að takast á við erfiðar og flóknar lífstílsbreytingar. Aðferðafræðin miðar að því að vekja upp innri hvata til breytinga sem eykur líkurnar á varanlegum árangri."],
+            content: ["Endurnæring notast við aðferðafræði áhugahvetjandi samtals, sem hefur reynst afar skilvirk leið til að hjálpa fólki að takast á við erfiðar og flóknar lífsstílsbreytingar. Aðferðafræðin miðar að því að vekja upp innri hvata til breytinga sem eykur líkurnar á varanlegum árangri."],
             button: {
                 caption: "Lesa meira",
                 to: "https://worldofwarcraft.com",

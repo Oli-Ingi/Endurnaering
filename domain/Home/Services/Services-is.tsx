@@ -17,7 +17,7 @@ const Services = () =>
             },
             { 
                 title: "Námskeið", 
-                description: "Endurnærandi lausnir.",
+                description: "Endurnærandi lausnir",
                 href: "/vidtol",
                 icon: "reward",
                 hoverColor: "red"

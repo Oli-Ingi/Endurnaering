@@ -30,7 +30,7 @@ const Benefits = () =>
             },
             { 
                 title: "Heilbrigðara hjarta", 
-                content: "Jákvæðrar áhrifa á hjarta- og æðakerfið gætir þegar við ræktum heilbrigt samband við mat og næringu.", 
+                content: "Jákvæðra áhrifa á hjarta- og æðakerfið gætir þegar við ræktum heilbrigt samband við mat og næringu.", 
                 icon: "heart",
                 color: "red"
             },

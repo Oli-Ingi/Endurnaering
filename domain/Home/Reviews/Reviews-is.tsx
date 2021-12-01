@@ -17,7 +17,7 @@ const reviews = [
     },
     { 
         title: "Frábær þjónusta", 
-        content: ["“Fékk frábæra þjónustu hjá Endurnæringu. Engar öfgar heldur mjög heilbrigðar umræður og nálgun á matarræðinu. Mjög gott að tala við Heiðdísi sem veit greinilega um hvað hún er að tala. Mæli með þessarri þjónustu fyrir alla þá sem vilja fjárfesta í sjálfum sér og nærast á heilbrigðan hátt.”"], 
+        content: ["“Fékk frábæra þjónustu hjá Endurnæringu. Engar öfgar heldur mjög heilbrigðar umræður og nálgun á mataræðinu. Mjög gott að tala við Heiðdísi sem veit greinilega um hvað hún er að tala. Mæli með þessarri þjónustu fyrir alla þá sem vilja fjárfesta í sjálfum sér og nærast á heilbrigðan hátt.”"], 
         subtitle: "39 ára kvk" 
     },
     { 
