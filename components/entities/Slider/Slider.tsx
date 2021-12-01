@@ -37,6 +37,9 @@ const StViewBox = styled.div<{ cardWidth: number; maxCards: number }>`
     max-width: 100%;
 
     /* media queries for fewer cards */
+    @media screen and (max-width: 400px) {
+        margin: 0;
+    }
 `
 
 const StCardHolder = styled.div<{ count: number, cardWidth: number; noStretch?: boolean }>`
@@ -69,7 +72,7 @@ const Slider: FC<Props> = ({ items, variant, cardWidth = 250, maxCardsInView = 4
         items: [
             Math.max(items.length - 1, 0),
             0, 
-            1 % items.length,
+                1 % items.length,
             2 % items.length,
             3 % items.length,
             4 % items.length,

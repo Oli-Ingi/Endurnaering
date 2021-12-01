@@ -3,10 +3,16 @@
 export const mainTheme = {
     colors: {
         primary: '#77A03F',
+        primaryLight: "#F6F9F0",
+        primaryMiddle: "#E2EED3",
         secondary: '#F7F7F5', // #ECF3E2
+        secondaryDark: "#EBEBE8",
         tertiary: '#C79900', // yellow
+        tertiaryLight: "#F2F6F2",
         red: '#B85B33',
         blue: '#387278',
+        brown: "#714E07",
+        purple: "#916C83",
         //green: '#77A03F',
         //lightGreen: '#a8c66c',
         //lightBlue: '#e1dd72',
@@ -35,6 +41,7 @@ export const mainTheme = {
         }
     },
     shadow: "0 0 15px #ccc",
+    shadowBottom: "0 10px 8px #e4e4e4",
     deepShadow: "0 0 25px #a1a1a1",
     layout: {
         containerWidth: "1200px",

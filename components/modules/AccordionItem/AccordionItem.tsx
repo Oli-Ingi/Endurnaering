@@ -14,7 +14,7 @@ export type Props = {
 
 
 const StAccordionItem = styled.li`
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid ${p => p.theme.colors.primaryMiddle};
 `
 
 const StHeader = styled.button<{ isOpen: boolean}>`
@@ -31,6 +31,10 @@ const StHeader = styled.button<{ isOpen: boolean}>`
     svg { margin-right: 1em; }
 
     :hover p { color: ${p => p.theme.colors.primary}; }
+
+    > div {
+        padding: 3px 0;
+    }
 `
 
 
@@ -45,7 +49,7 @@ const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
     return <StAccordionItem>
         <StHeader onClick={onClick} isOpen={isOpen}>
             <div><Toggler isOpen={isOpen} /></div>
-            <Text bold>{item.title}</Text>
+            <Text bold >{item.title}</Text>
         </StHeader>
         <DropView isOpen={isOpen} $height={height}>
             <div ref={contentNode} style={{ paddingBottom: '1em' }}>

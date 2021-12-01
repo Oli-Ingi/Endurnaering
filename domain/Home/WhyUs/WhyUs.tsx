@@ -16,6 +16,7 @@ const WhyUs = () =>
         cols="4"
         gap="sm"
         borders
+        border="bottom"
         definitions={[
             { 
                 title: "Viðurkenndir", 
@@ -28,20 +29,20 @@ const WhyUs = () =>
                 title: "Persónumiðuð", 
                 subtitle: "þjónusta",
                 icon: "target", 
-                content: "Mætum þér þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                content: "Með markmið þín að leiðarljósi finnum við lausnir sem eru sérsniðnar að þér.", 
                 color: "red"
             },
             { 
                 title: "Faglegur", 
                 subtitle: "stuðningur", 
                 icon: "chat", 
-                content: "Leiðbeinum þér á þinni vegferð og erum ávallt innan handar þér til halds og trausts.", 
+                content: "Leiðbeinum þér í átt að þínum markmiðum og erum ávallt innan handar þér til halds og trausts.", 
             },
             { 
                 title: "Langvarandi", 
                 subtitle: "árangur", 
                 icon: "chart", 
-                content: "Brjótum vegferð þína upp í lítil og raunhæf skref til að byggja upp traustan grunn sem endist.", 
+                content: "Brjótum leiðina að markmiðum þínum upp í lítil skref til að byggja upp traustan grunn sem endist.", 
                 color: "blue"
             }
         ]}

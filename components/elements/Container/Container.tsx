@@ -1,19 +1,24 @@
 import { FC } from "react"
 import styled, { css } from "styled-components"
-import { VariantHandler } from "../../../styles/common"
 
 
 export type Props = {
-    variant?: Variants;
+    variant?: Colors;
     noPad?: boolean;
     as?: "section" | "article" | "main";
+    shadowBottom?: boolean;
+    border?: "top" | "bottom" | "both";
 }
 
 
 const StContainer = styled.div<Props>`
     width: 100%;
     box-sizing: border-box;
-    background-color: ${VariantHandler};
+    background-color: ${p => p.theme.colors[p.variant || "white"]};
+    box-shadow: ${p => p.shadowBottom && p.theme.shadowBottom};
+    z-index: ${p => p.shadowBottom && 5};
+    border-top: ${p => (p.border === "both" || p.border === "top") && `1px solid #dadada`};
+    border-bottom: ${p => (p.border === "both" || p.border === "bottom") && `1px solid #dedede`};
     
     ${p => !p.noPad && css`
         @media screen and (min-width: 700px) {

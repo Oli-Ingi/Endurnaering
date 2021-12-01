@@ -17,6 +17,13 @@ const titleSizeMap = {
     subsection: "m"
 }
 
+const mediaSizeMap = {
+    huge: "xl",
+    page: "l",
+    section: "l",
+    subsection: "m"
+}
+
 type AttrsOut = Omit<Props, "color"> & { $color: NonNullable<Props["color"]> }
 
 const Title = styled.h1.attrs<Props, AttrsOut>(p => ({
@@ -33,6 +40,10 @@ const Title = styled.h1.attrs<Props, AttrsOut>(p => ({
     font-weight: ${p => p.light ? 300 : "bold"};
     text-align: ${p => p.center && "center"};
     ${MarginHandler}
+
+    @media (max-width: 700px) {
+        font-size: ${p => p.theme.font.sizes[mediaSizeMap[p.variant]]}px;
+    }
 `
 
 export default Title;

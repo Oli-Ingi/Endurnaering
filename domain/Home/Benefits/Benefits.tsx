@@ -6,41 +6,43 @@ import DefinitionSection from "../../../components/entities/DefinitionSection/De
 const Benefits = () => 
     <DefinitionSection 
         title={<Title light variant="section" center>Aðferðir okkar geta skilað <b>margvíslegum árangri</b></Title>}
+        variant="secondary"
         borders
+        border="both"
         definitions={[
             { 
-                title: "Betri melting", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                title: "Bætt melting", 
+                content: "Stuðlum að stöðugleika í þarmaflórunni sem skilar sér í bættri heilsu, heilastarfsemi og aukinni vellíðan.", 
                 icon: "recycle",
-                color: "primary"
+                color: "brown"
             },
             { 
                 title: "Jákvæð líkamsímynd", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.",
+                content: "Heilbrigðar fæðuvenjur hafa almennt jákvæð áhrif á það hvernig við skynjum líkama okkar og útlit.",
                 icon: "like",
                 color: "blue"
             },
             { 
-                title: "Orka og úthald", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                title: "Aukin orka og úthald", 
+                content: "Þegar við nærum líkamann rétt þá starfar hann vel og er betur í stakk búinn til að takast á við verkefni dagsins.", 
                 icon: "lightning",
                 color: "primary"
             },
             { 
-                title: "Líkamleg heilsa", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                title: "Heilbrigðara hjarta", 
+                content: "Jákvæðrar áhrifa á hjarta- og æðakerfið gætir þegar við ræktum heilbrigt samband við mat og næringu.", 
                 icon: "heart",
                 color: "red"
             },
             { 
                 title: "Minni streita", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                content: "Viðhorf okkar til matar og á hvaða forsendum við borðum hefur mikil áhrif á andlega líðan.", 
                 icon: "suitcase",
-                color: "primary"
+                color: "purple"
             },
             { 
-                title: "Vellíðan", 
-                content: "Mætum þer þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
+                title: "Betri líðan", 
+                content: "Líkamleg og andleg líðan byggist m.a. á trausti til svengdarvitundar okkar og fæðuvenja.", 
                 icon: "sun",
                 color: "tertiary"
             },

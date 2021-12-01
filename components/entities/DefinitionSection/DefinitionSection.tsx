@@ -7,7 +7,7 @@ import { Props as IconProps } from "../../elements/Icon/Icon"
 
 export type Props = {
     title: string | JSX.Element;
-    variant?: "secondary" | "white";
+    variant?: Colors;
     bigCards?: boolean;
     definitions: {
         title: string;
@@ -19,6 +19,7 @@ export type Props = {
     color?: Colors; // if same color is applied to all.
     justIconColor?: boolean;
     borders?: boolean;
+    border?: "top" | "bottom" | "both";
     cols?: "2" | "3" | "4";
     gap?: "sm" | "normal";
 }
@@ -29,8 +30,8 @@ const sizeMap = {
     "4": "265px"
 }
 
-const DefinitionSection: FC<Props> = ({ title, variant, definitions, gap, justIconColor, color, cols, borders }) => 
-    <Section title={title} variant={variant}>
+const DefinitionSection: FC<Props> = ({ title, variant, definitions, gap, justIconColor, color, cols, borders, border }) => 
+    <Section title={title} variant={variant} border={border}>
         <Grid min="220px" max={sizeMap[cols || "3"]} gap={gap === "sm" ? "30px" : "60px"}>
             {definitions.map(d => 
                 <Definition 

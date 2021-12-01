@@ -26,8 +26,8 @@ const StConcept = styled.article<Pick<Props, "variant" | "imgPos" | "shadow"> & 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    border-radius: 20px;
-    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #dedede;
     justify-content: center;
     ${p => p.shadow && css`box-shadow: ${p.theme.shadow};`}
     ${p => p.variant && css`background-color: ${p.theme.colors[p.variant]};`}
@@ -66,6 +66,8 @@ const StConcept = styled.article<Pick<Props, "variant" | "imgPos" | "shadow"> & 
         margin: 0;
         img { margin: 0; }
         background-color: white;
+        width: 100%;
+        border: none;
     }
 `
 
@@ -77,3 +79,4 @@ const Concept: FC<Props> = ({ img, imgPos, variant, article, imgOffset, shadow, 
 
 
 export default Concept
+

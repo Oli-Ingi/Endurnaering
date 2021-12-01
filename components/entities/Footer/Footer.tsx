@@ -68,7 +68,7 @@ const StSubFooter = styled.div`
 
 const Footer: FC<Props> = ({ contact, nav, orgInfo, smallOrgInfo, subLinks, affiliates, socialMedia }) => 
     <footer>
-        <Container variant="secondary">
+        <Container variant="secondary" border="top">
             <StTopFooter>
                 <Contact {...contact} />
                 <ListNav navItems={nav} />

@@ -25,6 +25,7 @@ export type Props = {
 const Text = styled.p<Props>`
     color: ${p => p.color ? p.theme.colors[p.color] : "inherit"};
     font-family: ${p => p.theme.fontFamily};
+    text-align: ${p => p.center ? "center" : "start"};
     font-size: ${p => !p.size || p.size === "med" 
         ? 1.2
         : p.size === "xs"

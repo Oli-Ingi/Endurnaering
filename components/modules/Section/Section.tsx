@@ -1,13 +1,14 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 import Container from '../../elements/Container/Container'
-import Text from '../../elements/Text/Text'
 import Title from '../../elements/Title/Title'
 
 
 export type Props = {
     title?: string | JSX.Element;
-    variant?: Variants;
+    variant?: Colors;
+    shadowBottom?: boolean;
+    border?: "top" | "bottom" | "both";
 }
 
 
@@ -15,7 +16,7 @@ const StInner = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.5em 1em;
+    padding: 4em 1em;
     width: 100%;
     box-sizing: border-box;
 
@@ -26,8 +27,8 @@ const StInner = styled.div`
 `
 
 
-const Section: FC<Props> = ({ title, variant = "white", children }) => 
-    <Container as="section" variant={variant}>
+const Section: FC<Props> = ({ title, variant = "white", children, ...style }) => 
+    <Container as="section" variant={variant} {...style}>
         <StInner>
             {typeof title === "string" ? <Title variant="section">{title}</Title> : title}
             {children}

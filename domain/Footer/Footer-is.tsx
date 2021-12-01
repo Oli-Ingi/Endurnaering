@@ -1,4 +1,6 @@
+import { useEffect } from 'react'
 import Footer from '../../components/entities/Footer/Footer'
+import { useMedia } from '../../hooks/useMedia'
 
 // SSR ?
 const nav = [
@@ -74,16 +76,21 @@ const socialMedia = [
 ]
 
 
-const FooterIs = () =>
-    <Footer  
+const FooterIs = () => {
+    const mediaMatch = useMedia('(max-width: 1050px)');
+    let slicedOrgInfo = mediaMatch ? orgInfo.slice(0, -2) : orgInfo;
+        
+    return <Footer  
         smallOrgInfo
         contact={contact}
         nav={nav}
-        orgInfo={orgInfo}
+        orgInfo={slicedOrgInfo}
         affiliates={affiliates}
         subLinks={subLinks}
         socialMedia={socialMedia}
     />
+}
+    
 
 
 export default FooterIs

@@ -14,13 +14,16 @@ export type Props = {
         hoverColor?: Colors;
     }[]
     title: string | JSX.Element;
-    variant?: "primary" | "secondary";
+    variant?: Colors;
+    shadowBottom?: boolean;
+    border?: "top" | "bottom" | "both";
 }
 
-const CardLinkSection: FC<Props> = ({ links, title, variant }) =>
-    <Section title={title} variant={variant}>
+const CardLinkSection: FC<Props> = ({ links, title, variant, ...styles }) =>
+    <Section title={title} variant={variant} {...styles}>
         <Grid min="280px" max="300px" gap="25px">
             {links.map(l => <CardLink 
+                key={l.title}
                 icon={l.icon}
                 title={l.title}
                 description={l.description}

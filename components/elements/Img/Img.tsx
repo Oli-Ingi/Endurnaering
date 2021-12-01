@@ -15,9 +15,10 @@ export type Props = {
 
 
 const Img = styled.img.attrs((p: Props) => ({ src: p.img }))<Props>`
-    flex-basis: ${p => p.basis}px;
     box-sizing: border-box;
-    height: auto;
+    align-self: flex-end;
+    width: 100%;
+    max-width: 350px;
     ${p => p.pad && css`padding: 1em;`}
     ${p => p.borderTop && css`border-top: 4px solid ${p.theme.colors[p.variant || "primary"]};`}
     ${p => p.borderRight && css`border-right: 4px solid ${p.theme.colors[p.variant || "primary"]};`}

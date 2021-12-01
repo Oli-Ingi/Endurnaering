@@ -6,6 +6,7 @@ const Services = () =>
     <CardLinkSection 
         title={<Title light variant="section"><b>Þjónustuleiðir</b> okkar</Title>}
         variant="secondary"
+        border="both"
         links={[
             { 
                 title: "Einstaklingsviðtöl", 

@@ -37,7 +37,7 @@ const questions = [
 ]
 
 const FaqIs = () =>
-    <Section title={<Title light variant="section">Algengar <b>spurningar</b></Title>}>
+    <Section title={<Title light variant="section" center>Algengar <b>spurningar</b></Title>}>
         <Accordion items={questions} />
     </Section>
 

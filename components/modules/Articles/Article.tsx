@@ -28,12 +28,14 @@ const StArticle = styled.article<Pick<Props, "shadow">>`
     align-items: flex-start;
     box-sizing: border-box;
     padding: 2em;
+
+    > h2 { margin-bottom: 1rem; }
 `
 
 
 const Article: FC<Props> = ({ title, content, button, variant, darkBg, shadow, as }) => 
     <StArticle shadow={shadow} as={as}>
-        <Title variant="section" marginBottom="1em">{title}</Title>
+        <Title variant="section">{title}</Title>
         {content.map((p, i) => <Text key={i} marginBottom={8} {...darkBg && { color: "white" }}>{p}</Text>)}
     </StArticle>
 
