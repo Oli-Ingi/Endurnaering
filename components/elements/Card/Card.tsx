@@ -5,6 +5,7 @@ export type Props = {
     variant?: Variants;
     shadow?: "always" | "hover";
     href?: string;
+    otherBorders?: boolean;
     children: ReactNode;
     row?: boolean;
 } & (
@@ -27,6 +28,12 @@ const Card = styled.div.attrs<Props>(p => ({
     text-decoration: none;
     color: black;
     transition-duration: .2s;
+    
+    ${p => p.otherBorders && css`
+        border-right: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        border-left: 1px solid #dedede;
+    `}
 
     :hover {
         border-color: ${p => p.borderHoverColor && p.theme.colors[p.borderHoverColor]};

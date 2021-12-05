@@ -21,6 +21,7 @@ const mediaSizeMap = {
     huge: "xl",
     page: "l",
     section: "l",
+    article: "l",
     subsection: "m"
 }
 

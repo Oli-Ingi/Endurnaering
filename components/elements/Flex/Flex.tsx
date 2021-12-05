@@ -4,11 +4,12 @@ import { MarginHandler } from "../../../styles/common"
 
 
 export type Props = {
-    as?: "main" | "section" | "article" | "header" | "footer";
+    as?: "main" | "section" | "article" | "header" | "footer" | "div";
     align?: "center" | "stretch" | "flex-start" | "flex-end";
     just?: "flex-start" | "flex-end" | "center" | "between" | "around" | "stretch";
     z?: number;
     col?: boolean;
+    $wrap?: boolean;
     pad?: string | number;
     pt?: string | number;
     pr?: string | number;
@@ -32,6 +33,7 @@ const Flex =  styled.div<Props>`
     padding-right: ${p => p.pr};
     padding-bottom: ${p => p.pb};
     padding-left: ${p => p.pl};
+    flex-wrap: ${p => p.$wrap && "wrap"};
     ${MarginHandler}
 `
 

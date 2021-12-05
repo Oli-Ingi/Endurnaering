@@ -3,55 +3,57 @@ import ArticlesPage from "../../components/templates/ArticlesPage/ArticlesPage"
 import Text from "../../components/elements/Text/Text";
 import BulletList from "../../components/elements/BulletList/BulletList";
 import Link from "../../components/elements/Link/Link";
+import styled from "styled-components";
+import Flex from "../../components/elements/Flex/Flex";
+import Title from "../../components/elements/Title/Title";
+import Container from "../../components/elements/Container/Container";
+import Section from "../../components/modules/Section/Section";
+import Button from "../../components/elements/Button/Button";
+import Column from "../../components/templates/Column/Column";
+import ImgBanner from "../../components/modules/ImgBanner/ImgBanner";
+import Card from "../../components/elements/Card/Card";
+import DescCard from "../../components/modules/DescCard/DescCard";
 
 
+const StHead = styled(Flex)`
+    padding-top: 4rem;
+
+    > img { align-self: flex-end; }
+`
+
+const StBar = styled(Container)`
+    > div { padding: 1.5rem 1rem; }
+`
+// TODO: Modify Hero for reusability here.
+// TODO: Reusable price bar?
+// TODO: námskeið: Card module.
+// IDEA: randomize hero images displayed?
 
 const InterviewsPage = () => 
-    <ArticlesPage pageTitle="Einstaklingsviðtöl">
-        <div>
-        <Text>
-            Endurnæring býður uppá næringarráðgjöf hjá löggiltum næringarfræðingi. Einstaklingsráðgjöf er persónulegur 
-            og faglegur stuðningur sem miðar að því að ná fram langtímaárangri.
-        </Text>
-        <Text>
-            Meðferðin er unnin með það að leiðarljósi að:
-        </Text>
-        <BulletList>
-            <Text as="li">Bæta meltingu</Text>
-            <Text as="li">Efla jákvæða líkamsímynd</Text>
-            <Text as="li">Auka orku og úthald</Text>
-            <Text as="li">Auka vellíðan</Text>
-            <Text as="li">Minnka streitu</Text>
-            <Text as="li">Efla líkamlega heilsu</Text>
-        </BulletList>
-        <Text>
-            Viðtalið er 50 mínútur og kostar 12.000 kr. og hægt er að óska eftir viðtalstíma
-            með því að smella á "Bóka tíma" hlekkinn hér fyrir neðan. Hlekkurinn leiðir inn
-            á örugga þjónustusíðu Kara Connect þar sem útfylling nauðsynlegra upplýsinga fer fram.
-            Næringarfræðingur hefur síðan samband símleiðis og bókar viðtalstíma.
-        </Text>
-        <Text>
-            Hægt er að fá nánari upplýsingar símleiðis í s. 577-1771 (9:00 - 16:00 alla virka daga) eða
-            með því að senda tölvupóst á <Link permaLine to="mailto:endurnaering@endurnaering.is">endurnaering@endurnaering.is</Link>
-        </Text>
-        <ArticleSection title="Fullorðnir">
-            <Text>
-                Um er að ræða stað- eða fjarviðtal eftir óskum hvers og eins.
-            </Text>
-            <Text>
-                Fjarviðtöl fara fram í gegnum fjarfundabúnað Kara Connect sem er viðurkennt tæki fyrir
-                fjarheilbrigðisþjónustu og má bæði nota í tölvu eða með appi í síma.
-            </Text>
-            <Text></Text>
-        </ArticleSection>
-        <ArticleSection title="Börn og unglingar">
-            <Text>
-                Um er að ræða staðviðtal fyrir einstaklinga sem hafa ekki náð 18 ára aldri og ávallt
-                í fylgd forráðamanns.
-            </Text>
-        </ArticleSection>
-        </div>
-    </ArticlesPage>
+    <Column as="main">
+        <ImgBanner img="/hrokkbraud.png" imgAlt="mynd-drengur-ad-borda" sm>
+            <div style={{ marginBottom: 50 }}>
+                <Title marginBottom="0.3em">Einstaklingsviðtöl</Title>
+                <Text marginBottom=".7em">
+                    Börnum, unglingum og fullorðnum býðst persónuleg og fagleg næringarráðgjöf, veitt af löggiltum næringarfræðing.
+                </Text>
+                <Text>
+                    Gera má ráð fyrir að viðtalstími taki 50 mínútur hvort sem um er að ræða stað- eða fjarviðtal. Athugið að einungis
+                    er boðið upp á fjarviðtöl fyrir einstaklinga sem hafa náð 18 ára aldri.
+                </Text>
+            </div>
+        </ImgBanner>
+        <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
+            <Text size="lg" color="primary" bold marginRight="1em">Verð: <Text as="span" color="dark" size="lg">12.000 kr.</Text></Text>
+            <Button lg to="https://mbl.is" margin="1em 4em 1em 0">Bóka viðtal</Button>
+        </Section>
+        <Section align="flex-end">
+            <DescCard 
+                date="Alla virka daga, kl. 9 - 16" 
+                loc="Ármúli 42, 108 Reykjavík" 
+            />
+        </Section>
+    </Column>
 
 
 export default InterviewsPage

@@ -36,6 +36,8 @@ const ReviewsIs = () =>
     <Section 
         title={<Title light variant="section" center><b>Ummæli</b> skjólstæðinga</Title>} 
         border="bottom"
+        align="center"
+        xl
     >
         <Slider items={reviews} autoSlide autoSlideInterval={10} variant="white" />
     </Section>

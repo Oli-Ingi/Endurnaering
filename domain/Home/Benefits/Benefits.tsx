@@ -26,7 +26,7 @@ const Benefits = () =>
                 title: "Aukin orka og úthald", 
                 content: "Þegar við nærum líkamann rétt þá starfar hann vel og er betur í stakk búinn til að takast á við verkefni dagsins.", 
                 icon: "lightning",
-                color: "primary"
+                color: "tertiary"
             },
             { 
                 title: "Heilbrigðara hjarta", 
@@ -44,7 +44,7 @@ const Benefits = () =>
                 title: "Betri líðan", 
                 content: "Líkamleg og andleg líðan byggist m.a. á trausti til svengdarvitundar okkar og fæðuvenja.", 
                 icon: "sun",
-                color: "tertiary"
+                color: "primary"
             },
         ]}
     />

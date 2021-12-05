@@ -10,10 +10,10 @@ const useOutsideClickListener = (node: RefObject<HTMLElement>, onOutsideClick?: 
             return;
         
         const handleClick: EventListener = e => {
-            
             if (node.current?.contains(e.target as Node))
                 return;
-                onOutsideClick();
+                
+            onOutsideClick();
         }
 
         document.body.addEventListener("click", handleClick);
