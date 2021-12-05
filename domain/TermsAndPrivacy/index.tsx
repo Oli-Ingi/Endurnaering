@@ -5,6 +5,7 @@ import PersonalInformation from "./PrivacyProtection/PersonalIformation"
 import PurposeAndAuthority from "./PrivacyProtection/PurposeAndAuthority"
 import TermsAndConditions from "./TermsAndConditions"
 import Attendance from "./TermsAndConditions/Attendance"
+import Confidentiality from "./TermsAndConditions/Confidentiality"
 import HealthServicesOps from "./TermsAndConditions/HealthServicesOps"
 import Payment from "./TermsAndConditions/Payment"
 import TermsOfUse from "./TermsAndConditions/TermsOfUse"
@@ -17,6 +18,7 @@ const TermsAndPrivacyPage = () =>
             <Attendance />
             <Payment />
             <HealthServicesOps />
+            <Confidentiality />
         </TermsAndConditions>
         <PrivacyProtection>
             <PersonalInformation />

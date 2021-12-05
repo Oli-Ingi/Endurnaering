@@ -7,8 +7,7 @@ const nav = [
     { 
         title: "Þjónustuleiðir", 
         links: [
-            { caption: "Staðviðtöl", to: "/vidtol" },
-            { caption: "Fjarviðtöl", to: "/vidtol" },
+            { caption: "Einstaklingsviðtöl", to: "/vidtol" },
             { caption: "Námskeið", to: "/vidtol" },
             { caption: "Fyrirlestrar", to: "/vidtol" },
         ]
