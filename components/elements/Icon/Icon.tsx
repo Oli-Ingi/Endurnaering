@@ -181,12 +181,12 @@ const Icon: FC<Props> = ({ type, color, ...margins }) => {
                 <defs>
                     <linearGradient id="paint0_linear_1095_2" x1="3.32992" y1="4.61959" x2="27.1555" y2="28.4451" gradientUnits="userSpaceOnUse">
                         <stop stopColor="white"/>
-                        <stop offset="0.4259" stop-color="white"/>
-                        <stop offset="1" stop-color="#F7F7F5"/>
+                        <stop offset="0.4259" stopColor="white"/>
+                        <stop offset="1" stopColor="#F7F7F5"/>
                     </linearGradient>
                     <linearGradient id="paint1_linear_1095_2" x1="7.33139" y1="0.688111" x2="23.2939" y2="16.6507" gradientUnits="userSpaceOnUse">
                         <stop stopColor="#EBEBE8"/>
-                        <stop offset="1" stop-color="#EBEBE8"/>
+                        <stop offset="1" stopColor="#EBEBE8"/>
                     </linearGradient>
                     <clipPath id="clip0_1095_2">
                         <rect width="30" height="30" fill="white"/>
@@ -204,8 +204,8 @@ const Icon: FC<Props> = ({ type, color, ...margins }) => {
                 <defs>
                     <linearGradient id="paint0_linear_1095_7" x1="6.11979" y1="3.60474" x2="23.6259" y2="21.1108" gradientUnits="userSpaceOnUse">
                         <stop stopColor="white"/>
-                        <stop offset="0.4136" stop-color="white"/>
-                        <stop offset="1" stop-color="#F7F7F5"/>
+                        <stop offset="0.4136" stopColor="white"/>
+                        <stop offset="1" stopColor="#F7F7F5"/>
                     </linearGradient>
                     <clipPath id="clip0_1095_7">
                         <rect width="30" height="30" fill="white"/>

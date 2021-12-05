@@ -79,7 +79,7 @@ const Dropdown: FC<Props> = ({ links, title, shadow }) => {
     }, [listNode])
    
     return <StDropDown isOpen={isOpen} shadow={shadow} ref={dropdownNode}>
-        <Link onClick={() => setIsOpen(!isOpen)} icon={<Caret isOpen={isOpen} />} iconRight>
+        <Link onClick={() => setIsOpen(!isOpen)} noHoverLine icon={<Caret isOpen={isOpen} />} iconRight>
             {title}
         </Link>
         <DropView isOpen={isOpen} $height={height} absolute>

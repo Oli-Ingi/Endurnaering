@@ -5,7 +5,7 @@ export type Props = {
     children: JSX.Element;
     img: string;
     imgAlt?: string;
-    variant?: "secondary";
+    variant?: Colors;
     sm?: boolean;
 }
 

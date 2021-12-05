@@ -2,9 +2,10 @@ import { FC, ReactNode } from 'react'
 import styled, { css } from 'styled-components'
 
 export type Props = {
-    variant?: Variants;
+    variant?: Colors;
     shadow?: "always" | "hover";
     href?: string;
+    borderColor?: Colors;
     otherBorders?: boolean;
     children: ReactNode;
     row?: boolean;
@@ -23,7 +24,7 @@ const Card = styled.div.attrs<Props>(p => ({
     align-items: ${p => p.row && "center"};
     background-color: ${p => p.variant && p.theme.colors[p.variant]};
     box-shadow: ${p => p.shadow === "always" ? p.theme.shadow : undefined}; 
-    ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.variant === "primary" ? "white" : "primary"]};`}
+    ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.borderColor || "primary"]};`}
     position: relative;
     text-decoration: none;
     color: black;

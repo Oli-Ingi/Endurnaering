@@ -7,6 +7,7 @@ export type Props = {
     as?: "main" | "section" | "article" | "header" | "footer" | "div";
     align?: "center" | "stretch" | "flex-start" | "flex-end";
     just?: "flex-start" | "flex-end" | "center" | "between" | "around" | "stretch";
+    self?: "flex-end" | "flex-start";
     z?: number;
     col?: boolean;
     $wrap?: boolean;
@@ -34,6 +35,7 @@ const Flex =  styled.div<Props>`
     padding-bottom: ${p => p.pb};
     padding-left: ${p => p.pl};
     flex-wrap: ${p => p.$wrap && "wrap"};
+    align-self: ${p => p.self};
     ${MarginHandler}
 `
 

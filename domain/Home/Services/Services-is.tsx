@@ -18,14 +18,14 @@ const Services = () =>
             { 
                 title: "Námskeið", 
                 description: "Endurnærandi lausnir",
-                href: "/vidtol",
+                href: "/namskeid",
                 icon: "reward",
                 hoverColor: "red"
             },
             { 
                 title: "Fyrirlestrar", 
                 description: "Fræðsla og innblástur", 
-                href: "/vidtol",
+                href: "/fyrirlestrar",
                 icon: "mic",
                 hoverColor: "blue"
             },

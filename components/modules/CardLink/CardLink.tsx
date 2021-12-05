@@ -14,38 +14,6 @@ export type Props = {
     hoverColor?: Colors;
 }
 
-// const CardStyle = css<Pick<Props, "variant" | "border" | "shadow">>`
-//     display: block;
-//     box-sizing: border-box;
-//     padding: 1.5em;
-//     background-color: ${p => p.variant ? p.theme.colors[p.variant] : undefined};
-//     box-shadow: ${p => p.shadow === "always" ? p.theme.shadow : undefined}; 
-//     ${p => p.border && css`border-top: 4px solid ${p.theme.colors[p.variant === "primary" ? "white" : "primary"]};`}
-//     position: relative;
-//     text-decoration: none;
-
-//     :hover {
-//         ::before {
-//             opacity: 1;
-//         }
-//     }
-
-//     ${p => p.shadow === "hover" && css`
-//         cursor: pointer;
-
-//         ::before {
-//             content: "";
-//             position: absolute;
-//             top: 0;
-//             bottom: 0;
-//             left: 0;
-//             right: 0;
-//             opacity: 0;
-//             box-shadow: ${p => p.theme.deepShadow};
-//             transition-duration: 0.5s;
-//         }
-//     `}
-// `
 
 const StCardLink = styled(Card)<CardProps>`
     color: ${p => p.theme.colors[p.color || "primary"]};

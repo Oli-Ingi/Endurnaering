@@ -1,8 +1,6 @@
 import ArticleSection from "../../components/modules/ArticleSections/ArticleSection/ArticleSection"
 import ArticlesPage from "../../components/templates/ArticlesPage/ArticlesPage"
 import Text from "../../components/elements/Text/Text";
-import BulletList from "../../components/elements/BulletList/BulletList";
-import Link from "../../components/elements/Link/Link";
 import styled from "styled-components";
 import Flex from "../../components/elements/Flex/Flex";
 import Title from "../../components/elements/Title/Title";
@@ -13,17 +11,10 @@ import Column from "../../components/templates/Column/Column";
 import ImgBanner from "../../components/modules/ImgBanner/ImgBanner";
 import Card from "../../components/elements/Card/Card";
 import DescCard from "../../components/modules/DescCard/DescCard";
+import SubPage from "../../components/templates/SubPage/SubPage";
+import SubPageBanner from "../../components/entities/SubPageBanner/SubPageBanner";
 
 
-const StHead = styled(Flex)`
-    padding-top: 4rem;
-
-    > img { align-self: flex-end; }
-`
-
-const StBar = styled(Container)`
-    > div { padding: 1.5rem 1rem; }
-`
 // TODO: Modify Hero for reusability here.
 // TODO: Reusable price bar?
 // TODO: námskeið: Card module.
@@ -31,21 +22,18 @@ const StBar = styled(Container)`
 
 const InterviewsPage = () => 
     <Column as="main">
-        <ImgBanner img="/hrokkbraud.png" imgAlt="mynd-drengur-ad-borda" sm>
-            <div style={{ marginBottom: 50 }}>
-                <Title marginBottom="0.3em">Einstaklingsviðtöl</Title>
-                <Text marginBottom=".7em">
-                    Börnum, unglingum og fullorðnum býðst persónuleg og fagleg næringarráðgjöf, veitt af löggiltum næringarfræðing.
-                </Text>
-                <Text>
-                    Gera má ráð fyrir að viðtalstími taki 50 mínútur hvort sem um er að ræða stað- eða fjarviðtal. Athugið að einungis
-                    er boðið upp á fjarviðtöl fyrir einstaklinga sem hafa náð 18 ára aldri.
-                </Text>
-            </div>
-        </ImgBanner>
+        <SubPageBanner 
+            title="Einstaklingsviðtöl"
+            description={[
+                "Börnum, unglingum og fullorðnum býðst persónuleg og fagleg næringarráðgjöf, veitt af löggiltum næringarfræðing.",
+                "Gera má ráð fyrir að viðtalstími taki 50 mínútur hvort sem um er að ræða stað- eða fjarviðtal. Athugið að einungis er boðið upp á fjarviðtöl fyrir einstaklinga sem hafa náð 18 ára aldri."
+            ]}
+            img="/hrokkbraud-350.png"
+            imgAlt="mynd-drengur-ad-borda"
+        />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
             <Text size="lg" color="primary" bold marginRight="1em">Verð: <Text as="span" color="dark" size="lg">12.000 kr.</Text></Text>
-            <Button lg to="https://mbl.is" margin="1em 4em 1em 0">Bóka viðtal</Button>
+            <Button lg to="https://app.karaconnect.com/company/1115/registration?auth=2" margin="1em 4em 1em 0">Bóka viðtal</Button>
         </Section>
         <Section align="flex-end">
             <DescCard 
@@ -57,3 +45,17 @@ const InterviewsPage = () =>
 
 
 export default InterviewsPage
+
+
+{/* <ImgBanner img="/hrokkbraud.png" imgAlt="mynd-drengur-ad-borda" sm>
+            <div style={{ marginBottom: 50 }}>
+                <Title marginBottom="0.3em">Einstaklingsviðtöl</Title>
+                <Text marginBottom=".7em">
+                    Börnum, unglingum og fullorðnum býðst persónuleg og fagleg næringarráðgjöf, veitt af löggiltum næringarfræðing.
+                </Text>
+                <Text>
+                    Gera má ráð fyrir að viðtalstími taki 50 mínútur hvort sem um er að ræða stað- eða fjarviðtal. Athugið að einungis
+                    er boðið upp á fjarviðtöl fyrir einstaklinga sem hafa náð 18 ára aldri.
+                </Text>
+            </div>
+        </ImgBanner> */}

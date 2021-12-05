@@ -13,6 +13,7 @@ export type Props = {
     faded?: boolean;
     id?: string;
     center?: boolean;
+    block?: boolean;
 } & Margins & (
     | { bold?: boolean; thick?: never; }
     | { bold?: never; thick?: boolean }
@@ -23,6 +24,7 @@ export type Props = {
 
 
 const Text = styled.p<Props>`
+    display: ${p => p.block && "block"};
     color: ${p => p.color ? p.theme.colors[p.color] : "inherit"};
     font-family: ${p => p.theme.fontFamily};
     text-align: ${p => p.center ? "center" : "start"};
