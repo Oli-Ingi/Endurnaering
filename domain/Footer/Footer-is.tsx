@@ -8,8 +8,8 @@ const nav = [
         title: "Þjónustuleiðir", 
         links: [
             { caption: "Einstaklingsviðtöl", to: "/vidtol" },
-            { caption: "Námskeið", to: "/vidtol" },
-            { caption: "Fyrirlestrar", to: "/vidtol" },
+            { caption: "Námskeið", to: "/namskeid" },
+            { caption: "Fyrirlestrar", to: "/fyrirlestrar" },
         ]
     },
     // {

@@ -9,7 +9,7 @@ export type Props = {
     imgAlt: string;
     title: string;
     description: string[];
-    variant: Colors;
+    variant?: Colors;
 }
 
 
