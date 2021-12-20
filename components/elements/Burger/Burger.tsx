@@ -27,7 +27,7 @@ const StBurger = styled.button<Props>`
     }
 
     line {
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
         stroke: ${VariantHandler};
         stroke-width: 2px;
         opacity: 1;

@@ -16,14 +16,16 @@ export const Default = Template.bind({})
 Default.args = {
     logos: [
         {
-            src: "/facebook_icon.png",
+            icon: "facebook",
             to: "https://www.facebook.com/endurnaering",
-            alt: "facebook"
         },
         {
-            src: "/instagram_icon.png",
+            icon: "instagram",
             to: "https://www.instagram.com/endurnaering/",
-            alt: "instagram"
-        }   
+        },
+        {
+            icon: "linkedIn",
+            to: "https://www.instagram.com/endurnaering/",
+        }
     ]
 } as Props

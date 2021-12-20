@@ -24,7 +24,7 @@ const StNav = styled.nav<Pick<Props, "lg">>`
         margin-left: 20px;
     }
 
-    @media screen and (max-width: 860px) {
+    @media screen and (max-width: 930px) {
         a { display: none; }
         > div { display: block; }
     }

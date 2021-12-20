@@ -35,8 +35,23 @@ const StHeader = styled.button<{ isOpen: boolean}>`
     > div {
         padding: 3px 0;
     }
+
+    @media screen and (max-width: 700px) {
+        > p {
+            font-size: 1rem;
+        }
+    }
 `
 
+const StContentWrapper = styled.div`
+    padding-bottom: 1rem;
+
+    @media screen and (max-width: 700px) {
+        > p {
+            font-size: 1rem;
+        }
+    }
+`
 
 
 const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
@@ -52,9 +67,9 @@ const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
             <Text bold >{item.title}</Text>
         </StHeader>
         <DropView isOpen={isOpen} $height={height}>
-            <div ref={contentNode} style={{ paddingBottom: '1em' }}>
+            <StContentWrapper ref={contentNode} style={{ paddingBottom: '1em' }}>
                 {item.content.map(p => <Text key={uuid()}>{p}</Text>)}
-            </div>
+            </StContentWrapper>
         </DropView>
     </StAccordionItem>
 }
