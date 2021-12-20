@@ -4,11 +4,9 @@
 	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:url(#SVGID_1_);}
-	.st1{fill:url(#SVGID_00000022523739559392944500000002055652215332275359_);}
-	.st2{fill:#FFFFFF;}
 </style>
 <radialGradient id="SVGID_1_" cx="-15.4042" cy="146.8747" r="198.9615" fx="-73.6016" fy="184.3708" gradientTransform="matrix(6.123234e-17 -1 1.0871 6.656850e-17 -175.0785 131.4705)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0" style="stop-color:#FFDD55"/>
+	<stop offset="0" style="stop-color:#FFDD55"/>
 	<stop  offset="0.1" style="stop-color:#FFDD55"/>
 	<stop  offset="0.5" style="stop-color:#FF543E"/>
 	<stop  offset="1" style="stop-color:#C837AB"/>
@@ -20,7 +18,7 @@
 	<stop  offset="1" style="stop-color:#6600FF;stop-opacity:0"/>
 </radialGradient>
 <circle style="fill:url(#SVGID_00000150085617196012039030000017256831259819302534_);" cx="100" cy="100" r="100"/>
-<path class="st2" d="M100,40c-16.3,0-18.3,0.1-24.7,0.4c-6.4,0.3-10.7,1.3-14.6,2.8c-3.9,1.5-7.3,3.6-10.6,6.9
+<path fill="#fff" d="M100,40c-16.3,0-18.3,0.1-24.7,0.4c-6.4,0.3-10.7,1.3-14.6,2.8c-3.9,1.5-7.3,3.6-10.6,6.9
 	c-3.3,3.3-5.4,6.7-6.9,10.6c-1.5,3.8-2.5,8.2-2.8,14.6C40.1,81.7,40,83.7,40,100s0.1,18.3,0.4,24.7c0.3,6.4,1.3,10.7,2.8,14.6
 	c1.5,3.9,3.6,7.3,6.9,10.6c3.3,3.3,6.7,5.4,10.6,6.9c3.8,1.5,8.2,2.5,14.6,2.8c6.4,0.3,8.4,0.4,24.7,0.4c16.3,0,18.3-0.1,24.7-0.4
 	c6.4-0.3,10.8-1.3,14.6-2.8c3.9-1.5,7.3-3.6,10.6-6.9c3.3-3.3,5.4-6.7,6.9-10.6c1.5-3.8,2.5-8.2,2.8-14.6c0.3-6.4,0.4-8.4,0.4-24.7

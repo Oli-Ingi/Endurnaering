@@ -63,16 +63,18 @@ const affiliates = [
 
 const socialMedia = [
     {
-        src: "/instagram.svg",
-        to: "https://www.instagram.com/endurnaering/",
-        alt: "instagram"
+        icon: "facebook",
+        to: "https://www.facebook.com/endurnaering",
     },
     {
-        src: "/linked-in.svg",
+        icon: "instagram",
         to: "https://www.instagram.com/endurnaering/",
-        alt: "linked-in"
+    },
+    {
+        icon: "linkedIn",
+        to: "https://www.instagram.com/endurnaering/",
     }
-]
+] as { to: string; icon: "facebook" | "instagram" | "linkedIn" }[]
 
 
 const FooterIs = () => {

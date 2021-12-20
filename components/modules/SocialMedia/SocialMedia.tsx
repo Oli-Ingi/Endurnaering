@@ -1,16 +1,14 @@
 import { FC } from "react";
 import styled from "styled-components";
-import SocialLogo from "../../elements/SocialLogo/SocialLogo";
 import { v4 as uuid } from 'uuid'
 import Icon from "../../elements/Icon/Icon";
 
 
 export type Props = {
-    logos: Array<{
-        src: string;
+    logos: {
         to: string;
-        alt?: string;
-    }>;
+        icon: "facebook" | "instagram" | "linkedIn";
+    }[]
 }
 
 const StSocialMedia = styled.div`
@@ -18,15 +16,16 @@ const StSocialMedia = styled.div`
     align-items: center;
     padding: 0.5em;
 
-    img {
-        margin-left: 0.8em;
+    a {
+        margin-left: 0.4em;
     }
 `
 
 const SocialMedia: FC<Props> = ({ logos }) =>
     <StSocialMedia>
-        <Icon type="facebook" /> {/* tmp, fix */}
-        {logos.map(logo => <SocialLogo key={uuid()} {...logo} />)}
+        {logos.map(logo => <a href={logo.to}>
+            <a href={logo.to} target="_blank"><Icon key={uuid()} type={logo.icon} /></a>
+        </a>)}
     </StSocialMedia>
 
 

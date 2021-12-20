@@ -14,7 +14,7 @@ export default {
       type: { 
           control: { 
               type: 'select',
-              options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun", "mic", "person", "reward"]
+              options: ["play", "target", "chat", "chart", "recycle", "like", "heart", "suitcase", "lightning", "sun", "mic", "person", "reward", "facebook", "instagram", "insta2", "linkedIn"]
             }
         },
         color: {
@@ -52,6 +52,8 @@ const AllStory: Story<Props> = args => {
         <Icon type="reward" />
         <Icon type="mic" />
         <Icon type="facebook" />
+        <Icon type="instagram" />
+        <Icon type="linkedIn" />
     </div>
 }
     
