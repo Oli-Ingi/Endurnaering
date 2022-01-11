@@ -72,7 +72,7 @@ const socialMedia = [
     },
     {
         icon: "linkedIn",
-        to: "https://www.linkedin.com/",
+        to: "https://www.linkedin.com/company/endurnaering",
     }
 ] as { to: string; icon: "facebook" | "instagram" | "linkedIn" }[]
 

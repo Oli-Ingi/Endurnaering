@@ -29,6 +29,8 @@ const PageHead = styled.div`
 // temp
 const PersonDiv = styled.div`
     margin-right: 30px;
+    max-width: 100%;
+    max-width: 600px;
 `
 
 const StIconLine = styled.div`
@@ -46,10 +48,24 @@ const AboutUsPage = () =>
             <Text size="lg" color="primary">Við búum öll yfir styrk til að stýra eigin lífi, styrk sem kemur innan frá en ekki að utan.</Text>
         </Section>
         <Section border="bottom">
-            <Text>
-                Endurnæring ehf. var stofnað í febrúar 2021. Við sjáum fyrir okkur heilbrigt þjóðfélag 
-                og einstaklinga sem nálgast heilsu á jákvæðan og uppbyggjandi hátt. Við viljum vera hluti af þessari
-                ...vantar
+            <Text marginBottom="1em">
+                Endurnæring ehf. er lýðheilsufyrirtæki sem var stofnað í febrúar 2021 og sérhæfir sig 
+                í næringarráðgjöf. Félagið starfar með leyfi frá Embætti landlæknis fyrir bæði almenna 
+                heilbrigðisþjónustu og fjarheilbrigðisþjónustu. Sérfræðingar okkar hafa því allir löggild starfsréttindi 
+                frá Embætti landlæknis. 
+            </Text>
+            <Text marginBottom="1em">
+                Okkur finnst umræðan í þjóðfélaginu um næringu vera of einsleitna og skorta skilning á því hversu einstök
+                við öll erum. Einsettum við okkur því að byggja upp fyrirtæki sem leggur áherslu á að fagna
+                fjölbreytileikanum; bæði hvað við erum fjölbreytt og hvað matur er fjölbreyttur. 
+                Okkur dreymir um að móta þjóðfélag sem einfaldlega nýtur þess að borða, en lítur ekki á mat sem óvin 
+                sinn eða eitthvað sem á að telja ofan í sig. Lykillinn að slíku samfélagi er að hjálpa fólki að 
+                byggja upp heilbrigt samband við mat.
+            </Text>
+            <Text marginBottom="1em">
+                Endurnæring er og verður ávallt staður þar sem þér er tekið eins og þú ert. Hér starfa viðurkenndir 
+                sérfræðingar sem veita þér persónumiðaða þjónustu og faglegan stuðning í átt að langvarandi árangri 
+                sem þú kýst að vilja ná.
             </Text>
         </Section>
         <div id="starfsfolk" style={{ marginBottom: 20}}></div>
@@ -59,7 +75,10 @@ const AboutUsPage = () =>
                 <PersonDiv>
                     <Title variant="section">Heiðdís Snorradóttir</Title>
                     <Title variant="subsection" color="dark" marginBottom="1rem">Næringarfræðingur MSc. með áherslu á lýðheilsu</Title>
-                    <Text marginBottom="1.5em">Hér vantar textann um Heiðdísi</Text>
+                    <Text marginBottom="1.5em">
+                        Heiðdís er stofnandi og meðeigandi Endurnæringar og næringarfræðingur MSc með áherslu á lýðheilsu. 
+                        Hún sérhæfir sig í að hjálpa einstaklingum að byggja upp heilbrigt sambandi við mat.
+                    </Text>
                     <StIconLine><Icon type="email" marginRight={8} /><Link to={`mailto:heiddis@endurnaering.is`}>heiddis@endurnaering.is</Link></StIconLine>
                 </PersonDiv>
             </Flex>

@@ -22,7 +22,7 @@ const CoursesPage = () =>
             imgAlt="mynd-stulka-ad-borda"
         />
         <Section border="both" align="center" title={<Title variant="section"><Text as="span" size="lg">Væntanleg</Text> námskeið</Title>}>
-            <Text color="dark" marginBottom="100px">Innan skamms munum við bjóða upp á námskeið... ? vantar betri texta.</Text>
+            <Text color="dark" marginBottom="100px">Innan skamms munum við bjóða upp á námskeið.</Text>
             {/* <Grid min="280px" max="300px" gap="25px">
                 <CourseCard 
                     title="Byggja upp heilbrigt"

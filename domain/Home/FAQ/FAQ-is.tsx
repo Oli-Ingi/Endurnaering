@@ -11,7 +11,7 @@ const questions = [
     },
     { 
         title: "Fyrir hverja hentar þjónusta Endurnæringar?", 
-        content: ["Þjónustan hentar öllum sem eru reiðubúnir að takast á við breytingar á sínum lífsstíl. Hún er einkum miðuð að þeim sem vilja bæta meltingu, efla jákvæða líkamsímynd, auka orku, úthald og vellíðan. Jafnframt hentar þjónustan þeim sem vilja minnka streitu og efla líkamlega heilsu."]
+        content: ["Þjónustan hentar öllum sem eru reiðubúnir að takast á við breytingar á sínum lífsstíl. Það geta allir lært að eiga í heilbrigðu sambandi við mat."]
     },
     { 
         title: "Hvernig fer bókunarferli viðtals fram?", 
@@ -23,17 +23,15 @@ const questions = [
     },
     {
         title: "Er þjónusta Endurnæringar niðurgreidd?",
-        content: ["Hægt er að nálgast kvittun hjá okkur sem hægt er að framvísa til stéttarfélaga. Við hvetjum skjólstæðinga okkar til að leita til síns stéttarfélags fyrir nánari upplýsingar."]
+        content: [
+            "Hægt er að nálgast kvittun hjá okkur sem hægt er að framvísa til stéttarfélaga. Við hvetjum skjólstæðinga okkar til að leita til síns stéttarfélags fyrir nánari upplýsingar.",
+            "Jafnframt er Endurnæring þjónustuaðili hjá VIRK fyrir þá sem það úrræði nýta."
+    ]
     },
     {
         title: "Hvaða greiðsluleiðir eru í boði?",
         content: ["Greiðsla er innt af hendi eftir hvert viðtal í gegnum innheimtuþjónustu Íslandsbanka eða með millifærslu. Skjólstæðingur fær kvittun fyrir greiðslunni senda í tölvupósti eftir að greiðsla hefur verið framkvæmd."]
     },
-    {
-        title: "Eru einhverjar kringumstæður þar sem maður ætti ekki að leita til ykkar?",
-        content: ["Einstaklingar sem hafa lagst inn á spítala á síðastliðnum 3. mánuðum eða liggja inni á heilbrigðisstofnun, t.d. á hjúkrunarheimilum, geta ekki nýtt þjónustu Endurnæringar."]
-    },
-    
 ]
 
 const FaqIs = () =>
