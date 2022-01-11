@@ -23,8 +23,8 @@ const nav = [
     {
         title: "Um okkur",
         links: [
-            { caption: "Endurnæring", to: "https://visir.is" },
-            { caption: "Starfsfólk", to: "https://visir.is" }
+            { caption: "Endurnæring", to: "/um-okkur" },
+            { caption: "Starfsfólk", to: "/um-okkur#starfsfolk" }
         ]
     },
 ]
@@ -72,7 +72,7 @@ const socialMedia = [
     },
     {
         icon: "linkedIn",
-        to: "https://www.instagram.com/endurnaering/",
+        to: "https://www.linkedin.com/",
     }
 ] as { to: string; icon: "facebook" | "instagram" | "linkedIn" }[]
 

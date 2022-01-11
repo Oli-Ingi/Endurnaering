@@ -11,7 +11,7 @@ const concepts = [
         img: "/burger-guy-350.png", 
         article: { 
             title: "Heilbrigt samband við mat", 
-            content: ["Heilbrigt samband við mat er lýsandi fyrir ákveðið hugarfar sem skapast þegar þú hefur tileiknað þér ákveðnar áherslur. Áhersla er lögð á að þú njótir þess að borða mat sem lætur líkama þinn starfa vel og veitir þér vellíðan. Jafnframt að þú takir eftir líkamlegum merkjum á borð við svengd og seddu."], 
+            content: ["Áhersla okkar er að veita þér ráðgjöf, stuðning og fræðslu í átt að heilbrigðu sambandi við mat. Hjá okkur lærirðu að hlusta á eigin líkama frekar en að fylgja fyrirmælum annarra. Heilbrigðar venjur, traust á eigið innsæi og þekking á næringu eru lykilþættir sem við skoðum til að byggja upp traustan grunn sem endist."], 
             button: {
                 caption: "Lesa meira",
                 to: "https://worldofwarcraft.com",
@@ -23,7 +23,7 @@ const concepts = [
         img: "/coffee-girl-350.png", 
         article: { 
             title: "Jákvæð heilsa", 
-            content: ["Jákvæð heilsa er heildræn nálgun á heilsu sem byggir á getu þinni til að takast á við líkamlegar, tilfinningalegar og félagslegar áskoranir í lífinu. Áherslan er því ekki lögð á veikindi og sjúkdóma, heldur á seiglu og hvað gefur lífi þínu tilgang."],
+            content: ["Markmið okkar er að þú færist nær jákvæðri heilsu með því að byggja upp heilbrigt samband við mat. Jákvæð heilsa er heildræn nálgun á heilbrigði. Nálgunin er byggð á getu þinni til að takast á við líkamlegar, tilfinningalegar og félagslegar áskoranir í lífinu. Áherslan er því lögð á seiglu og hvað gefur lífi þínu tilgang í stað veikinda og sjúkdóma."],
             button: {
                 caption: "Lesa meira",
                 to: "https://worldofwarcraft.com",
@@ -35,7 +35,7 @@ const concepts = [
         img: "/green-girl-350.png", 
         article: { 
             title: "Áhugahvetjandi samtal", 
-            content: ["Við notumst við aðferðafræði áhugahvetjandi samtals sem hefur reynst afar skilvirk leið til þess að hjálpa fólki að takast á við erfiðar og flóknar lífsstílsbreytingar. Tilgangur aðferðafræðinnar er að vekja upp innri hvata til breytinga sem eykur líkurnar á varanlegum árangri."],
+            content: ["Þjónusta okkar er byggð að mestu á aðferðafræði áhugahvetjandi samtals. Aðferðafræðin hefur reynst skilvirk leið til að hjálpa einstaklingum að takast á við erfiðar og flóknar lífstílssbreytingar. Tilgangurinn er að vekja upp þína innri hvata til breytinga sem eykur líkurnar á langvarandi árangri."],
             button: {
                 caption: "Lesa meira",
                 to: "https://worldofwarcraft.com",

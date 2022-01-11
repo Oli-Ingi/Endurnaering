@@ -90,14 +90,14 @@ const Intro: FC<Props> = ({ title, subtitle, variant, content, animate, onButton
                     {p}
                 </Text>)}
         </StContent>
-        {onButtonClick && buttonCaption && <Link 
+        {/* {onButtonClick && buttonCaption && <Link 
             onClick={onButtonClick} 
             variant="primary"
             bold
             icon={buttonIcon && <Icon type={buttonIcon} color="primary" />}
         >
             {buttonCaption}
-        </Link>}
+        </Link>} */}
     </StIntro>
 
 

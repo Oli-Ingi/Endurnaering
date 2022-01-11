@@ -20,7 +20,7 @@ export type Props = {
 }
 
 const CardLinkSection: FC<Props> = ({ links, title, variant, ...styles }) =>
-    <Section title={title} variant={variant} {...styles}>
+    <Section titleAlign="center" title={title} variant={variant} {...styles}>
         <Grid min="280px" max="300px" gap="25px">
             {links.map(l => <CardLink 
                 key={l.title}

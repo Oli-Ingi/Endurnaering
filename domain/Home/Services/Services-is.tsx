@@ -17,7 +17,7 @@ const Services = () =>
             },
             { 
                 title: "Námskeið", 
-                description: "Endurnærandi lausnir",
+                description: "Fjölbreyttar lausnir",
                 href: "/namskeid",
                 icon: "reward",
                 hoverColor: "red"

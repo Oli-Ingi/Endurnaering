@@ -31,7 +31,7 @@ const sizeMap = {
 }
 
 const DefinitionSection: FC<Props> = ({ title, variant, definitions, gap, justIconColor, color, cols, borders, border }) => 
-    <Section title={title} variant={variant} border={border}>
+    <Section titleAlign="center" title={title} variant={variant} border={border}>
         <Grid min="220px" max={sizeMap[cols || "3"]} gap={gap === "sm" ? "30px" : "60px"}>
             {definitions.map(d => 
                 <Definition 

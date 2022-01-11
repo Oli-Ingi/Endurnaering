@@ -12,37 +12,37 @@ const Benefits = () =>
         definitions={[
             { 
                 title: "Bætt melting", 
-                content: "Stuðlum að stöðugleika í þarmaflórunni sem skilar sér í bættri heilsu, heilastarfsemi og aukinni vellíðan.", 
+                content: "Meira jafnvægi og fjölbreytni í þarmaflórunni sem skilar sér í bættri heilsu, heilastarfsemi og aukinni vellíðan.", 
                 icon: "recycle",
                 color: "brown"
             },
             { 
-                title: "Jákvæð líkamsímynd", 
-                content: "Heilbrigðar fæðuvenjur hafa almennt jákvæð áhrif á það hvernig við skynjum líkama okkar og útlit.",
+                title: "Jákvæðari líkamsímynd", 
+                content: "Sterkari tenging og aukin virðing fyrir eigin líkama sem stuðlar að betri sjálfsmynd og meiri líkamssátt.",
                 icon: "like",
                 color: "blue"
             },
             { 
-                title: "Aukin orka og úthald", 
-                content: "Þegar við nærum líkamann rétt þá starfar hann vel og er betur í stakk búinn til að takast á við verkefni dagsins.", 
+                title: "Meiri orka og úthald", 
+                content: "Aukinn skilningur á orku- og næringarþörf líkamans og meiri þekking á fæðuvali til að mæta þeirri þörf.", 
                 icon: "lightning",
                 color: "tertiary"
             },
             { 
                 title: "Heilbrigðara hjarta", 
-                content: "Jákvæðra áhrifa á hjarta- og æðakerfið gætir þegar við ræktum heilbrigt samband við mat og næringu.", 
+                content: "Jafnari blóðsykursstjórn, lægri blóðþrýstingur og aukið magn af góðu kólesteróli í blóði.", 
                 icon: "heart",
                 color: "red"
             },
             { 
                 title: "Minni streita", 
-                content: "Viðhorf okkar til matar og á hvaða forsendum við borðum hefur mikil áhrif á andlega líðan.", 
+                content: "Aukið traust á eigið innsæi og meira matarfrelsi sem dregur úr áhyggjum, samviskubiti og kvíða í tengslum við mat.", 
                 icon: "suitcase",
                 color: "purple"
             },
             { 
-                title: "Betri líðan", 
-                content: "Líkamleg og andleg líðan byggist m.a. á trausti til svengdarvitundar okkar og fæðuvenja.", 
+                title: "Aukin lífsgæði", 
+                content: "Heilbrigðari fæðuvenjur og góðvild í eigin garð sem leiðir af sér betra jafnvægi á líkama og sál.", 
                 icon: "sun",
                 color: "primary"
             },

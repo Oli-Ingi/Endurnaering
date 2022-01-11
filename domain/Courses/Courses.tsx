@@ -1,17 +1,7 @@
-import ArticleSection from "../../components/modules/ArticleSections/ArticleSection/ArticleSection"
-import ArticlesPage from "../../components/templates/ArticlesPage/ArticlesPage"
 import Text from "../../components/elements/Text/Text";
-import styled from "styled-components";
-import Flex from "../../components/elements/Flex/Flex";
 import Title from "../../components/elements/Title/Title";
-import Container from "../../components/elements/Container/Container";
 import Section from "../../components/modules/Section/Section";
-import Button from "../../components/elements/Button/Button";
 import Column from "../../components/templates/Column/Column";
-import ImgBanner from "../../components/modules/ImgBanner/ImgBanner";
-import Card from "../../components/elements/Card/Card";
-import DescCard from "../../components/modules/DescCard/DescCard";
-import SubPage from "../../components/templates/SubPage/SubPage";
 import SubPageBanner from "../../components/entities/SubPageBanner/SubPageBanner";
 import Grid from "../../components/elements/Grid/Grid";
 import CourseCard from "../../components/modules/CourseCard/CourseCard";
@@ -26,15 +16,14 @@ const CoursesPage = () =>
     <Column as="main">
         <SubPageBanner 
             title="Námskeið"
-            variant="secondary"
-            description={[
-                "Innan skamms mun þér standa til boða að bóka lausnir undir handleiðslu næringarfræðings."
-            ]}
+            subtitle="Fjölbreyttar lausnir"
+            smSubtitle
             img="/pasta-girl-350.png"
             imgAlt="mynd-stulka-ad-borda"
         />
         <Section border="both" align="center" title={<Title variant="section"><Text as="span" size="lg">Væntanleg</Text> námskeið</Title>}>
-            <Grid min="280px" max="300px" gap="25px">
+            <Text color="dark" marginBottom="100px">Innan skamms munum við bjóða upp á námskeið... ? vantar betri texta.</Text>
+            {/* <Grid min="280px" max="300px" gap="25px">
                 <CourseCard 
                     title="Byggja upp heilbrigt"
                     subtitle="samband við mat"
@@ -65,7 +54,7 @@ const CoursesPage = () =>
                     type="Vefnámskeið"
                     color="blue"
                 />
-            </Grid>
+            </Grid> */}
         </Section>
     </Column>
 

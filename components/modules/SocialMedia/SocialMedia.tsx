@@ -23,9 +23,8 @@ const StSocialMedia = styled.div`
 
 const SocialMedia: FC<Props> = ({ logos }) =>
     <StSocialMedia>
-        {logos.map(logo => <a href={logo.to}>
-            <a href={logo.to} target="_blank"><Icon key={uuid()} type={logo.icon} /></a>
-        </a>)}
+        {logos.map(logo => 
+            <a href={logo.to} target="_blank" key={logo.to}><Icon key={uuid()} type={logo.icon} /></a>)}
     </StSocialMedia>
 
 

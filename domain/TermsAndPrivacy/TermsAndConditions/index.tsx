@@ -7,7 +7,7 @@ import OpenArticle from "../../../components/modules/Articles/OpenArticle/OpenAr
 const TermsAndConditions: FC<{}> = ({ children }) =>
     <OpenArticle title="Skilmálar">
         <Text>
-            Þjónusta Endurnæringar ehf. er háð eftirfarandi skilmálum:
+            Þjónusta Endurnæringar ehf. er háð eftirfarandi skilmálum.
             Þegar þú notar vefsíðuna eða kaupir þjónustu samþykkir þú þessa skilmála, vinsamlegast lestu vel yfir þá. 
             Þú getur sent tölvupóst á <Link inline to="mailto:endurnaering@endurnaering.is" permaLine>endurnaering@endurnaering.is</Link> ef þú hefur spurningar um skilmálana. 
             Endurnæring ehf. áskilur sér rétt til að breyta reglum og skilmálum án fyrirvara. Endurnæring ehf. notar hugbúnað frá Kara Connect 

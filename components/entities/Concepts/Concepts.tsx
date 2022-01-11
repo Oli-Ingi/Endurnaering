@@ -12,7 +12,7 @@ export type Props = {
         article: {
             title: string;
             content: string[];
-            button: {
+            button?: {
                 caption: string;
                 to: string;
                 newTab?: boolean;

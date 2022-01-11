@@ -32,7 +32,7 @@ const Card = styled.div.attrs<Props>(p => ({
     
     ${p => p.otherBorders && css`
         border-right: 1px solid #dedede;
-        border-bottom: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;   
         border-left: 1px solid #dedede;
     `}
 

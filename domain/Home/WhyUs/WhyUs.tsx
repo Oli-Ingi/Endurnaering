@@ -29,20 +29,20 @@ const WhyUs = () =>
                 title: "Persónumiðuð", 
                 subtitle: "þjónusta",
                 icon: "target", 
-                content: "Með markmið þín að leiðarljósi finnum við lausnir sem eru sérsniðnar að þér.", 
+                content: "Mætum þér þar sem þú ert á þinni vegferð og finnum lausnir sem eru sérsniðnar að þér.", 
                 color: "red"
             },
             { 
                 title: "Faglegur", 
                 subtitle: "stuðningur", 
                 icon: "chat", 
-                content: "Leiðbeinum þér í átt að þínum markmiðum og erum ávallt innan handar þér til halds og trausts.", 
+                content: "Leiðbeinum þér á þinni vegferð og erum þér ávallt innan handar til halds og trausts.", 
             },
             { 
                 title: "Langvarandi", 
                 subtitle: "árangur", 
                 icon: "chart", 
-                content: "Brjótum leiðina að markmiðum þínum upp í lítil skref til að byggja upp traustan grunn sem endist.", 
+                content: "Brjótum vegferð þína upp í raunhæf skref til að byggja upp traustan grunn sem endist.", 
                 color: "blue"
             }
         ]}

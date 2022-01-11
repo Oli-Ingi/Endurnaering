@@ -10,6 +10,7 @@ export type Props = {
     self?: "flex-end" | "flex-start";
     z?: number;
     col?: boolean;
+    reverse?: boolean;
     $wrap?: boolean;
     pad?: string | number;
     pt?: string | number;
@@ -26,7 +27,7 @@ const Flex =  styled.div<Props>`
     display: flex;
     align-items: ${p => p.align};
     justify-content: ${p => ["between", "around"].includes(p.just) ? `space-${p.just}` : p.just};
-    flex-direction: ${p => p.col && "column"};
+    flex-direction: ${p => p.col ? "column" : p.reverse ? "row-reverse" : "row"};
     z-index: ${p => p.z};
     padding: ${p => p.pad};
     width: ${p => p.width === "full" ? "100%" : p.width};

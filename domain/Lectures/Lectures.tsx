@@ -2,38 +2,31 @@ import Text from "../../components/elements/Text/Text";
 import Section from "../../components/modules/Section/Section";
 import Button from "../../components/elements/Button/Button";
 import Column from "../../components/templates/Column/Column";
+import ImgBanner from "../../components/modules/ImgBanner/ImgBanner";
+import Card from "../../components/elements/Card/Card";
 import DescCard from "../../components/modules/DescCard/DescCard";
+import SubPage from "../../components/templates/SubPage/SubPage";
 import SubPageBanner from "../../components/entities/SubPageBanner/SubPageBanner";
+import Link from "../../components/elements/Link/Link";
 
 
-// TODO: Modify Hero for reusability here.
-// TODO: Reusable price bar?
-// TODO: námskeið: Card module.
-// IDEA: randomize hero images displayed?
 
-const InterviewsPage = () => 
+const LecturesPage = () => 
     <Column as="main">
         <SubPageBanner 
-            title="Einstaklingsviðtöl"
-            subtitle="Sérsniðin næringarráðgjöf"
+            title="Fyrirlestrar"
+            subtitle="Fræðsla og innblástur"
             smSubtitle
-            img="/hrokkbraud-350.png"
-            imgAlt="mynd-drengur-ad-borda"
+            img="/coffee-girl-350.png"
+            imgAlt="mynd-stulka-ad-drekka-kaffi"
         />
-        <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
-            <Text size="lg" color="primary" bold marginRight="1em">Verð: <Text as="span" color="dark" size="lg">12.000 kr.</Text></Text>
-            <Button lg to="https://app.karaconnect.com/company/1115/registration?auth=2" margin="1em 4em 1em 0">Bóka viðtal</Button>
-        </Section>
-        <Section align="flex-end">
-            <DescCard 
-                date="Alla virka daga, kl. 9 - 16" 
-                loc="Ármúli 42, 108 Reykjavík" 
-            />
+        <Section asEl="div"  border="both" just="between" align="center" row pad="1em">
+            <Text bold margin="4em 1em">Endurnæring býður upp á fyrirlestra fyrir hópa og fyrirtæki. Hægt er að bóka fyrirlestur og ræða fyrirkomulag með því að senda póst á: <Link to="mailto:endurnaering@endurnaering.is" bold inline>endurnaering@endurnaering.is</Link></Text>
         </Section>
     </Column>
 
 
-export default InterviewsPage
+export default LecturesPage
 
 
 {/* <ImgBanner img="/hrokkbraud.png" imgAlt="mynd-drengur-ad-borda" sm>

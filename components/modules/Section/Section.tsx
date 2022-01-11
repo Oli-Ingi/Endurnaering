@@ -5,6 +5,7 @@ import Flex, { Props as FlexProps } from '../../elements/Flex/Flex';
 
 export type Props = {
     title?: string | JSX.Element;
+    titleAlign?: "left" | "center";
     variant?: Colors;
     shadowBottom?: boolean;
     border?: "top" | "bottom" | "both";
@@ -23,7 +24,7 @@ const StSection = styled.section<Omit<Props, "title" | "xl" | "asEl"> & { as?: "
     border-bottom: ${p => (p.border === "both" || p.border === "bottom") && `1px solid #dedede`};
 `
 
-const StInner = styled(Flex)<{ xl?: boolean; }>`
+const StInner = styled(Flex)<{ xl?: boolean; titleAlign?: Props["titleAlign"] }>`
     padding: ${p => p.pad || "4em 1em"};
     width: 100%;
     max-width: ${p => !p.xl && p.theme.layout.containerWidth};
@@ -33,7 +34,7 @@ const StInner = styled(Flex)<{ xl?: boolean; }>`
     > h2 {
         margin-bottom: 50px;
         margin-top: 0;
-        text-align: center;
+        text-align: ${p => p.titleAlign === "center" && "center"};
     }
 `
 
