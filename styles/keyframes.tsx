@@ -1,6 +1,8 @@
 import { keyframes } from 'styled-components'
 
 
+// #region fades
+
 export const fadeRight = keyframes`
     from {
         opacity: 0;
@@ -25,7 +27,24 @@ export const fadeDown = keyframes`
 
 
 export const fadeIn = keyframes`
-    to { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; visibility: visible; }
+`
+
+export const fadeOut = keyframes`
+    0% { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+`
+
+export const fadeUp = keyframes`
+    from {
+        opacity: 0;
+        transform: translateY(1em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 `
 
 export const displayFadeIn = keyframes`
@@ -52,11 +71,19 @@ export const fadeLeft = keyframes`
     }
 `
 
-export type fadeType = "right" | "left" | "down" | "in";
 
-export const fade = (type: fadeType) =>
+export const fade = (type: Fade) =>
     type === "right" ? fadeRight 
         : type === "left" ? fadeLeft 
         : type === "down" ? fadeDown 
         : type === "in" ? fadeIn 
+        : type === "up" ? fadeUp
         : null;
+
+
+//#endregion
+
+export const widthIn = keyframes`
+    from { width: 0; }
+    to { width: 100%; }
+`
