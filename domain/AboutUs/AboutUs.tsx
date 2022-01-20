@@ -56,7 +56,7 @@ const AboutUsPage = () =>
             </Text>
             <Text marginBottom="1em">
                 Okkur finnst umræðan í þjóðfélaginu um næringu vera of einsleitna og skorta skilning á því hversu einstök
-                við öll erum. Einsettum við okkur því að byggja upp fyrirtæki sem leggur áherslu á að fagna
+                við öll erum. Við einsettum okkur því að byggja upp fyrirtæki sem leggur áherslu á að fagna
                 fjölbreytileikanum; bæði hvað við erum fjölbreytt og hvað matur er fjölbreyttur. 
                 Okkur dreymir um að móta þjóðfélag sem einfaldlega nýtur þess að borða, en lítur ekki á mat sem óvin 
                 sinn eða eitthvað sem á að telja ofan í sig. Lykillinn að slíku samfélagi er að hjálpa fólki að 
@@ -74,7 +74,7 @@ const AboutUsPage = () =>
                 <img src="/heiddis.png" alt="mynd-heiddis" style={{ marginBottom: 25, borderRadius: 20 }} />
                 <PersonDiv>
                     <Title variant="section">Heiðdís Snorradóttir</Title>
-                    <Title variant="subsection" color="dark" marginBottom="1rem">Næringarfræðingur MSc. með áherslu á lýðheilsu</Title>
+                    <Title variant="subsection" color="dark" marginBottom="1rem">Næringarfræðingur MSc.</Title>
                     <Text marginBottom="1.5em">
                         Heiðdís er stofnandi og meðeigandi Endurnæringar og næringarfræðingur MSc með áherslu á lýðheilsu. 
                         Hún sérhæfir sig í að hjálpa einstaklingum að byggja upp heilbrigt sambandi við mat.

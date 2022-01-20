@@ -2,7 +2,6 @@ import Title from "../../../components/elements/Title/Title";
 import Accordion from "../../../components/entities/Accordion/Accordion";
 import Section from '../../../components/modules/Section/Section'
 
-const fyrirHverja = "Alla þá sem langar til að bæta heilsu sína. Hvort sem það er bara að líða betur í eigin skinni, eða til að koma í veg fyrir heilsukvilla."
 
 const questions = [
     {
@@ -10,7 +9,7 @@ const questions = [
         content: ["Næringarfræðingar Endurnæringar hafa lokið meistaraprófi í næringarfræði og eru með starfsleyfi frá embætti landlæknis. Þeir hafa því þekkinguna sem þarf til að geta boðið upp á persónumiðaðar lausnir frekar en staðlaðar, sem eru sérsniðnar að þínum markmiðum og venjum. Slík persónumiðuð nálgun eykur líkur á langvarandi árangri."]
     },
     { 
-        title: "Fyrir hverja hentar þjónusta Endurnæringar?", 
+        title: "Hverjum hentar þjónusta Endurnæringar?", 
         content: ["Þjónustan hentar öllum sem eru reiðubúnir að takast á við breytingar á sínum lífsstíl. Það geta allir lært að eiga í heilbrigðu sambandi við mat."]
     },
     { 

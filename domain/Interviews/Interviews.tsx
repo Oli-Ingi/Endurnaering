@@ -22,7 +22,7 @@ const InterviewsPage = () =>
         />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
             <Text size="lg" color="primary" bold marginRight="1em">Verð: <Text as="span" color="dark" size="lg">12.000 kr.</Text></Text>
-            <Button lg to="https://app.karaconnect.com/company/1115/registration?auth=2" margin="1em 4em 1em 0">Bóka viðtal</Button>
+            <Button lg to="https://accounts.karaconnect.com/auth/realms/kara/protocol/openid-connect/auth?kc_idp_hint=island.is&ui_locales=is&response_type=code&client_id=kara-acc-manage-fe&scope=openid&redirect_uri=https%3A%2F%2Fauth.karaconnect.com%2Fcreate-client%3Fview%3Dapply%26company_id%3D1115%26lang%3Dis" margin="1em 4em 1em 0">Bóka viðtal</Button>
         </Section>
         <Section align="flex-end">
             <DescCard 
