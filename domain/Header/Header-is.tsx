@@ -24,7 +24,7 @@ const interview = {
     },
     book: {
         caption: "Bóka viðtal",
-        to: "https://app.karaconnect.com/company/1115/registration?auth=2"
+        to: "https://accounts.karaconnect.com/auth/realms/kara/protocol/openid-connect/auth?kc_idp_hint=island.is&ui_locales=is&response_type=code&client_id=kara-acc-manage-fe&scope=openid&redirect_uri=https%3A%2F%2Fauth.karaconnect.com%2Fcreate-client%3Fview%3Dapply%26company_id%3D1115%26lang%3Dis"
     },
     title: "Viðtöl"
 }
