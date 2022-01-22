@@ -45,7 +45,7 @@ const AboutUsPage = () =>
             <PageTitle bold="Um okkur" light="Endurnæring" />
         </PageHead>
         <Section asEl="div" border="both" variant="secondary" pad="2em 1em" marginBottom="1em">
-            <Text size="lg" color="primary">Við búum öll yfir styrk til að stýra eigin lífi, styrk sem kemur innan frá en ekki að utan.</Text>
+            <Text size="lg" color="primary">Við búum öll yfir styrk til að stýra eigin lífi, styrk sem kemur innan frá, ekki að utan.</Text>
         </Section>
         <Section border="bottom">
             <Text marginBottom="1em">
