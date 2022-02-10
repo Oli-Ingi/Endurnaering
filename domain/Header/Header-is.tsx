@@ -24,7 +24,7 @@ const interview = {
     },
     book: {
         caption: "Bóka viðtal",
-        to: "https://go.karaconnect.com/therapists/pro/25708/ask"
+        to: "https://accounts.karaconnect.com/auth/realms/kara/protocol/openid-connect/registrations?response_type=code&client_id=kara-acc-manage-fe&scope=openid&redirect_uri=https%3A%2F%2Fauth.karaconnect.com%2Fcreate-client%3Fview%3Dapply%26company_id%3D1115"
     },
     title: "Viðtöl"
 }
