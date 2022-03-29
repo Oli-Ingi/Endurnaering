@@ -29,6 +29,11 @@ const reviews = [
         title: "Góð næringarráðgjöf fyrir fatlaða",
         content: ["“Heiðdís, þú ert mjög góð í næringarráðgjöf fyrir fatlaða. Þú nýttist mér vel en ég á það til að gleyma mér í mataræðinu en hef fólk til að minna mig á. Svo er gott að ekkert sé bannað og ég má fá mér smá sykur á hverjum degi. Það er skárra en að missa sig mikið á laugardegi.”"],
         subtitle: "27 ára kk"
+    },
+    {
+        title: "Gott viðmót eftir efnaskiptaaðgerð og minni streita",
+        content: ["“Þegar ég leitaði til Heiðdísar þá voru ekki nema 3 mánuðir síðan ég fór í efnaskiptaaðgerð. Næringin var byrjuð að valda mér mikilli streitu þar sem næringarþörfin var orðin allt önnur en fyrir aðgerð. Hún hjálpaði mér ekki einungis með að komast á réttu brautina heldur losnaði ég við streituna enda ekki annað hægt þegar spjallið við Heiðdísi var þægilegt og gott. Hún hefur mjög gott viðmót.”"],
+        subtitle: "43 ára kvk"
     }
 ]
 

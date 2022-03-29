@@ -12,7 +12,7 @@ const WhyUss = () =>
 
 const WhyUs = () => 
     <DefinitionSection 
-        title={<Title light marginBottom="70px" variant="section">Af hverju <b>Endurnæring</b>?</Title>}
+        title={<Title light mb="70px" variant="section">Af hverju <b>Endurnæring</b>?</Title>}
         cols="4"
         gap="sm"
         borders

@@ -36,11 +36,11 @@ const StContact = styled.div`
 
 const Contact: FC<Props> = ({ title, tel, hours, email }) => 
     <StContact>
-        <Text marginBottom="1em" thick color="primary">{title}</Text>
-        <Button to={tel.link} marginBottom="1em" variant="ghost" color="white">{tel.caption}</Button>
-        <Text sm marginBottom="0.3em">{hours.desc}</Text>
+        <Text mb="1em" thick color="primary">{title}</Text>
+        <Button to={tel.link} mb="1em" variant="ghost" color="white">{tel.caption}</Button>
+        <Text sm mb="0.3em">{hours.desc}</Text>
         <Text thick>{hours.period}</Text>
-        <Button to={`mailto:${email}`} marginTop="1em" variant="ghost" color="white">{email}</Button>
+        <Button to={`mailto:${email}`} mt="1em" variant="ghost" color="white">{email}</Button>
     </StContact>
 
 

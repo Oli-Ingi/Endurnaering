@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import Text from '../../elements/Text/Text'
 import { v4 as uuid } from 'uuid'
 import Toggler from '../../elements/Toggler/Toggler'
-import { useResizeObserver } from '../../../hooks/useResize'
+import { useDynamicHeight } from '../../../hooks/useDynamicHeight'
 import DropView from '../../elements/DropView/DropView'
 
 export type Props = {
@@ -56,10 +56,11 @@ const StContentWrapper = styled.div`
 
 const AccordionItem: FC<Props> = ({ onClick, item, isOpen }) => {
     const contentNode = useRef<HTMLDivElement>();
-    const [height, setHeight] = useState(0);
+    const height = useDynamicHeight(contentNode);
+    //const [height, setHeight] = useState(0);
 
-    useResizeObserver(() => 
-        contentNode && contentNode.current.offsetHeight !== height && setHeight(contentNode.current.offsetHeight));
+    //useResizeObserver(() => 
+    //    contentNode && contentNode.current.offsetHeight !== height && setHeight(contentNode.current.offsetHeight));
 
     return <StAccordionItem>
         <StHeader onClick={onClick} isOpen={isOpen}>

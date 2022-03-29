@@ -44,17 +44,17 @@ const AboutUsPage = () =>
         <PageHead>
             <PageTitle bold="Um okkur" light="Endurnæring" />
         </PageHead>
-        <Section asEl="div" border="both" variant="secondary" pad="2em 1em" marginBottom="1em">
+        <Section asEl="div" border="both" variant="secondary" pad="2em 1em" mb="1em">
             <Text size="lg" color="primary">Við búum öll yfir styrk til að stýra eigin lífi, styrk sem kemur innan frá, ekki að utan.</Text>
         </Section>
         <Section border="bottom">
-            <Text marginBottom="1em">
+            <Text mb="1em">
                 Endurnæring ehf. er lýðheilsufyrirtæki sem var stofnað í febrúar 2021 og sérhæfir sig 
                 í næringarráðgjöf. Félagið starfar með leyfi frá Embætti landlæknis fyrir bæði almenna 
                 heilbrigðisþjónustu og fjarheilbrigðisþjónustu. Sérfræðingar okkar hafa því allir löggild starfsréttindi 
                 frá Embætti landlæknis. 
             </Text>
-            <Text marginBottom="1em">
+            <Text mb="1em">
                 Okkur finnst umræðan í þjóðfélaginu um næringu vera of einsleitna og skorta skilning á því hversu einstök
                 við öll erum. Við einsettum okkur því að byggja upp fyrirtæki sem leggur áherslu á að fagna
                 fjölbreytileikanum; bæði hvað við erum fjölbreytt og hvað matur er fjölbreyttur. 
@@ -62,7 +62,7 @@ const AboutUsPage = () =>
                 sinn eða eitthvað sem á að telja ofan í sig. Lykillinn að slíku samfélagi er að hjálpa fólki að 
                 byggja upp heilbrigt samband við mat.
             </Text>
-            <Text marginBottom="1em">
+            <Text mb="1em">
                 Endurnæring er og verður ávallt staður þar sem þér er tekið eins og þú ert. Hér starfa viðurkenndir 
                 sérfræðingar sem veita þér persónumiðaða þjónustu og faglegan stuðning í átt að langvarandi árangri 
                 sem þú kýst að vilja ná.
@@ -70,16 +70,16 @@ const AboutUsPage = () =>
         </Section>
         <div id="starfsfolk" style={{ marginBottom: 20}}></div>
         <Section titleAlign="center" title="Starfsfólk">
-            <Flex just="around" marginTop="2em" $wrap reverse>
+            <Flex just="around" mt="2em" $wrap reverse>
                 <img src="/heiddis.png" alt="mynd-heiddis" style={{ marginBottom: 25, borderRadius: 20 }} />
                 <PersonDiv>
                     <Title variant="section">Heiðdís Snorradóttir</Title>
-                    <Title variant="subsection" color="dark" marginBottom="1rem">Næringarfræðingur MSc.</Title>
-                    <Text marginBottom="1.5em">
+                    <Title variant="subsection" color="dark" mb="1rem">Næringarfræðingur MSc.</Title>
+                    <Text mb="1.5em">
                         Heiðdís er stofnandi og meðeigandi Endurnæringar og næringarfræðingur MSc með áherslu á lýðheilsu. 
                         Hún sérhæfir sig í að hjálpa einstaklingum að byggja upp heilbrigt sambandi við mat.
                     </Text>
-                    <StIconLine><Icon type="email" marginRight={8} /><Link to={`mailto:heiddis@endurnaering.is`}>heiddis@endurnaering.is</Link></StIconLine>
+                    <StIconLine><Icon type="email" mr={8} /><Link to={`mailto:heiddis@endurnaering.is`}>heiddis@endurnaering.is</Link></StIconLine>
                 </PersonDiv>
             </Flex>
         </Section>

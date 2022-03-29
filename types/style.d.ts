@@ -1,11 +1,11 @@
 
 
 declare type Margins = {
-    margin?: string | number;
-    marginTop?: string | number;
-    marginRight?: string | number;
-    marginBottom?: string | number;
-    marginLeft?: string | number;
+    m?: string | number;
+    mt?: string | number;
+    mr?: string | number;
+    mb?: string | number;
+    ml?: string | number;
 }
 
 declare type FadeProps = 

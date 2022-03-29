@@ -1,4 +1,4 @@
-import { FC, useRef, useState, useEffect, useLayoutEffect } from 'react'
+import { FC, useRef, useState, useEffect, useLayoutEffect, useMemo, useCallback } from 'react'
 import styled from 'styled-components'
 import Arrow from '../../elements/Arrow/Arrow'
 import { v4 as uuid } from 'uuid'
@@ -59,13 +59,13 @@ const Slider: FC<Props> = ({ items, variant, cardWidth = 250, maxCardsInView = 4
     const [inTransit, setInTransit] = useState(false);
     const [screenMaxCards, setScreenMaxCards] = useState(1);
 
-    const tallestItem = items.reduce((acc, curr, index) => {
+    const tallestItem = useMemo(() => items.reduce((acc, curr, index) => {
         const currLength = curr.title.length + curr.content.reduce((acc, curr) => acc + curr.length, 0);
         
         return currLength > acc.length
             ? { length: currLength, index }
             : acc;
-    }, {length: 0, index: 0});
+    }, {length: 0, index: 0}), [items]); 
 
     const [render, setRender] = useState({
         pos: 0,
@@ -142,14 +142,14 @@ const Slider: FC<Props> = ({ items, variant, cardWidth = 250, maxCardsInView = 4
     return <StSlider isColumn={screenMaxCards <= 1} alignStart={noStretch}>
         {screenMaxCards <= 1 
             ? <Arrows onLeftClick={() => slide(true)} onRightClick={() => slide()} width={cardWidth} /> 
-            : <Arrow onClick={() => slide(true)} marginTop={noStretch ? "3.5em" : 0} />}
+            : <Arrow onClick={() => slide(true)} mt={noStretch ? "3.5em" : 0} />}
         <StViewBox cardWidth={cardWidth} maxCards={screenMaxCards || 1}>
             <StCardHolder ref={sliderNode} count={items.length} cardWidth={cardWidth} noStretch={noStretch}>
                 {render.items.map(ri => items[ri] && 
                     <Cardicle key={uuid()} {...items[ri]} />)}
             </StCardHolder>
         </StViewBox>
-        {screenMaxCards > 1 && <Arrow onClick={() => slide()} right marginTop={noStretch ? "3.5em" : 0} />}
+        {screenMaxCards > 1 && <Arrow onClick={() => slide()} right mt={noStretch ? "3.5em" : 0} />}
     </StSlider>
 }
     

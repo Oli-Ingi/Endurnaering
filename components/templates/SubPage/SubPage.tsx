@@ -20,8 +20,8 @@ const SubPage: FC<Props> = ({ img, imgAlt, title, description, barContent, child
     <Column as="main">
         <ImgBanner img={img} imgAlt={imgAlt} sm>
             <div style={{ marginBottom: 50 }}>
-                <Title marginBottom="0.3em">{title}</Title>
-                {description.map(d => <Text marginBottom=".7em">{d}</Text>)}
+                <Title mb="0.3em">{title}</Title>
+                {description.map(d => <Text mb=".7em">{d}</Text>)}
             </div>
         </ImgBanner>
         {barContent && <Section asEl="div" border="both" just="between" align="center" row variant="secondary" pad="1em">

@@ -7,11 +7,11 @@ export const addPxIfNumber = (value?: string | number) =>
         : value;
 
 export const MarginHandler = css<Margins>`
-    margin: ${p => addPxIfNumber(p.margin || 0)};
-    margin-top: ${p => addPxIfNumber(p.marginTop)};
-    margin-right: ${p => addPxIfNumber(p.marginRight)};
-    margin-bottom: ${p => addPxIfNumber(p.marginBottom)};
-    margin-left: ${p => addPxIfNumber(p.marginLeft)};
+    margin: ${p => addPxIfNumber(p.m || 0)};
+    margin-top: ${p => addPxIfNumber(p.mt)};
+    margin-right: ${p => addPxIfNumber(p.mr)};
+    margin-bottom: ${p => addPxIfNumber(p.mb)};
+    margin-left: ${p => addPxIfNumber(p.ml)};
 `
 
 interface IVariants { variant?: Variants }

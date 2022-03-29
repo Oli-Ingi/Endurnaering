@@ -310,3 +310,94 @@ Entities
     Um okkur síða, subsection með Heiðdísi
     Concepts eru enn biluð í responsive
     Plúsar í algengar spurningar beyglast inn í responsive með nýju spurningunum
+
+
+elements
+Logo
+    -variants
+        - green
+        - white
+Typography (Tp)
+    - as
+        - h1, h2, etc.
+        - p
+        - span
+        - label, etc ?
+    - variants
+        - PageHeader
+        - SectionHeader
+        - SubPageHeader
+        - ArticleHeader
+        - LargeText (1.6rem)
+        - Text (1.2rem)
+        - MiniText (1rem)
+    - bold
+    - italic
+    - color
+        - primary
+        - dark
+        - white
+Icons
+    - type
+        - Arrow
+        - recycle
+        - etc.
+        - facebook
+Button (no buttons atm.)
+Card ?
+    - width
+    - border (and color)
+    - height
+    - as
+        - link
+Section
+Page
+    - variants
+        - wrapped
+        - full (default)
+Image (needs research)
+    - Herborg
+    - Embætti landlæknis etc.
+    - variants
+        - Banner
+        - Card
+    - border
+Divy
+    - very flexible box (Flex)
+Seperator
+Link
+    - variants
+        - inText
+        - standalone
+        - button
+        - ghost
+        - icon (not needed?, wrap icon in <NextLink />)
+        - circle (eða bara link utan um socialIcon)
+SocialMediaIcon
+Bullet
+    - bold
+BulletList ?
+Burger
+DropView ?
+
+
+modules
+Dropdown (nav)
+SubPageBanner
+PriceBanner
+InfoCard
+(Page)Intro
+Section
+LinkCard
+Cardicle
+Card
+AccordionItem
+Accordion
+Contact
+PageLinkList
+SepList
+
+
+heavier
+Header
+Footer

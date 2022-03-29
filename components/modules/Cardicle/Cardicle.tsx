@@ -15,10 +15,10 @@ const Cardicle: FC<Props> = ({ title, content, subtitle }) =>
     <Card variant="white" shadow="always" border>
         <Flex col width="full" just="between" style={{ height: "100%" }}>
             <div>
-                <Title variant="subsection" marginBottom={20}>{title}</Title>
+                <Title variant="subsection" mb={20}>{title}</Title>
                 {content.map(c => <Text size="sm" key={c}>{c}</Text>)}
             </div>
-            {subtitle && <Text size="sm" bold marginTop={15} faded>{subtitle}</Text>}
+            {subtitle && <Text size="sm" bold mt={15} faded>{subtitle}</Text>}
         </Flex>
     </Card>
 

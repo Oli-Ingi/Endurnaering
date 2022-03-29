@@ -21,7 +21,7 @@ const LecturesPage = () =>
             imgAlt="mynd-stulka-ad-drekka-kaffi"
         />
         <Section asEl="div"  border="both" just="between" align="center" row pad="1em">
-            <Text bold margin="4em 1em">Endurnæring býður upp á fyrirlestra fyrir hópa og fyrirtæki. Hægt er að bóka fyrirlestur og ræða fyrirkomulag með því að senda póst á: <Link to="mailto:endurnaering@endurnaering.is" bold inline>endurnaering@endurnaering.is</Link></Text>
+            <Text bold m="4em 1em">Endurnæring býður upp á fyrirlestra fyrir hópa og fyrirtæki. Hægt er að bóka fyrirlestur og ræða fyrirkomulag með því að senda póst á: <Link to="mailto:endurnaering@endurnaering.is" bold inline>endurnaering@endurnaering.is</Link></Text>
         </Section>
     </Column>
 

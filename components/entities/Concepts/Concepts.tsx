@@ -35,7 +35,7 @@ const Concepts: FC<Props> = ({ concepts, title, ...margins }) =>
                     imgPos={i % 2 === 0 ? "bottomLeft" : "bottomRight"} 
                     imgOffset 
                     variant="secondary"
-                    marginBottom="6em" 
+                    mb="6em" 
                 />)}
         </StConcept>
     </Section>

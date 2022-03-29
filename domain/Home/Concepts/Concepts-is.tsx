@@ -47,7 +47,7 @@ const concepts = [
 
 const HeroIs = () =>
     <Concepts 
-        title={<Title light variant="huge" marginBottom={70} center>Byggjum á <b>gagnreyndum</b> og <b>viðurkenndum</b> aðferðum</Title>}
+        title={<Title light variant="huge" mb={70} center>Byggjum á <b>gagnreyndum</b> og <b>viðurkenndum</b> aðferðum</Title>}
         concepts={concepts} 
     />
 

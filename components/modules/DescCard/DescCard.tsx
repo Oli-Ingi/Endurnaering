@@ -18,12 +18,12 @@ const StDescCard = styled.div`
 
 const DescCard: FC<Props> = ({ date, loc }) =>
     <Card border variant="secondary" otherBorders>
-        <Flex align="center" marginBottom="1em">
-            <Icon type="calendar" marginRight="1em" />
+        <Flex align="center" mb="1em">
+            <Icon type="calendar" mr="1em" />
             <Text>{date}</Text>
         </Flex>
         <Flex align="center">
-            <Icon type="location" marginRight="1em" />
+            <Icon type="location" mr="1em" />
             <Text>{loc}</Text>
         </Flex>
     </Card>

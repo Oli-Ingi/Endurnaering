@@ -14,7 +14,7 @@ import Footer from '../domain/Footer/Footer-is'
 function Endurnaering({ Component, pageProps }: AppProps) {
   return <ThemeProvider theme={mainTheme}>
       <Head>
-        <title>Endurnæring</title>
+        <title>Endurnæring - Næringarráðgjöf</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet" />
@@ -25,6 +25,8 @@ function Endurnaering({ Component, pageProps }: AppProps) {
         <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
+        <meta name="description" content="Sérniðin næringarráðgjöf" />
+        <meta name="keywords" content="næringarráðgjöf, næringarfræðingur, næring" />
       </Head>
       <Header />
         <Component {...pageProps} />

@@ -25,9 +25,10 @@ export const mainTheme = {
         //red: '#AB4405',
         //brown: '#594B32',
         white: '#FFF',
+        faded: "001A00"
     },
     font: {
-        family: "roboto",
+        family: "roboto", // am i using this or the other?
         sizes: {
             xxl: 72,
             xl: 42, // 

@@ -13,20 +13,15 @@ import Faq from '../domain/Home/FAQ/FAQ-is';
 
 
 const HomePage = () =>
-  <>
-    <Head>
-      <title>Endurnæring</title>
-    </Head>
-    <Column>
-      <Hero />
-      <Services />
-      <WhyUs />
-      <Concepts />
-      <Benefits />
-      <Reviews />
-      <Faq />
-    </Column>
-  </>
+  <Column>
+    <Hero />
+    <Services />
+    <WhyUs />
+    <Concepts />
+    <Benefits />
+    <Reviews />
+    <Faq />
+  </Column>
 
 
 export default HomePage;

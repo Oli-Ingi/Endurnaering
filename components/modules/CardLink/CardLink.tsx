@@ -35,7 +35,7 @@ const StCardLink = styled(Card)<CardProps>`
 
 const CardLink: FC<Props> = ({ icon, title, description, href, hoverColor }) => 
     <StCardLink row href={href} border variant="white" shadow="hover" borderHoverColor={hoverColor}>
-        <Icon type={icon} marginRight={12} />
+        <Icon type={icon} mr={12} />
         <div>
             <Title variant="subsection" color="primary">{title}</Title>
             <Text color="dark" size="sm">{description}</Text>

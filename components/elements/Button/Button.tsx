@@ -50,8 +50,6 @@ const Button = styled.button.attrs((p: Props) => ({
                 color: ${p.theme.colors[p.color === "primary" ? "primary" : "white"]};
             `}
         `}
-        
-        
     }
 `
 

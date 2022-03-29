@@ -65,7 +65,7 @@ const Home: FC<Props> = ({ hero, concepts, references, faq, services }) =>
                     imgPos={i % 2 === 1 ? "bottomLeft" : "bottomRight"} 
                     imgOffset 
                     variant="secondary"
-                    marginBottom="7em" 
+                    mb="7em" 
                 />)}
         </Section>
         <Section variant="secondary" title={references.title}>

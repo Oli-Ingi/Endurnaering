@@ -9,7 +9,7 @@ export type Props = {
 
 const SubArticleSection: FC<Props> = ({ title, children }) => 
     <>
-        <Text as="h3" bold margin="1rem 0 0.3rem">{title}</Text>
+        <Text as="h3" bold m="1rem 0 0.3rem">{title}</Text>
         {children}
     </>
 

@@ -52,10 +52,10 @@ const AboutPerson: FC<Props> = ({ img, title, subtitle, email, phone, bookLink }
         <Img img={img} />
         <Card border>
             <Title variant="section">{title}</Title>
-            <Title variant="subsection" color="dark" marginBottom="1rem">{subtitle}</Title>
-            <StIconLine><Icon type="email" marginRight={8} /><Link to={`mailto:${email}`}>{email}</Link></StIconLine>
-            <StIconLine><Icon type="phone" marginRight={8} /><Link to={`tel:${phone}`}>{phone}</Link></StIconLine>
-            <StBtnWrapper><Button color="primary" sm to={bookLink.to} marginTop="2rem">{bookLink.caption}</Button></StBtnWrapper>
+            <Title variant="subsection" color="dark" mb="1rem">{subtitle}</Title>
+            <StIconLine><Icon type="email" mr={8} /><Link to={`mailto:${email}`}>{email}</Link></StIconLine>
+            <StIconLine><Icon type="phone" mr={8} /><Link to={`tel:${phone}`}>{phone}</Link></StIconLine>
+            <StBtnWrapper><Button color="primary" sm to={bookLink.to} mt="2rem">{bookLink.caption}</Button></StBtnWrapper>
         </Card>
     </StAboutPerson>
 

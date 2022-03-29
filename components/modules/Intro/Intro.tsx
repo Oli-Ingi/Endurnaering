@@ -82,7 +82,7 @@ const Intro: FC<Props> = ({ title, subtitle, variant, content, animate, onButton
             {content.map(p => 
                 <Text 
                     key={uuid()} 
-                    marginBottom={8} 
+                    mb={8} 
                     {...variant === "primary" && { color: "white" }} 
                     center={style.round}
                     size="lg"

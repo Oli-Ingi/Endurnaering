@@ -4,13 +4,7 @@ import InterviewsPage from '../domain/Interviews/Interviews'
 
 
 
-const Vidtol = () =>
-  <>
-    <Head>
-      <title>Endurnæring - Viðtöl</title>
-    </Head>
-        <InterviewsPage />
-  </>
+const Vidtol = () => <InterviewsPage />
 
 
 export default Vidtol;

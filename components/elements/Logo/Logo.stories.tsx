@@ -12,7 +12,7 @@ export default {
         variant: { 
             control: { 
                 type: 'radio',
-                options: ["primary", "secondary", "white"]
+                options: ["primary", "transparent"]
             }
         },
         height: { type: 'number' }
@@ -21,14 +21,10 @@ export default {
 
 const Template: Story<Props> = props => <Logo {...props} />
 
-export const Default = Template.bind({})
+export const Default = Template.bind({}) // primary
 
-export const Primary = Template.bind({})
-Primary.args = {
-    variant: "primary"
-} as Props
 
 export const Secondary = Template.bind({})
 Secondary.args = {
-    variant: "secondary"
+    variant: "transparent"
 } as Props

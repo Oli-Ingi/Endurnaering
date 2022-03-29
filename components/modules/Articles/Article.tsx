@@ -36,7 +36,7 @@ const StArticle = styled.article<Pick<Props, "shadow">>`
 const Article: FC<Props> = ({ title, content, button, variant, darkBg, shadow, as }) => 
     <StArticle shadow={shadow} as={as}>
         <Title variant="section">{title}</Title>
-        {content.map((p, i) => <Text key={i} marginBottom={8} {...darkBg && { color: "white" }}>{p}</Text>)}
+        {content.map((p, i) => <Text key={i} mb={8} {...darkBg && { color: "white" }}>{p}</Text>)}
     </StArticle>
 
 
