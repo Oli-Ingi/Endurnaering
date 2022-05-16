@@ -65,7 +65,7 @@ Default.args = {
     orgInfo: [
         { caption: "Endurnæring ehf."},
         { caption: "kt. 410221-0200" },
-        { caption: "Ármúli 42, 3. hæð" },
+        { caption: "Bíldshöfði 9, 110 Reykjavík. Höfðinn, Heilsuklasinn" },
         { caption: "105 Reykjavík" },
         { caption: "577-1771" },
         { caption: "endurnaering@endurnaering.is" },

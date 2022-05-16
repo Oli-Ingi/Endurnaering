@@ -313,7 +313,7 @@ Entities
 
 
 elements
-Logo
+Logo.....................X
     -variants
         - green
         - white

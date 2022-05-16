@@ -1,12 +1,11 @@
 import styled, { css } from 'styled-components'
 import { FC, MouseEvent} from  'react'
-import { VariantHandler } from '../../../styles/common'
 
 
 export type Props = {
     onClick: (e: MouseEvent<HTMLButtonElement>) => void;
     isOpen: boolean;
-    variant?: Variants;
+    variant?: "primary" | "white";
     scale?: number;
 }
 
@@ -28,7 +27,7 @@ const StBurger = styled.button<Props>`
 
     line {
         transition: all 0.3s ease-in-out;
-        stroke: ${VariantHandler};
+        stroke: ${p => p.theme.colors[p.variant || "primary"]};
         stroke-width: 2px;
         opacity: 1;
 

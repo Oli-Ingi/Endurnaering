@@ -7,6 +7,7 @@ export type Props = {
     color?: Colors;
     light?: boolean;
     center?: boolean;
+    as?: "h1" | "h2" | "h3" | "h4" | "h5";
 } & Margins
 
 const titleSizeMap = {
@@ -28,9 +29,9 @@ const mediaSizeMap = {
 type AttrsOut = Omit<Props, "color"> & { $color: NonNullable<Props["color"]> }
 
 const Title = styled.h1.attrs<Props, AttrsOut>(p => ({
-    as: p.variant === "section" ? "h2" 
+    as: p.as || (p.variant === "section" ? "h2" 
         : p.variant === "subsection" ? "h3" 
-        : "h1",
+        : "h1"),
     variant: p.variant || "article",
     $color: p.color || "primary",
     color: undefined

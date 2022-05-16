@@ -29,13 +29,13 @@ const StArticle = styled.article<Pick<Props, "shadow">>`
     box-sizing: border-box;
     padding: 2em;
 
-    > h2 { margin-bottom: 1rem; }
+    > h3 { margin-bottom: 1rem; }
 `
 
 
 const Article: FC<Props> = ({ title, content, button, variant, darkBg, shadow, as }) => 
     <StArticle shadow={shadow} as={as}>
-        <Title variant="section">{title}</Title>
+        <Title variant="section" as="h3">{title}</Title>
         {content.map((p, i) => <Text key={i} mb={8} {...darkBg && { color: "white" }}>{p}</Text>)}
     </StArticle>
 

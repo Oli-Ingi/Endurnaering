@@ -11,9 +11,6 @@ export type Props = {
 
 const DropView = styled.div<Props>`
     height: ${p => p.isOpen ? p.$height : 0}px;
-
-    
-
     overflow: hidden;
     transition: height 0.3s cubic-bezier(0.9,.05,.2,1);
     margin-left: ${p => !p.absolute && "40px"};

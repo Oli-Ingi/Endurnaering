@@ -18,7 +18,8 @@ export default {
     },
   } as Meta;
 
-const Template: Story<Props> = props => <Title {...props} />
+const Template: Story<Props> = props => 
+    <Title {...props} />
 
 export const Default = Template.bind({})
 Default.args = {

@@ -6,7 +6,6 @@ import ListNav from '../ListNav/ListNav'
 import Divider from '../../modules/Divider/Divider'
 import Affiliates from '../../modules/Affiliates/Affiliates'
 import SocialMedia from '../../modules/SocialMedia/SocialMedia'
-import { Props as IconProps } from '../../elements/Icon/Icon'
 
 export type Props = {
     contact: {

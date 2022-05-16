@@ -45,8 +45,7 @@ const contact = {
 const orgInfo = [
     { caption: "Endurnæring ehf."},
     { caption: "kt. 410221-0200" },
-    { caption: "Ármúli 42, 3. hæð" },
-    { caption: "108 Reykjavík" },
+    { caption: "Bíldshöfði 9, 110 Reykjavík. Höfðinn, Heilsuklasinn" },
     { caption: "577-1771" },
     { caption: "endurnaering@endurnaering.is" },
 ]
