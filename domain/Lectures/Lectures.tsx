@@ -1,11 +1,6 @@
 import Text from "../../components/elements/Text/Text";
 import Section from "../../components/modules/Section/Section";
-import Button from "../../components/elements/Button/Button";
 import Column from "../../components/templates/Column/Column";
-import ImgBanner from "../../components/modules/ImgBanner/ImgBanner";
-import Card from "../../components/elements/Card/Card";
-import DescCard from "../../components/modules/DescCard/DescCard";
-import SubPage from "../../components/templates/SubPage/SubPage";
 import SubPageBanner from "../../components/entities/SubPageBanner/SubPageBanner";
 import Link from "../../components/elements/Link/Link";
 
@@ -21,7 +16,7 @@ const LecturesPage = () =>
             imgAlt="mynd-stulka-ad-drekka-kaffi"
         />
         <Section asEl="div"  border="both" just="between" align="center" row pad="1em">
-            <Text bold m="4em 1em">Endurnæring býður upp á fyrirlestra fyrir hópa og fyrirtæki. Hægt er að bóka fyrirlestur og ræða fyrirkomulag með því að senda póst á: <Link to="mailto:endurnaering@endurnaering.is" bold inline>endurnaering@endurnaering.is</Link></Text>
+            <Text m="4em 1em">Endurnæring býður upp á fyrirlestra fyrir hópa og fyrirtæki. Hægt er að bóka fyrirlestur og ræða fyrirkomulag með því að senda póst á: <Link to="mailto:endurnaering@endurnaering.is" inline permaLine>endurnaering@endurnaering.is</Link></Text>
         </Section>
     </Column>
 

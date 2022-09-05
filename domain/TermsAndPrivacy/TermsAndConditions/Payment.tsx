@@ -1,4 +1,5 @@
 import BulletList from "../../../components/elements/BulletList/BulletList";
+import Link from "../../../components/elements/Link/Link";
 import Text from "../../../components/elements/Text/Text";
 import ArticleSection from "../../../components/modules/ArticleSections/ArticleSection/ArticleSection";
 import SubArticleSection from "../../../components/modules/ArticleSections/SubArticleSection/SubArticleSection";
@@ -9,16 +10,17 @@ const Payment = () =>
         <SubArticleSection title="Greiðslumáti">
             <Text>
                 Greiðsla er innt af hendi eftir hvert viðtal í gegnum innheimtuþjónustu Íslandsbanka eða með millifærslu. 
-                Skjólstæðingur fær kvittun fyrir greiðslunni senda í tölvupósti eftir að greiðsla hefur verið framvkæmd. 
-                Endurnæring ehf hefur ekki aðgang að kortaupplýsingum kaupenda. 
+                Skjólstæðingur fær kvittun fyrir greiðslunni senda í tölvupósti eftir að greiðsla hefur verið framvkæmd.
+                Endurnæring ehf hefur ekki aðgang að kortaupplýsingum kaupenda.
             </Text>
             <Text>
-                Hægt er að nálgast kvittun hjá Endurnæringu ehf. sem hægt er framvísa til stéttarfélaga vegna greiðsluþátttöku 
-                en sum stéttarfélög styrkja sína félagsmenn til að sækja veitta þjónustu.
+                Hægt er að nálgast kvittun hjá Endurnæringu ehf. sem hægt er framvísa til stéttarfélaga vegna greiðsluþátttöku 
+                en sum stéttarfélög styrkja sína félagsmenn til að sækja veitta þjónustu.
             </Text>
         </SubArticleSection>
         <SubArticleSection title="Verð">
             <Text>
+                Viðtalstími (60-90mín) hjá næringarfræðing kostar alla jafna 18 þúsund kr. Sjá nánar á <Link to="/vidtol" inline permaLine>hér</Link>.
                 Öll verð eru í íslenskum krónum og eru verð og upplýsingar um þjónustu birt með fyrirvara um innsláttarvillur. 
                 Við áskiljum okkur rétt til verðbreytinga án fyrirvara. 
                 <Text as="span" italic>
@@ -34,6 +36,9 @@ const Payment = () =>
                 <Text as="li">Öryrkjabandalag Íslands</Text>
                 <Text as="li">Félag eldri borgara</Text>
             </BulletList>
+            <Text>
+                Jafnframt ef beiðni/tilvísun um næringarráðgjöf kemur frá lækni er veittur 20% afsláttur.
+            </Text>
         </SubArticleSection>
     </ArticleSection>
 

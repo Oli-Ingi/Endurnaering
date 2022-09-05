@@ -1,4 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import React from "react";
 import Footer, { Props } from "./Footer";
 
@@ -17,9 +17,9 @@ export default {
       },
       smallOrgInfo: { type: "boolean" }
     },
-  } as Meta;
+  } as ComponentMeta<typeof Footer>;
 
-const Template: Story<Props> = props => <Footer {...props} />
+const Template: ComponentStory<typeof Footer> = props => <Footer {...props} />
 
 export const Default = Template.bind({})
 Default.args = {

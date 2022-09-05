@@ -11,6 +11,7 @@ export const mainTheme = {
         tertiaryLight: "#F2F6F2",
         red: '#B85B33',
         blue: '#387278',
+        blueLight: '#BADBDE',
         brown: "#714E07",
         purple: "#916C83",
         //green: '#77A03F',

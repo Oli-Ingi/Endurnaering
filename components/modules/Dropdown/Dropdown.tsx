@@ -4,6 +4,7 @@ import Link from '../../elements/Link/Link'
 import Caret from '../../elements/Caret/Caret'
 import DropView from '../../elements/DropView/DropView'
 import useOutsideClickListener from '../../../hooks/useOutsideClickListener'
+import List from '../List/List'
 
 
 export type Props = {
@@ -49,6 +50,8 @@ const StDropDown = styled.div<{ isOpen: boolean, shadow?: boolean }>`
             border: 1px solid #eee;
             border-top: none;
             background: white;
+            display: block;
+            width: 100%;
         }
 
         a {
@@ -76,18 +79,18 @@ const Dropdown: FC<Props> = ({ links, title, shadow }) => {
 
     useEffect(() => {
         listNode.current?.offsetHeight !== height && setHeight(listNode.current?.offsetHeight)
-    }, [listNode])
+    }, [listNode, isOpen])
    
     return <StDropDown isOpen={isOpen} shadow={shadow} ref={dropdownNode}>
         <Link onClick={() => setIsOpen(!isOpen)} noHoverLine icon={<Caret isOpen={isOpen} />} iconRight>
             {title}
         </Link>
         <DropView isOpen={isOpen} $height={height} absolute>
-            <ul ref={listNode}>
+            <List ref={listNode}>
                 {links.map(link => <li key={link.caption} onClick={e => e.stopPropagation()}>
                     <Link to={link.to} newTab={link.newTab} noHoverLine>{link.caption}</Link>
                 </li>)}
-            </ul>
+            </List>
         </DropView>
     </StDropDown>
 }

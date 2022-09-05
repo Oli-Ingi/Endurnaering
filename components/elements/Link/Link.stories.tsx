@@ -1,4 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import React from "react";
 import Icon from "../Icon/Icon";
 import Link, { Props } from "./Link";
@@ -21,9 +21,10 @@ export default {
         permaLine: { type: 'boolean' },
         iconRight: { type: "boolean" }
     },
-  } as Meta;
+    
+  } as ComponentMeta<typeof Link>;
 
-const Template: Story<Props> = props => <Link {...props} />
+const Template: ComponentStory<typeof Link> = props => <Link {...props} />
 
 export const Default = Template.bind({})
 Default.args = {

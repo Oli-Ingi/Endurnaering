@@ -20,10 +20,6 @@ const StNav = styled.nav<Pick<Props, "lg">>`
 
     > div { display: none; }
 
-    > * :not(:first-child) {
-        margin-left: 20px;
-    }
-
     @media screen and (max-width: 930px) {
         a { display: none; }
         > div { display: block; }
@@ -33,7 +29,7 @@ const StNav = styled.nav<Pick<Props, "lg">>`
 
 const InterviewNav: FC<Props> = ({ title, book, attend, lg, dropShadow }) =>
     <StNav lg={lg}>
-        <Button to={book.to}>{book.caption}</Button>
+        <Button to={book.to} mr={10}>{book.caption}</Button>
         <Button color="secondary" to={attend.to} keepColorOnHover>{attend.caption}</Button>
         <Dropdown title={title} links={[book, attend]} shadow={dropShadow} />
     </StNav>

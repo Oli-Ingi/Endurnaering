@@ -5,8 +5,8 @@ import ArticleSection from "../../../components/modules/ArticleSections/ArticleS
 const HealthServicesOps = () =>
     <ArticleSection title="Rekstur heilbrigðisþjónustu">
         <Text>
-            Endurnæring ehf er rekin með leyfi frá Embætti landlæknis. 
-            Allir veitendur heilbrigðisþjónustu hjá Endurnæring ehf eru með löggilt starfsleyfi frá Embætti landlæknis.   
+            Endurnæring ehf er rekin með leyfi frá Embætti landlæknis. 
+            Allir veitendur heilbrigðisþjónustu hjá Endurnæring ehf eru með löggilt starfsleyfi frá Embætti landlæknis.
         </Text>
     </ArticleSection>
 

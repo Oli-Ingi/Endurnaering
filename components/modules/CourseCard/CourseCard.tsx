@@ -24,7 +24,7 @@ const CourseCard: FC<Props> = ({ title, subtitle, description, length, lengthLab
         <Title variant="subsection" color={color || "primary"} mb=".5em">{title}{subtitle && <Text as="span" block> {subtitle}</Text>}</Title>
         <div style={{ flex: 1 }}><Text>{description}</Text></div>
         <Flex just="between" mt="1em">
-            <Text bold color={color || "primary"}>{lengthLabel} <Text as="span" color="dark">{length}</Text></Text>
+            <Text bold color={color || "primary"} mr={10}>{lengthLabel} <Text as="span" color="dark">{length}</Text></Text>
             <Badge color={color || "primary"}>{type}</Badge>
         </Flex>
     </Card>

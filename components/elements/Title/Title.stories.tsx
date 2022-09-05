@@ -1,4 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 import React from "react";
 import Title, { Props } from "./Title";
 
@@ -16,9 +16,9 @@ export default {
           }
       },
     },
-  } as Meta;
+  } as ComponentMeta<typeof Title>;
 
-const Template: Story<Props> = props => 
+const Template: ComponentStory<typeof Title> = props => 
     <Title {...props} />
 
 export const Default = Template.bind({})

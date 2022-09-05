@@ -1,4 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import React from "react";
 import Arrow, { Props } from "./Arrow";
 
@@ -18,10 +18,10 @@ export default {
         length: { type: "number" },
         right: { type: "boolean" }
     },
-  } as Meta;
+  } as ComponentMeta<typeof Arrow>;
 
 
-const template: Story<Props> = args => <Arrow {...args} />
+const template: ComponentStory<typeof Arrow> = args => <Arrow {...args} />
 
 export const Default = template.bind({})
 Default.args = {

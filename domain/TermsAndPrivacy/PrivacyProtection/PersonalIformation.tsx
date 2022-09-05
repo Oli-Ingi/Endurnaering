@@ -6,7 +6,7 @@ import ArticleSection from "../../../components/modules/ArticleSections/ArticleS
 const PersonalInformation = () =>
     <ArticleSection title="Persónugögn">
         <Text>
-            Persónugögn eru gögn sem hægt er að tengja við einstaklinga. Endurnæring ehf.
+            Persónugögn eru gögn sem hægt er að tengja við einstaklinga. Endurnæring ehf.
             safnar og vinnur eftirfarandi persónugögn sem hægt er að tengja við þig:
         </Text>
         <BulletList>

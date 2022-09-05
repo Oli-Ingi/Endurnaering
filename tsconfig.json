@@ -16,14 +16,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "custom.d.ts"
-, "pages/skilmalar.js"  ],
+    "custom.d.ts",
+    "pages/skilmalar.js"
+  ],
   "exclude": [
     "node_modules"
   ]

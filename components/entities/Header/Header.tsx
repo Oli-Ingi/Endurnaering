@@ -8,6 +8,7 @@ import { fadeIn, fadeOut } from '../../../styles/keyframes'
 import BulletList from '../../elements/BulletList/BulletList'
 import Text from '../../elements/Text/Text'
 import Link from '../../elements/Link/Link'
+import Dropdown from '../../modules/Dropdown/Dropdown'
 
 type Link = {
     to: string;
@@ -72,6 +73,16 @@ const StHeader = styled.div<Pick<Props, "shadow"> & { isOpen?: boolean; }>`
     
 `
 
+const MdNavBar = styled.nav`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 930px) {
+         display: none;
+    }
+`
+
+
 const StMenu = styled.div<{ isOpen: boolean; initial: boolean }>`
     position: fixed;
     top: 70px;
@@ -102,9 +113,12 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
 
     return <StHeader shadow={shadow} as="header">
         <Logo variant="primary" />
-        <div>
-            <Nav items={navItems} lgMarginBetween dropShadow={shadow} />
-        </div>
+        <MdNavBar>
+        {navItems && navItems.map(it => 
+            it.links 
+                ? <Dropdown key={it.caption} title={it.caption} links={it.links} shadow />
+                : <Link to={it.to} key={it.caption} bold>{it.caption}</Link>)}
+            </MdNavBar>
         <InterviewNav {...interview} dropShadow={shadow} />
         <Burger onClick={toggleMenu} isOpen={burgerMenuIsOpen} variant="white" />
         <StMenu isOpen={burgerMenuIsOpen} initial={initial}>

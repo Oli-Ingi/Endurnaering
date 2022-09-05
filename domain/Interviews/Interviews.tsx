@@ -4,12 +4,43 @@ import Button from "../../components/elements/Button/Button";
 import Column from "../../components/templates/Column/Column";
 import DescCard from "../../components/modules/DescCard/DescCard";
 import SubPageBanner from "../../components/entities/SubPageBanner/SubPageBanner";
+import styled from "styled-components";
+import Link from "../../components/elements/Link/Link";
 
 
 // TODO: Modify Hero for reusability here.
 // TODO: Reusable price bar?
 // TODO: námskeið: Card module.
 // IDEA: randomize hero images displayed?
+
+const StArticleSection = styled.div`
+    max-width: ${p => p.theme.layout.containerWidth};
+    display: flex;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 48px 0;
+
+    > div:first-child {
+        margin-right: 48px;
+        flex: 1;
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column-reverse;
+
+        > div:first-child {
+            margin-top: 24px;
+        }
+    }
+`
 
 const InterviewsPage = () => 
     <Column as="main">
@@ -21,15 +52,39 @@ const InterviewsPage = () =>
             imgAlt="mynd-drengur-ad-borda"
         />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
-            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">16.000 kr.</Text></Text>
+            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">18.000 kr.</Text></Text>
             <Button lg to="https://accounts.karaconnect.com/auth/realms/kara/protocol/openid-connect/registrations?response_type=code&client_id=kara-acc-manage-fe&scope=openid&redirect_uri=https%3A%2F%2Fauth.karaconnect.com%2Fcreate-client%3Fview%3Dapply%26company_id%3D1115" m="1em 4em 1em 0">Bóka viðtal</Button>
         </Section>
-        <Section align="flex-end">
+        <StArticleSection>
+            <div>
+                <Text>Viðtal við næringarfræðing tekur u.þ.b. 60-90 mínútur.</Text>
+                <Text>
+                    Áhersla er lögð á að þú stýrir ferðinni og að ráðgjöfin sé stuðningur við markmið tengd næringu og/eða matarvenjum. 
+                    Í viðtalinu er notast við þekkta og gagnreynda samtalsaðferð sem kallast áhugahvetjandi samtal (e. Motivational Interviewing). Sú aðferð hefur reynst vel 
+                    við að skapa áhuga á viðfangsefninu og auka líkur á langvarandi árangri. 
+                    Markmið viðtalsins verður þannig að skapa drifkraft og veita tæki og tól sem þú nýtir þér til að bæta mataræði þitt.
+                </Text>
+                <Text>
+                    Í viðtalinu vinnum við efnislega með lykilstoðir jákvæðrar heilsu, þ.e. hreyfingu, næringu, svefn og andlega heilsu. Áhersla verður lögð á að leiðbeina þér í átt að heilbrigðu sambandi við mat með
+                    því að læra að borða með innsæinu (e. intuitive eating). Í þeirri nálgun felast engin boð eða bönn heldur persónumiðuð fræðsla og þjálfun í því að læra að hlusta
+                    á eigin líkama og tengjast svengdar- og sedduboðum.
+                </Text>
+                <Text>
+                    Þjónustan hentar öllum þeim sem vilja læra að byggja upp heilbrigt samband við mat, en við viljum þó benda sérstaklega á að hún getur hentað þeim sem eru að kljást við kvíða, streitu, ADHD, einhverfu og tengdar raskanir. 
+                    Jafnframt hafa aðferðir okkar reynst árangursríkar fyrir þá sem þjást af völdum einkenna á borð við meltingaróþægindi, fæðuofnæmi eða óþol.
+                </Text>
+                <Text>
+                    Viðtölin eru styrkt af flestum stéttarfélögum og býðst öryrkjum 20% afsláttur gegn framvísun félagskorts.
+                </Text>
+                <Text>
+                    Ef frekari upplýsinga er óskað er hægt að hafa samband beint við næringarfræðing hér: <Link inline to="mailto:heiddis@endurnaering.is" permaLine>heiddis@endurnaering.is</Link>.
+                </Text>
+            </div>
             <DescCard 
                 date="Alla virka daga, kl. 9 - 16" 
-                loc="Ármúli 42, 108 Reykjavík" 
+                loc=" Bíldshöfði 9, 110 Reykjavík" 
             />
-        </Section>
+        </StArticleSection>
     </Column>
 
 

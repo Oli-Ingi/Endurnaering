@@ -5,7 +5,7 @@ import Flex from '../../elements/Flex/Flex'
 import Icon from '../../elements/Icon/Icon'
 import Text from '../../elements/Text/Text'
 
-export type Props = {
+export type Props = Margins & {
     date: string;
     loc: string;
 }
@@ -16,8 +16,8 @@ const StDescCard = styled.div`
 `
 
 
-const DescCard: FC<Props> = ({ date, loc }) =>
-    <Card border variant="secondary" otherBorders>
+const DescCard: FC<Props> = ({ date, loc, ...margins }) =>
+    <Card border variant="secondary" otherBorders {...margins}>
         <Flex align="center" mb="1em">
             <Icon type="calendar" mr="1em" />
             <Text>{date}</Text>
