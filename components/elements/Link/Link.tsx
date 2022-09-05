@@ -14,10 +14,12 @@ export type Props = Margins & {
     keepColorOnHover?: boolean;
     size?: "sm" | "lg";
     inner?: boolean;
+    isNav?: boolean;
     children: string;
+    onClick?: MouseEventHandler<HTMLElement>;
 } & (
-    | { onClick: MouseEventHandler<HTMLElement>; to?: never; newTab?: never; }
-    | { onClick?: never; to: string; newTab?: boolean; }
+    | { to?: never; newTab?: never; }
+    | { to: string; newTab?: boolean; }
 ) & (
     | { icon: JSX.Element; iconRight?: boolean }
     | { icon?: never; iconRight?: never }
@@ -39,6 +41,8 @@ const StLink = styled.a.attrs<Omit<Props, "children" | "icon">>(p => ({
     font-weight: ${p => p.bold ? "bold" : 300};
     text-decoration: none;
     ${MarginHandler}
+
+
 
     ${p => p.onClick && css`
         background: none;

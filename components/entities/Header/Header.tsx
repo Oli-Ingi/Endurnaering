@@ -111,6 +111,8 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
         setBurgerMenuIsOpen(!burgerMenuIsOpen);
     }
 
+    const closeIt = () => setBurgerMenuIsOpen(false);
+
     return <StHeader shadow={shadow} as="header">
         <Logo variant="primary" />
         <MdNavBar>
@@ -125,9 +127,9 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
             <nav>
                 <Text as="span" bold color="white" size="lg">Þjónustuleiðir</Text>
                 <BulletList variant="secondary" spaceLg noMargin>
-                    <li><Link variant="white" permaLine to="/vidtol">Einstaklingsviðtöl</Link></li>
-                    <li><Link variant="white" permaLine to="/namskeid">Námskeið</Link></li>
-                    <li><Link variant="white" permaLine to="/fyrirlestrar">Fyrirlestrar</Link></li>
+                    <li><Link variant="white" permaLine to="/vidtol" onClick={closeIt} inner>Einstaklingsviðtöl</Link></li>
+                    <li><Link variant="white" permaLine to="/namskeid" inner onClick={closeIt}>Námskeið</Link></li>
+                    <li><Link variant="white" permaLine to="/fyrirlestrar" inner onClick={closeIt}>Fyrirlestrar</Link></li>
                 </BulletList>
                 <Text as="span" bold color="white" size="lg">Viðtöl</Text>
                 <BulletList variant="secondary" spaceLg noMargin>
@@ -136,9 +138,9 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
                 </BulletList>
                 <Text as="span" bold color="white" size="lg">Um okkur</Text>
                 <BulletList variant="secondary" spaceLg noMargin>
-                    <li><Link variant="white" permaLine to="/um-okkur">Endurnæring</Link></li>
-                    <li><Link variant="white" permaLine to="/um-okkur#starfsfolk">Starfsfólk</Link></li>
-                    <li><Link variant="white" permaLine to="/skilmalar">Skilmálar og persónuvernd</Link></li>
+                    <li><Link variant="white" permaLine onClick={closeIt} inner to="/um-okkur">Endurnæring</Link></li>
+                    <li><Link variant="white" permaLine onClick={closeIt} inner to="/um-okkur#starfsfolk">Starfsfólk</Link></li>
+                    <li><Link variant="white" permaLine onClick={closeIt} inner to="/skilmalar">Skilmálar og persónuvernd</Link></li>
                 </BulletList>
             </nav>
         </StMenu>
