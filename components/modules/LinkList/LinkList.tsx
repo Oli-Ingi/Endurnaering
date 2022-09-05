@@ -32,7 +32,7 @@ const LinkList: FC<Props> = ({ links, title }) =>
     <StLinkList>
         <li>{title}</li>
         {links.map(link => <li key={link.caption}>
-            <Link to={link.to}>{link.caption}</Link>
+            <Link to={link.to} inner>{link.caption}</Link>
         </li>)}
     </StLinkList>
 

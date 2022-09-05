@@ -5,6 +5,7 @@ import { v4 as uuid } from 'uuid'
 import Card, { Props as CardProps } from '../../elements/Card/Card'
 import Icon, { Props as IconProps } from '../../elements/Icon/Icon'
 import Title from '../../elements/Title/Title'
+import NextLink from 'next/link'
 
 export type Props = {
     title: string;
@@ -34,13 +35,15 @@ const StCardLink = styled(Card)<CardProps>`
 `
 
 const CardLink: FC<Props> = ({ icon, title, description, href, hoverColor }) => 
-    <StCardLink row href={href} border variant="white" shadow="hover" borderHoverColor={hoverColor}>
-        <Icon type={icon} mr={12} />
-        <div>
-            <Title variant="subsection" color="primary">{title}</Title>
-            <Text color="dark" size="sm">{description}</Text>
-        </div>
-    </StCardLink>
+    <NextLink href={href} passHref>
+        <StCardLink row href={href} border variant="white" shadow="hover" borderHoverColor={hoverColor}>
+            <Icon type={icon} mr={12} />
+            <div>
+                <Title variant="subsection" color="primary">{title}</Title>
+                <Text color="dark" size="sm">{description}</Text>
+            </div>
+        </StCardLink>
+    </NextLink>
 
 export default CardLink
 // Typescript doesn't like "as".

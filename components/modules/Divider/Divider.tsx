@@ -35,7 +35,7 @@ const Divider: FC<Props> = ({ values, ...style }) =>
     <StDivider>
         {values.map((val, i) => <Fragment key={val.caption}> 
             {val.to 
-                ?   <Link to={val.to} newTab={val.newTab} {...style} keepColorOnHover={style.variant === "primary"}>{val.caption}</Link>
+                ?   <Link to={val.to} newTab={val.newTab} {...style} keepColorOnHover={style.variant === "primary"} inner>{val.caption}</Link>
                 :   <Text {...style} color={style.variant}>{val.caption}</Text>}
             {i + 1 < values.length && <StLine variant={style.variant} size={style.size} />}
         </Fragment>)}
