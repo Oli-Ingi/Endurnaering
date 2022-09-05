@@ -117,7 +117,7 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
         {navItems && navItems.map(it => 
             it.links 
                 ? <Dropdown key={it.caption} title={it.caption} links={it.links} shadow />
-                : <Link to={it.to} key={it.caption} bold>{it.caption}</Link>)}
+                : <Link to={it.to} key={it.caption} bold inner>{it.caption}</Link>)}
             </MdNavBar>
         <InterviewNav {...interview} dropShadow={shadow} />
         <Burger onClick={toggleMenu} isOpen={burgerMenuIsOpen} variant="white" />

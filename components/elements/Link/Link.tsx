@@ -1,6 +1,7 @@
 import { FC, MouseEventHandler } from 'react'
 import styled, { css } from 'styled-components'
 import { MarginHandler, VariantHandler } from '../../../styles/common'
+import NextLink from "next/link";
 
 export type Props = Margins & {
     variant?: Variants;
@@ -12,6 +13,7 @@ export type Props = Margins & {
     noHoverLine?: boolean;
     keepColorOnHover?: boolean;
     size?: "sm" | "lg";
+    inner?: boolean;
     children: string;
 } & (
     | { onClick: MouseEventHandler<HTMLElement>; to?: never; newTab?: never; }
@@ -86,11 +88,19 @@ const StLink = styled.a.attrs<Omit<Props, "children" | "icon">>(p => ({
 `
 
 
-const Link: FC<Props> = ({ icon, children, ...link }) => 
-    <StLink {...link}>
-        {icon}
-        <span>{children}</span>
-    </StLink>
+const Link: FC<Props> = ({ icon, children, inner, ...link }) => 
+    inner 
+    ?   <NextLink href={link.to} passHref>
+            <StLink {...link}>
+                {icon}
+                <span>{children}</span>
+            </StLink>
+        </NextLink>
+    :   <StLink {...link}>
+            {icon}
+            <span>{children}</span>
+        </StLink>
+    
 
 
 export default Link
