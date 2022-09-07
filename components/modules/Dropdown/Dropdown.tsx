@@ -89,7 +89,7 @@ const Dropdown: FC<Props> = ({ links, title, shadow }) => {
         <DropView isOpen={isOpen} $height={height} absolute>
             <List ref={listNode}>
                 {links.map(link => <li key={link.caption} onClick={e => e.stopPropagation()}>
-                    <Link to={link.to} newTab={link.newTab} noHoverLine inner>{link.caption}</Link>
+                    <Link to={link.to} newTab={link.newTab} noHoverLine inner onClick={() => setIsOpen(false)}>{link.caption}</Link>
                 </li>)}
             </List>
         </DropView>
