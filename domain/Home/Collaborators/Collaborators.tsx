@@ -3,9 +3,9 @@ import CollabSection from '../../../components/entities/CollabSection/CollabSect
 
 
 const links = [
-    { logo: "heilsuklasinn.png", alt: "heilsuklasinn-logo-link", to: "https://klasinn.is" },
-    { logo: "heilsugaeslan_hofda.png", alt: "heilsugaesla-hofda-logo-link", to: "https://hgh.is" },
-    { logo: "Virk.png", alt: "Virk-logo-link", to: "https://virk.is" }
+    { logo: "/Heilsuklasinn.png", alt: "heilsuklasinn-logo-mynd", to: "https://klasinn.is" },
+    { logo: "/Heilsugaeslan_hofda.png", alt: "heilsugaesla-hofda-logo-mynd", to: "https://hgh.is" },
+    { logo: "/Virk.png", alt: "Virk-logo-mynd", to: "https://virk.is" }
 ];
 
 

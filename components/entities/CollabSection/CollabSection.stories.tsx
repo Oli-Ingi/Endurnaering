@@ -18,9 +18,9 @@ const template: Story<Props> = args => <CollabSection {...args} />
 export const Default = template.bind({})
 Default.args = {
     links: [
-        { logo: "/Virk.png", alt: "Virk-logo-link", to: "https://virk.is" },
-        { logo: "/heilsugaeslan_hofda.png", alt: "heilsugaesla-hofda-logo-link", to: "https://virk.is" },
-        { logo: "/heilsuklasinn.png", alt: "heilsuklasinn-logo-link", to: "https://heilsuklasinn.is" }
+        { logo: "/Virk.png", alt: "Virk-mynd", to: "https://virk.is" },
+        { logo: "/Heilsugaeslan_Hofda.png", alt: "heilsugaesla-hofda-mynd", to: "https://virk.is" },
+        { logo: "/Heilsuklasinn.png", alt: "heilsuklasinn-mynd", to: "https://heilsuklasinn.is" }
     ],
     title: "Samstarfsaðilar"
 } as Props
