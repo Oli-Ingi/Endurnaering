@@ -33,7 +33,8 @@ Default.args = {
     title: "Hér er titill",
     description: "Hér er texti",
     icon: "chart",
-    hoverColor: "red"
+    hoverColor: "red",
+    href: "/"
 } as Props
 
 export const Secondary = Template.bind({})

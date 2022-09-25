@@ -6,8 +6,7 @@ import Line from "../../elements/Line/Line";
 import Text from "../../elements/Text/Text";
 import { v4 as uuid } from 'uuid'
 import Title from "../../elements/Title/Title";
-import Icon, { Props as IconProps } from '../../elements/Icon/Icon'
-import Link from "../../elements/Link/Link";
+import { Props as IconProps } from '../../elements/Icon/Icon'
 
 export type Props = {
     title: string;

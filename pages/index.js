@@ -10,7 +10,7 @@ import Reviews from '../domain/Home/Reviews/Reviews-is';
 import WhyUs from '../domain/Home/WhyUs/WhyUs';
 import Benefits from '../domain/Home/Benefits/Benefits';
 import Faq from '../domain/Home/FAQ/FAQ-is';
-
+import Collaborators from '../domain/Home/Collaborators/Collaborators';
 
 const HomePage = () =>
   <Column>
@@ -20,6 +20,7 @@ const HomePage = () =>
     <Concepts />
     <Benefits />
     <Reviews />
+    <Collaborators />
     <Faq />
   </Column>
 

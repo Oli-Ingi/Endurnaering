@@ -12,6 +12,7 @@ export type Props = {
 const StContainer = styled.section<Pick<Props, "variant">>`
     background-color: ${p => p.variant && p.theme.colors[p.variant]};
     width: 100%;
+    min-width: 382px;
 `
 
 const StImgBanner = styled.div<{ sm?: boolean}>`
@@ -48,7 +49,7 @@ const ImgBanner: FC<Props> = ({ children, img, imgAlt, variant, sm }) =>
     <StContainer variant={variant}>
         <StImgBanner sm={sm}>
             {children}
-            <img src={img} alt={imgAlt || "mynd"} />
+            <img src={img} height={350} alt={imgAlt || "mynd"} />
         </StImgBanner>
     </StContainer>
 
