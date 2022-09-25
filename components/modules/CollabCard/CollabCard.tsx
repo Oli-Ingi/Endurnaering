@@ -12,19 +12,30 @@ const StCollabCard = styled.a`
     width: 320px;
     height: 150px;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     border: 1px solid #dedede;
+    cursor: pointer;
     border-radius: 5px;
     background-color: white;
-    filter: grayscale(100%);
     transition-duration: .2s;
 
-    :hover {
-        filter: grayscale(0%);
+    :hover ::before, :active ::before {
+        opacity: 1;
     }
 
-    @media screen and (max-width: 1100px) { filter: none; }
+    ::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        box-shadow: ${p => p.theme.deepShadow};
+        transition-duration: 0.3s;
+    }
 
     > img { max-width: 200px; }
 `
