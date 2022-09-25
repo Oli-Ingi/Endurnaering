@@ -5,7 +5,7 @@ import CollabSection from '../../../components/entities/CollabSection/CollabSect
 const links = [
     { logo: "/Heilsuklasinn.png", alt: "heilsuklasinn-logo-mynd", to: "https://klasinn.is" },
     { logo: "/Heilsugaeslan_Hofda.png", alt: "heilsugaesla-hofda-logo-mynd", to: "https://hgh.is" },
-    { logo: "/Virk.png", alt: "Virk-logo-mynd", to: "https://virk.is" }
+    { logo: "/VIRK.png", alt: "Virk-logo-mynd", to: "https://virk.is" }
 ];
 
 
