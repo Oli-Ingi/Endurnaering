@@ -52,7 +52,7 @@ const InterviewsPage = () =>
             imgAlt="mynd-drengur-ad-borda"
         />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
-            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">18.000 kr.</Text></Text>
+            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">16.000 kr.</Text></Text>
             <Button lg to="https://accounts.karaconnect.com/auth/realms/kara/protocol/openid-connect/registrations?response_type=code&client_id=kara-acc-manage-fe&scope=openid&redirect_uri=https%3A%2F%2Fauth.karaconnect.com%2Fcreate-client%3Fview%3Dapply%26company_id%3D1115" m="1em 4em 1em 0">Bóka viðtal</Button>
         </Section>
         <StArticleSection>

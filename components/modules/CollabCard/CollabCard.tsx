@@ -21,7 +21,7 @@ const StCollabCard = styled.a`
     background-color: white;
     transition-duration: .2s;
 
-    :hover ::before, :active ::before {
+    :hover ::before {
         opacity: 1;
     }
 
