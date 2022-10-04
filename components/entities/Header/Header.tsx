@@ -133,7 +133,7 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
                 </BulletList>
                 <Text as="span" bold color="white" size="lg">Viðtöl</Text>
                 <BulletList variant="secondary" spaceLg noMargin>
-                    <li><Link variant="white" permaLine to="https://app.karaconnect.com/company/1115/registration?auth=2">Bóka viðtal</Link></li>
+                    <li><Link variant="white" permaLine to="https://noona.is/heilsuklas">Bóka viðtal</Link></li>
                     <li><Link variant="white" permaLine to="https://app.karaconnect.com/login?cid=1115">Mæta í viðtal</Link></li>
                 </BulletList>
                 <Text as="span" bold color="white" size="lg">Um okkur</Text>
