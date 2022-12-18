@@ -28,16 +28,10 @@ const Payment = () =>
                 </Text>
             </Text>
         </SubArticleSection>
-        <SubArticleSection title="Afslættir">
+        <SubArticleSection title="Stéttarfélög og styrkir til að sækja næringarráðgjöf">
             <Text>
-                Endurnæring veitir meðlimum eftirtalinna samtaka 20% afslátt af þjónustu sinni gegn framvísun meðlimakorts:
-            </Text>
-            <BulletList>
-                <Text as="li">Öryrkjabandalag Íslands</Text>
-                <Text as="li">Félag eldri borgara</Text>
-            </BulletList>
-            <Text>
-                Jafnframt ef beiðni/tilvísun um næringarráðgjöf kemur frá lækni er veittur 20% afsláttur.
+                Endurnæring vekur athygli á því að nú niðurgreiða flest stéttarfélög viðtalstíma hjá næringarfræðingi gegn framvísun kvittunar.
+                Endurnæring gefur út viðeigandi kvittanir sem framvísa má til stéttarfélaga. Nánari upplýsingar um slíkt veitir Endurnæring góðfúslega.
             </Text>
         </SubArticleSection>
     </ArticleSection>

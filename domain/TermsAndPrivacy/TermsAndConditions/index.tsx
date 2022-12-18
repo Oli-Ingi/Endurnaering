@@ -1,5 +1,4 @@
 import { FC } from "react";
-import InfoBox from "../../../components/elements/InfoBox/InfoBox";
 import Link from "../../../components/elements/Link/Link";
 import Text from "../../../components/elements/Text/Text";
 import OpenArticle from "../../../components/modules/Articles/OpenArticle/OpenArticle";
@@ -7,13 +6,6 @@ import OpenArticle from "../../../components/modules/Articles/OpenArticle/OpenAr
 
 const TermsAndConditions: FC<{}> = ({ children }) =>
     <OpenArticle title="Skilmálar">
-        <InfoBox m="20px 0">
-            <Text>
-                Endurnæring vill vekja athygli á því að nú niðurgreiða flest stéttarfélög viðtalstíma hjá næringarfræðingi gegn framvísun kvittunar. 
-                Endurnæring gefur út viðeigandi kvittanir sem framvísa má til stéttarfélaga. 
-                Nánari upplýsingar um slíkt veitir Endurnæring góðfúslega.
-            </Text>
-        </InfoBox>
         <Text>
             Þjónusta Endurnæringar ehf. er háð eftirfarandi skilmálum.
             Þegar þú notar vefsíðuna eða kaupir þjónustu samþykkir þú þessa skilmála, vinsamlegast lestu vel yfir þá. 
