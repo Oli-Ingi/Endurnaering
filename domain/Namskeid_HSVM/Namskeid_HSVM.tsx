@@ -121,12 +121,11 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
             <div>
                 <Text>
                     Heilbrigt samband við mat byggir á þremur grunnstoðum: venjum, innsæi og næringu. 
-                    Á námskeiðinu verður farið yfir þessi grunnstoðir og hvernig þekking á þeim
+                    Á námskeiðinu verður farið yfir þessar grunnstoðir og hvernig þekking á þeim
                     eykur líkur á jafnvægi í okkar mataræði.
                 </Text>
                 <Text>
-                    Námskeiðið hentar jafnt konum sem körlum sem náð hafa 20 ára aldri og
-                    langar að ná betri tökum á mataræði- og venjum.
+                    Námskeiðið hentar konum og körlum sem langar að ná betri tökum á mataræði- og venjum.
                 </Text>
                 <Title variant="subsection">Helstu markmið námskeiðsins:</Title>
                 <BulletList>
