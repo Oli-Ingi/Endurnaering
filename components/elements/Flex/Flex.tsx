@@ -20,6 +20,7 @@ export type Props = {
     children: ReactNode;
     width?: string | number | "full";
     style?: CSSProperties;
+    bg?: "primary" | "secondary";
 } & Margins
 
 
@@ -37,6 +38,7 @@ const Flex =  styled.div<Props>`
     padding-left: ${p => p.pl};
     flex-wrap: ${p => p.$wrap && "wrap"};
     align-self: ${p => p.self};
+    background-color: ${p => p.bg && p.theme.bgColors[p.bg]};
     ${MarginHandler}
 `
 

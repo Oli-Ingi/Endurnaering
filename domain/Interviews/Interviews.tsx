@@ -74,7 +74,7 @@ const InterviewsPage = () =>
                     Jafnframt hafa aðferðir okkar reynst árangursríkar fyrir þá sem þjást af völdum einkenna á borð við meltingaróþægindi, fæðuofnæmi eða óþol.
                 </Text>
                 <Text>
-                    Viðtölin eru styrkt af flestum stéttarfélögum og býðst öryrkjum 20% afsláttur gegn framvísun félagskorts.
+                    Viðtölin eru styrkt af flestum stéttarfélögum.
                 </Text>
                 <Text>
                     Ef frekari upplýsinga er óskað er hægt að hafa samband beint við næringarfræðing hér: <Link inline to="mailto:heiddis@endurnaering.is" permaLine>heiddis@endurnaering.is</Link>.

@@ -26,7 +26,11 @@ export const mainTheme = {
         //red: '#AB4405',
         //brown: '#594B32',
         white: '#FFF',
-        faded: "001A00"
+        faded: "001A00",
+    },
+    bgColors: {
+        primary: "#FFF",
+        secondary: "#F7F7F5"
     },
     font: {
         family: "roboto", // am i using this or the other?

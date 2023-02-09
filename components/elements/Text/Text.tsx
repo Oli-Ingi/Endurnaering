@@ -14,6 +14,7 @@ export type Props = {
     id?: string;
     center?: boolean;
     block?: boolean;
+    nowrap?: boolean;
 } & Margins & (
     | { bold?: boolean; thick?: never; }
     | { bold?: never; thick?: boolean }
@@ -28,6 +29,7 @@ const Text = styled.p<Props>`
     color: ${p => p.color ? p.theme.colors[p.color] : "inherit"};
     font-family: ${p => p.theme.fontFamily};
     text-align: ${p => p.center ? "center" : "start"};
+    white-space: ${p => p.nowrap && "nowrap"}; 
     font-size: ${p => !p.size || p.size === "med" 
         ? 1.2
         : p.size === "xs"

@@ -20,11 +20,11 @@ export type Props = {
 
 
 const CourseCard: FC<Props> = ({ title, subtitle, description, length, lengthLabel, type, link, color }) =>
-    <Card borderColor={color || "primary"} variant="white" border otherBorders>
+    <Card shadow="hover" borderColor={color || "primary"} variant="white" border otherBorders href={link}>
         <Title variant="subsection" color={color || "primary"} mb=".5em">{title}{subtitle && <Text as="span" block> {subtitle}</Text>}</Title>
         <div style={{ flex: 1 }}><Text>{description}</Text></div>
         <Flex just="between" mt="1em">
-            <Text bold color={color || "primary"} mr={10}>{lengthLabel} <Text as="span" color="dark">{length}</Text></Text>
+            <Text bold color={color || "primary"} mr={10} nowrap>{lengthLabel} <Text as="span" color="dark" nowrap>{length}</Text></Text>
             <Badge color={color || "primary"}>{type}</Badge>
         </Flex>
     </Card>

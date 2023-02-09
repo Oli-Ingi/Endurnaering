@@ -21,20 +21,19 @@ const CoursesPage = () =>
             img="/pasta-girl-350.png"
             imgAlt="mynd-stulka-ad-borda"
         />
-        <Section border="both" align="center" title={<Title variant="section"><Text as="span" size="lg">Væntanleg</Text> námskeið</Title>}>
-            <Text color="dark" mb="100px">Innan skamms munum við bjóða upp á námskeið.</Text>
-            {/* <Grid min="280px" max="300px" gap="25px">
+        <Section border="both" align="center">
+            <Grid min="280px" max="400px" gap="25px">
                 <CourseCard 
                     title="Byggja upp heilbrigt"
                     subtitle="samband við mat"
-                    description="Aðal námskeiðið hjá Endurnæringu til þess að byggja upp heilbrigt samband við mat."
+                    description="Farið er yfir grunnstoðir og vegferðina í átt að heilbrigðu sambandi við mat"
                     lengthLabel="Lengd"
-                    length="6 vikur"
+                    length="4 vikur"
                     link="/namskeid/heilbrigt-samband-vid-mat"
                     type="Staðnámskeið"
                     color="tertiary"
                 />
-                <CourseCard 
+                {/* <CourseCard 
                     title="Samsetning máltíða:"
                     subtitle="næring og orka"
                     description="Hvernig virkar matur og næring? Hvernig er best að setja saman máltíðir mínar?"
@@ -53,8 +52,8 @@ const CoursesPage = () =>
                     link="/namskeid/versla-i-matinn"
                     type="Vefnámskeið"
                     color="blue"
-                />
-            </Grid> */}
+                /> */}
+            </Grid>
         </Section>
     </Column>
 

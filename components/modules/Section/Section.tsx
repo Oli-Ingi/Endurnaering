@@ -41,7 +41,7 @@ const StInner = styled(Flex)<{ xl?: boolean; titleAlign?: Props["titleAlign"] }>
 
 const Section: FC<Props> = ({ title, variant = "white", children, asEl, shadowBottom, border, row, ...flex }) => 
     <StSection as={asEl} variant={variant} shadowBottom={shadowBottom} border={border}>
-        <StInner col={!row} $wrap={row} {...flex}>
+        <StInner col={!row} $wrap={row} className="sec" {...flex}>
             {typeof title === "string" ? <Title variant="section">{title}</Title> : title}
             {children}
         </StInner>

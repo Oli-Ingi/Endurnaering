@@ -11,7 +11,7 @@ export type Props = {
  */
 const Column = styled.div<Props>`
     display: flex;
-    padding-top: 80px;
+    padding-top: 70px;
     flex-direction: column;
     align-items: center;
     width: ${p => p.contained ? p.theme.layout.containerWidth : '100%'};

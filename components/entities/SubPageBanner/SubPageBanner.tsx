@@ -11,14 +11,15 @@ export type Props = {
     title: string;
     subtitle: string;
     smSubtitle?: boolean;
+    smTitle?: boolean;
     variant?: Colors;
 }
 
 
-const SubPageBanner: FC<Props> = ({ img, imgAlt, title, subtitle, smSubtitle, variant }) =>
+const SubPageBanner: FC<Props> = ({ img, imgAlt, title, subtitle, smSubtitle, variant, smTitle }) =>
     <ImgBanner img={img} imgAlt={imgAlt} sm variant={variant}>
         <div style={{ marginBottom: 50 }}>
-            <PageTitle bold={title} light={subtitle} smLight={smSubtitle} />
+            <PageTitle bold={title} light={subtitle} sm={smTitle} smLight={smSubtitle} />
         </div>
     </ImgBanner>
 

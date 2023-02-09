@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { MarginHandler } from '../../../styles/common';
 
 
-export type Props = {
+export type Props = Margins & {
     color: Colors;
     bold?: boolean;
 }
@@ -14,6 +15,8 @@ const Badge = styled.div<Props>`
     font-family: ${p => p.theme.font.family};
     padding: 4px 1em;
     color: ${p => p.theme.colors[p.color]};
+
+    ${MarginHandler}
 `
 
 
