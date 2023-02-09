@@ -4,7 +4,7 @@ import Header from '../../components/entities/Header/Header'
 const navItems = [
     { caption: "Þjónustuleiðir", links: [
         { caption: "Viðtöl", to: "/vidtol" },
-        { caption: "Námskeið", to: "/namskeid" },
+        { caption: "Námskeið", to: "/namskeid/heilbrigt-samband-vid-mat" },
         { caption: "Fyrirlestrar", to: "/fyrirlestrar" },
     ] },
     { caption: "Um okkur", links: [

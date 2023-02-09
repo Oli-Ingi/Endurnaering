@@ -18,7 +18,7 @@ const Services = () =>
             { 
                 title: "Námskeið", 
                 description: "Fjölbreyttar lausnir",
-                href: "/namskeid",
+                href: "/namskeid/heilbrigt-samband-vid-mat",
                 icon: "reward",
                 hoverColor: "red"
             },

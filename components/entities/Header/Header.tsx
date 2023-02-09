@@ -128,7 +128,7 @@ const Header: FC<Props> = ({ navItems, interview, flag, shadow }) => {
                 <Text as="span" bold color="white" size="lg">Þjónustuleiðir</Text>
                 <BulletList variant="secondary" spaceLg noMargin>
                     <li><Link variant="white" permaLine to="/vidtol" onClick={closeIt} inner>Einstaklingsviðtöl</Link></li>
-                    <li><Link variant="white" permaLine to="/namskeid" inner onClick={closeIt}>Námskeið</Link></li>
+                    <li><Link variant="white" permaLine to="/namskeid/heilbrigt-samband-vid-mat" inner onClick={closeIt}>Námskeið</Link></li>
                     <li><Link variant="white" permaLine to="/fyrirlestrar" inner onClick={closeIt}>Fyrirlestrar</Link></li>
                 </BulletList>
                 <Text as="span" bold color="white" size="lg">Viðtöl</Text>

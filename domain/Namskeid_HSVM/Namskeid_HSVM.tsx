@@ -92,10 +92,12 @@ const SalesBox: FC<SalesBoxProps> = ({ badgeTitle, title, price, button }) => <S
 
 
 const FlexHider = styled.div`
-    width: ${p => p.theme.layout.containerWidth};
+    width: 1000px;
     max-width: 100%;
-    background-image: url("/namskeid-matur.png");
+    background-image: url("/hsvm-heiddis.png");
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 50px;
     padding-bottom: 50px;
     overflow: hidden;
@@ -112,15 +114,15 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
         />
     </FlexHider>
     <Section asEl="div"  border="both"  align="center" row variant="secondary" pad="40px 1em">
-        <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 12. febrúar 2023</Text></Text>
+        <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 15. febrúar 2023</Text></Text>
         <Text color="primary" bold mr="2em">Staðsetning: <Text as="span" color="dark" >Heilsuklasinn - Bíldshöfða 9, Reykjavík</Text></Text>
     </Section>
     <StArticleSection>
             <div>
                 <Text>
                     Heilbrigt samband við mat byggir á þremur grunnstoðum: venjum, innsæi og næringu. 
-                    Á námskeiðinu verður yfir þessi atriði og hvernig hægt er að nýta sér þekkingu á þeim
-                    til að finna jafnvægi í matarhegðun og eiga í heilbrigðu sambandi við mat.
+                    Á námskeiðinu verður farið yfir þessi grunnstoðir og hvernig þekking á þeim
+                    eykur líkur á jafnvægi í okkar mataræði.
                 </Text>
                 <Text>
                     Námskeiðið hentar jafnt konum sem körlum sem náð hafa 20 ára aldri og
@@ -142,7 +144,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                 <Line mb={24} />
                 <Title variant="subsection" mb={24}>Skilmálar og almennar upplýsingar</Title>
                 <Text>
-                    Námskeiðið er 4ra vikna og er haldið á hverjum miðvikudegi frá 12. febrúar til 8. mars, frá 17:00 til 19:00. 
+                    Námskeiðið er 4ra vikna og er haldið á hverjum miðvikudegi frá 15. febrúar til 8. mars, frá 17:00 til 19:00. 
                 </Text>
                 <Text>
                     Athugið að námskeiðið er styrkhæft hjá mörgum stéttarfélögum.
@@ -152,8 +154,8 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                     Takmörkuð sæti eru í boði og einungis þegar greiðsla hefur verið innt af hendi telst viðskiptavinur öruggur með sæti á námskeiðinu.
                 </Text>
                 <Text>
-                    Heiðdís Snorradóttir næringarfræðingur M.sc. stýrir námskeiðinu og
-                    veitir nánari upplýsingar ef þörf er á í gegnum netfangið <Link inline to="mailto:heiddis@endurnaering.is" permaLine>heiddis@endurnaering.is</Link> eða
+                    Heiðdís Snorradóttir næringarfræðingur M.Sc. stýrir námskeiðinu og
+                    veitir nánari upplýsingar ef þess er óskað í gegnum netfangið <Link inline to="mailto:heiddis@endurnaering.is" permaLine>heiddis@endurnaering.is</Link> eða
                     í síma <Link inline permaLine to="tel:5771771">577 1771</Link>.
                 </Text>
             </div>
