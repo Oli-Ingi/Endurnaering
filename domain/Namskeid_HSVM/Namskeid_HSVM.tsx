@@ -114,7 +114,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
         />
     </FlexHider>
     <Section asEl="div"  border="both"  align="center" row variant="secondary" pad="40px 1em">
-        <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 15. febrúar 2023</Text></Text>
+        <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 1. mars 2023, kl. 17:30</Text></Text>
         <Text color="primary" bold mr="2em">Staðsetning: <Text as="span" color="dark" >Heilsuklasinn - Bíldshöfða 9, Reykjavík</Text></Text>
     </Section>
     <StArticleSection>
@@ -143,7 +143,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                 <Line mb={24} />
                 <Title variant="subsection" mb={24}>Skilmálar og almennar upplýsingar</Title>
                 <Text>
-                    Námskeiðið er 4ra vikna og er haldið á hverjum miðvikudegi frá 15. febrúar til 8. mars, frá 17:00 til 19:00. 
+                    Námskeiðið er 4ra vikna og er haldið á hverjum miðvikudegi frá 1. mars til 22. mars, frá 17:30 til 19:00. 
                 </Text>
                 <Text>
                     Athugið að námskeiðið er styrkhæft hjá mörgum stéttarfélögum.
