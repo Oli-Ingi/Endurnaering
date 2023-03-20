@@ -85,7 +85,6 @@ const SalesBox: FC<SalesBoxProps> = ({ badgeTitle, title, price, button }) => <S
         </Text>
         <Flex width="100%" just="between" bg="primary" $wrap>
             <Text size="lg" color="primary" bold mr="1em">{price.key} <Text as="span" color="dark" size="lg">{price.value}</Text></Text>
-            {button}
         </Flex>
     </StWrapper>
 </StSalesBox>
@@ -114,7 +113,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
         />
     </FlexHider>
     <Section asEl="div"  border="both"  align="center" row variant="secondary" pad="40px 1em">
-        <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 1. mars 2023, kl. 17:30</Text></Text>
+        {/* <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 1. mars 2023, kl. 17:30</Text></Text> */}
         <Text color="primary" bold mr="2em">Staðsetning: <Text as="span" color="dark" >Heilsuklasinn - Bíldshöfða 9, Reykjavík</Text></Text>
     </Section>
     <StArticleSection>
@@ -125,7 +124,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                     eykur líkur á jafnvægi í okkar mataræði.
                 </Text>
                 <Text>
-                    Námskeiðið hentar konum og körlum sem langar að ná betri tökum á mataræði- og venjum.
+                    Námskeiðið hentar fólki sem langar að ná betri tökum á mataræði- og venjum.
                 </Text>
                 <Title variant="subsection">Helstu markmið námskeiðsins:</Title>
                 <BulletList>
@@ -143,13 +142,13 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                 <Line mb={24} />
                 <Title variant="subsection" mb={24}>Skilmálar og almennar upplýsingar</Title>
                 <Text>
-                    Námskeiðið er 4ra vikna og er haldið á hverjum miðvikudegi frá 1. mars til 22. mars, frá 17:30 til 19:00. 
+                    Námskeiðið er 4ra vikna.
                 </Text>
                 <Text>
                     Athugið að námskeiðið er styrkhæft hjá mörgum stéttarfélögum.
                 </Text>
                 <Text>
-                    Þegar viðskiptavinur hefur <Link inline permaLine to="https://forms.office.com/Pages/ResponsePage.aspx?id=h-GhAWgFO0uFlpl3jDbQUnTLjVvQchhNqvFinXC5IhJUNUxKRTZSMldaUFEwU0dGQlRVVEVWVTMzRyQlQCN0PWcu&fbclid=IwAR0910xS1lhnPyuvdwoWSJXOF7igLsFMtg7aqCQr45sgooGnK7MAw_inOmk">skráð sig á námskeið</Link> verður sendur reikningur í heimabanka. 
+                    Þegar viðskiptavinur hefur skráð sig á námskeið verður sendur reikningur í heimabanka. 
                     Takmörkuð sæti eru í boði og einungis þegar greiðsla hefur verið innt af hendi telst viðskiptavinur öruggur með sæti á námskeiðinu.
                 </Text>
                 <Text>
@@ -167,3 +166,5 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
 
 
 export default HeilbrigtSambandVidMat;
+
+{/* <Link inline permaLine to="https://forms.office.com/Pages/ResponsePage.aspx?id=h-GhAWgFO0uFlpl3jDbQUnTLjVvQchhNqvFinXC5IhJUNUxKRTZSMldaUFEwU0dGQlRVVEVWVTMzRyQlQCN0PWcu&fbclid=IwAR0910xS1lhnPyuvdwoWSJXOF7igLsFMtg7aqCQr45sgooGnK7MAw_inOmk">skráð sig á námskeið</Link> */}
