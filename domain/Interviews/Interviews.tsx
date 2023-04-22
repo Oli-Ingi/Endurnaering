@@ -48,7 +48,7 @@ const InterviewsPage = () =>
             title="Einstaklingsviðtöl"
             subtitle="Sérsniðin næringarráðgjöf"
             smSubtitle
-            img="/hrokkbraud-350.png"
+            img="/vidtal.png"
             imgAlt="mynd-drengur-ad-borda"
         />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">

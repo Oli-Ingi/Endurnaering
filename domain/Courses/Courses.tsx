@@ -18,6 +18,7 @@ const CoursesPage = () =>
             title="Námskeið"
             subtitle="Fjölbreyttar lausnir"
             smSubtitle
+            padTop
             img="/pasta-girl-350.png"
             imgAlt="mynd-stulka-ad-borda"
         />

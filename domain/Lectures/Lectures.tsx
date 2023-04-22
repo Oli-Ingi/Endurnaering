@@ -12,6 +12,7 @@ const LecturesPage = () =>
             title="Fyrirlestrar"
             subtitle="Fræðsla og innblástur"
             smSubtitle
+            padTop
             img="/coffee-girl-350.png"
             imgAlt="mynd-stulka-ad-drekka-kaffi"
         />

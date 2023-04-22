@@ -18,7 +18,7 @@ export type Props = {
 
 const SubPage: FC<Props> = ({ img, imgAlt, title, description, barContent, children }) =>
     <Column as="main">
-        <ImgBanner img={img} imgAlt={imgAlt} sm>
+        <ImgBanner img={img} imgAlt={imgAlt}>
             <div style={{ marginBottom: 50 }}>
                 <Title mb="0.3em">{title}</Title>
                 {description.map(d => <Text mb=".7em">{d}</Text>)}

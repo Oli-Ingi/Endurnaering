@@ -1,4 +1,4 @@
-import { FC, useRef, useState, useEffect, useLayoutEffect, useMemo, useCallback } from 'react'
+import { FC, useRef, useState, useEffect, useMemo, useCallback } from 'react'
 import styled from 'styled-components'
 import Arrow from '../../elements/Arrow/Arrow'
 import { v4 as uuid } from 'uuid'
@@ -80,7 +80,7 @@ const Slider: FC<Props> = ({ items, variant, cardWidth = 250, maxCardsInView = 4
         ]
     })
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         // calculate how many cards should be visible in the viewbox.
         // TODO: stop reading window inner width - forward ref from parent to get the width
         // to make slider reusable in more contexts than fullWidth - margin/padding.

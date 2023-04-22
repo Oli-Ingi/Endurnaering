@@ -5,8 +5,8 @@ export type Props = {
     children: JSX.Element;
     img: string;
     imgAlt?: string;
+    padTop?: boolean;
     variant?: Colors;
-    sm?: boolean;
 }
 
 const StContainer = styled.section<Pick<Props, "variant">>`
@@ -15,39 +15,41 @@ const StContainer = styled.section<Pick<Props, "variant">>`
     min-width: 382px;
 `
 
-const StImgBanner = styled.div<{ sm?: boolean}>`
+const StImgBanner = styled.div<{ padTop?: boolean }>`
     display: flex;
     justify-content: space-between;
-    padding: 2em 1em 0 1em;
+    padding: ${p => p.padTop ? "2em" : 0} 1em 0 1em;
+    gap: 1em;
     align-items: center;
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
+    flex-wrap: wrap;
     
 
     > div {
         max-width: 60%;
+        padding-top: 1em;
     }
 
     img {
-        width: ${p => p.sm ? 350 : 500}px;
         max-width: 95vw;
+        object-fit: cover;
     }
 
-    @media screen and (max-width: 920px) {
+    @media screen and (max-width: 1150px) {
         > div {
             max-width: unset;
         }
 
-        flex-wrap: wrap;
         justify-content: space-around;
     }
 `
 
 
-const ImgBanner: FC<Props> = ({ children, img, imgAlt, variant, sm }) =>
+const ImgBanner: FC<Props> = ({ children, img, imgAlt, variant, padTop }) =>
     <StContainer variant={variant}>
-        <StImgBanner sm={sm}>
+        <StImgBanner padTop={padTop}>
             {children}
             <img src={img} height={350} alt={imgAlt || "mynd"} />
         </StImgBanner>
