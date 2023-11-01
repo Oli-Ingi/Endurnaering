@@ -57,7 +57,8 @@ const InterviewsPage = () =>
         </Section>
         <StArticleSection>
             <div>
-                <Text>Viðtal við næringarfræðing tekur u.þ.b. 60-90 mínútur.</Text>
+                <Text>Viðtal við næringarfræðing tekur u.þ.b. 50 mínútur.</Text>
+                <Text>Næringarráðgjöf er fyrir börn, unglinga og fullorðna.</Text>
                 <Text>
                     Áhersla er lögð á að þú stýrir ferðinni og að ráðgjöfin sé stuðningur við markmið tengd næringu og/eða matarvenjum. 
                     Í viðtalinu er notast við þekkta og gagnreynda samtalsaðferð sem kallast áhugahvetjandi samtal (e. Motivational Interviewing). Sú aðferð hefur reynst vel 

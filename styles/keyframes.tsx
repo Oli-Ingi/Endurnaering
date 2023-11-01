@@ -72,6 +72,7 @@ export const fadeLeft = keyframes`
 `
 
 
+
 export const fade = (type: Fade) =>
     type === "right" ? fadeRight 
         : type === "left" ? fadeLeft 

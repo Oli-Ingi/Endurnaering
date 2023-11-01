@@ -15,7 +15,6 @@ const Badge = styled.div<Props>`
     font-family: ${p => p.theme.font.family};
     padding: 4px 1em;
     color: ${p => p.theme.colors[p.color]};
-
     ${MarginHandler}
 `
 

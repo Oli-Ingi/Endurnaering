@@ -28,6 +28,10 @@ export const mainTheme = {
         white: '#FFF',
         faded: "001A00",
     },
+    experimental: {
+        lightGradient: "linear-gradient(315deg, #ffffff, #d7e1ec)",
+        conic: "conic-gradient(from -270deg at 75% 110%, rgb(119, 175, 3), rgb(119, 160, 63))"
+    },
     bgColors: {
         primary: "#FFF",
         secondary: "#F7F7F5"
