@@ -52,7 +52,7 @@ const InterviewsPage = () =>
             imgAlt="mynd-drengur-ad-borda"
         />
         <Section asEl="div"  border="both" just="between" align="center" row variant="secondary" pad="1em">
-            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">16.000 kr.</Text></Text>
+            <Text size="lg" color="primary" bold mr="1em">Verð: <Text as="span" color="dark" size="lg">18.000 kr.</Text></Text>
             <Button lg to="https://noona.is/heilsuklas" m="1em 4em 1em 0">Bóka viðtal</Button>
         </Section>
         <StArticleSection>

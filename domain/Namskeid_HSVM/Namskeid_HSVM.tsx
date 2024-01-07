@@ -112,9 +112,10 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
             button={<Button to="https://forms.office.com/Pages/ResponsePage.aspx?id=h-GhAWgFO0uFlpl3jDbQUnTLjVvQchhNqvFinXC5IhJUNUxKRTZSMldaUFEwU0dGQlRVVEVWVTMzRyQlQCN0PWcu&fbclid=IwAR0910xS1lhnPyuvdwoWSJXOF7igLsFMtg7aqCQr45sgooGnK7MAw_inOmk">Skrá mig</Button>}
         />
     </FlexHider>
-    <Section asEl="div"  border="both"  align="center" row variant="secondary" pad="40px 1em">
+    <Section asEl="div"  border="both" variant="secondary" pad="40px 1em">
         {/* <Text color="primary" bold mr="2em">Námskeið hefst: <Text as="span" color="dark">miðvikudaginn 1. mars 2023, kl. 17:30</Text></Text> */}
         <Text color="primary" bold mr="2em">Staðsetning: <Text as="span" color="dark" >Heilsuklasinn - Bíldshöfða 9, Reykjavík</Text></Text>
+        <Text color="primary" bold mr="2em">Dagsetning: <Text as="span" color="dark" >Dagsetning fyrir næsta námskeið hefur ekki verið ákveðin</Text></Text>
     </Section>
     <StArticleSection>
             <div>
@@ -154,7 +155,7 @@ const HeilbrigtSambandVidMat = () => <Column as="main">
                 <Text>
                     Heiðdís Snorradóttir næringarfræðingur M.Sc. stýrir námskeiðinu og
                     veitir nánari upplýsingar ef þess er óskað í gegnum netfangið <Link inline to="mailto:heiddis@endurnaering.is" permaLine>heiddis@endurnaering.is</Link> eða
-                    í síma <Link inline permaLine to="tel:5771771">577 1771</Link>.
+                    í síma <Link inline permaLine to="tel:8487407">848-7407</Link>.
                 </Text>
             </div>
             {/* <DescCard 
