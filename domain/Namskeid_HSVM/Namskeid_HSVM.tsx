@@ -80,12 +80,12 @@ const SalesBox: FC<SalesBoxProps> = ({ badgeTitle, title, price, button }) => <S
     <StWrapper>
         <Badge color="tertiary" mb={30}>{badgeTitle}</Badge>
         <Title mb={20}>{title}</Title>
-        <Text mb={48}>
+        <Text>
             Heiðdís Snorradóttir, næringarfræðingur Endurnæringar stýrir 4ra vikna námskeiði þar sem farið verður yfir grunnstoðir og leiðina til heilbrigðs sambands við mat.
         </Text>
-        <Flex width="100%" just="between" bg="primary" $wrap>
+        {/* <Flex width="100%" just="between" bg="primary" $wrap>
             <Text size="lg" color="primary" bold mr="1em">{price.key} <Text as="span" color="dark" size="lg">{price.value}</Text></Text>
-        </Flex>
+        </Flex> */}
     </StWrapper>
 </StSalesBox>
 

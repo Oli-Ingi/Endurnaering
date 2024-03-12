@@ -1,4 +1,4 @@
-import Hero from "../../../components/entities/Hero/Hero";
+import Hero from "../../../components/entities/Hero/Hero-new";
 
 
 const HeroIs = () =>
