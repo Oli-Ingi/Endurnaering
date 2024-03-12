@@ -32,8 +32,8 @@ const nav = [
 const contact = {
     title: "Hafðu samband",
     tel: {
-        caption: "848-7407",
-        link: "tel:8487407"
+        caption: "Móttaka heilsuklasans: 599-1600",
+        link: "tel:5991600"
     },
     hours: {
         desc: "Það er hægt að hringja í okkur alla virka daga á milli",
@@ -46,7 +46,7 @@ const orgInfo = [
     { caption: "Endurnæring ehf."},
     { caption: "kt. 410221-0200" },
     { caption: "Bíldshöfði 9, 110 Reykjavík. Höfðinn, Heilsuklasinn" },
-    { caption: "848-7407" },
+    { caption: "599-1600" },
     { caption: "endurnaering@endurnaering.is" },
 ]
 
