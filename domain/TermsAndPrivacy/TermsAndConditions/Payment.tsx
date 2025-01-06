@@ -20,7 +20,7 @@ const Payment = () =>
         </SubArticleSection>
         <SubArticleSection title="Verð">
             <Text>
-                Viðtalstími (50mín) hjá næringarfræðing kostar alla jafna 18 þúsund kr. Sjá nánar<Link to="/vidtol" inline permaLine inner>hér</Link>.
+                Viðtalstími (50mín) hjá næringarfræðing kostar alla jafna 19 þúsund kr. Sjá nánar<Link to="/vidtol" inline permaLine inner>hér</Link>.
                 Öll verð eru í íslenskum krónum og eru verð og upplýsingar um þjónustu birt með fyrirvara um innsláttarvillur. 
                 Við áskiljum okkur rétt til verðbreytinga án fyrirvara. 
                 <Text as="span" italic>
