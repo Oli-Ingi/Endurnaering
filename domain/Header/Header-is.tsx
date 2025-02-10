@@ -24,7 +24,7 @@ const interview = {
     },
     book: {
         caption: "Bóka viðtal",
-        to: "https://noona.is/heilsuklas"
+        to: "https://noona.is/endurnaering"
     },
     title: "Viðtöl"
 }
