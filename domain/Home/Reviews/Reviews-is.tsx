@@ -34,6 +34,26 @@ const reviews = [
         title: "Gott viðmót eftir efnaskiptaaðgerð og minni streita",
         content: ["“Þegar ég leitaði til Heiðdísar þá voru ekki nema 3 mánuðir síðan ég fór í efnaskiptaaðgerð. Næringin var byrjuð að valda mér mikilli streitu þar sem næringarþörfin var orðin allt önnur en fyrir aðgerð. Hún hjálpaði mér ekki einungis með að komast á réttu brautina heldur losnaði ég við streituna enda ekki annað hægt þegar spjallið við Heiðdísi var þægilegt og gott. Hún hefur mjög gott viðmót.”"],
         subtitle: "43 ára kvk"
+    },
+    {
+        title: "Fagleg og gagnleg þjónusta",
+        content: ["“Mæringarráðgjöfin var mjög fagleg og gagnast vel.”"],
+        subtitle: "63 ára kk"
+    },
+    {
+        title: "Hlýlegt viðmót",
+        content: ["“Þú tekur alltaf hlýlega á móti mér. Hvetjandi, gefur góð ráð og sendir hjálplegt stuðningefni í tölvupósti", "Mæli eindregið með Endurnæringu”"],
+        subtitle: "57 ára kvk"
+    },
+    {
+        title: "Skynsöm og heilbrigð ráögjöf",
+        content: ["“Heiðdís veitir skynsama og heilbrigða næringarráðgjöf. Í mínu ferli voru þetta litlar breytingar yfir lengra tímabil sem gerði það að verkum að mér tókst að tileinka mér betri matarvenjur og betri líðan.”"],
+        subtitle: "48 ára kk"
+    },
+    {
+        title: "Gott viðmót og sérsniðnar hagnýtar ábendingar",
+        content: ["“Mig langar bara að segja að það var gott að koma til þín, ert góð í vinna með þær upplýsingar sem ég gaf þér og byggja ofan á og koma með uppástungur um hvað megi betur fara. Svo eru frábær heilræði sem þú gafst varðandi geymslu á matvælum, meðferð matvæla og hvernig ég gat unnið mér í haginn vitandi að ég elda ekki mat.”"],
+        subtitle: "55 ára kvk"
     }
 ]
 
