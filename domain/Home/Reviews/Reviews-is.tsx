@@ -46,13 +46,13 @@ const reviews = [
         subtitle: "57 ára kvk"
     },
     {
-        title: "Skynsöm og heilbrigð ráögjöf",
+        title: "Skynsöm og heilbrigð ráðgjöf",
         content: ["“Heiðdís veitir skynsama og heilbrigða næringarráðgjöf. Í mínu ferli voru þetta litlar breytingar yfir lengra tímabil sem gerði það að verkum að mér tókst að tileinka mér betri matarvenjur og betri líðan.”"],
         subtitle: "48 ára kk"
     },
     {
         title: "Gott viðmót og sérsniðnar hagnýtar ábendingar",
-        content: ["“Mig langar bara að segja að það var gott að koma til þín, ert góð í vinna með þær upplýsingar sem ég gaf þér og byggja ofan á og koma með uppástungur um hvað megi betur fara. Svo eru frábær heilræði sem þú gafst varðandi geymslu á matvælum, meðferð matvæla og hvernig ég gat unnið mér í haginn vitandi að ég elda ekki mat.”"],
+        content: ["“Mig langar bara að segja að það var gott að koma til þín, ert góð í að vinna með þær upplýsingar sem ég gaf þér og byggja ofan á og koma með uppástungur um hvað megi betur fara. Svo eru frábær heilræði sem þú gafst varðandi geymslu á matvælum, meðferð matvæla og hvernig ég gat unnið mér í haginn vitandi að ég elda ekki mat.”"],
         subtitle: "55 ára kvk"
     }
 ]
